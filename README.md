@@ -16,11 +16,10 @@ sge-viettrans/
     ├── hero-s.jpg        (cùng ảnh, 1100 px cho điện thoại)
     ├── truck.jpg         (xe tải thùng nhìn ngang, phần giới thiệu)
     ├── band.jpg          (dải ảnh phủ xanh, phần khẩu hiệu)
-    ├── team.jpg          (đội ngũ trước xe tải)
     └── fonts/            (Montserrat, Be Vietnam Pro, kèm giấy phép OFL)
 ```
 
-Các ảnh `hero`, `hero-s`, `truck`, `band`, `team` được cắt từ ảnh mẫu (ảnh minh họa dựng bằng AI, gốc chỉ rộng 768 px nên hơi mềm khi xem trên màn hình lớn). Khi có ảnh chụp thật của xe và nhân viên, thay đúng tên file và giữ tỉ lệ: hero 16:9 có bầu trời ở phần trên để đặt chữ.
+Các ảnh `hero`, `hero-s`, `truck`, `band` được cắt từ ảnh mẫu (ảnh minh họa dựng bằng AI, gốc chỉ rộng 768 px nên hơi mềm khi xem trên màn hình lớn). Khi có ảnh chụp thật của xe và nhân viên, thay đúng tên file và giữ tỉ lệ: hero 16:9 có bầu trời ở phần trên để đặt chữ.
 
 ## Đưa lên GitHub và bật website miễn phí
 
