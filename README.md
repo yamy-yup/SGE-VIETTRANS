@@ -11,6 +11,8 @@ sge-viettrans/
 ├── README.md
 └── assets/
     ├── logo.jpg          (logo SGE Viettrans, đã có)
+    ├── hero.jpg          (ảnh đầu trang, máy tính, 2000 px ngang)
+    ├── hero-m.jpg        (cùng ảnh, cắt cho điện thoại và máy tính bảng dọc)
     ├── field-1.jpg       (ảnh bốc xếp, chuyển đồ lên xe, dọc 4:5)
     ├── field-2.jpg       (ảnh tháo lắp tại chỗ, dọc 4:5)
     └── field-3.jpg       (ảnh xe tải thùng SGE, dọc 4:5)
@@ -32,7 +34,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 ## Những chỗ cần bổ sung (tìm chữ `TODO` trong index.html)
 
 - Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
-- Ảnh thực tế của công ty: `assets/field-1.jpg` đến `field-3.jpg` (hiện chưa có ảnh nào, trang đang dùng hình vẽ thành phố và xe tải)
+- Ảnh thực tế tại hiện trường: `assets/field-1.jpg` đến `field-3.jpg` (chưa có, mục "Công việc thực tế" đang ẩn). Ảnh đầu trang đã có (`hero.jpg`, `hero-m.jpg`). Muốn đổi ảnh đầu trang: giữ tỉ lệ ảnh gốc có phần mờ ở trên và dưới, chữ sẽ nằm trên các vùng mờ đó
 - Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
 - Link Facebook, TikTok, Zalo ở chân trang
 - Ảnh chia sẻ (og:image) và địa chỉ web (og:url)
