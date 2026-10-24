@@ -35,15 +35,4 @@
   $$('a',nav).forEach(function(a){a.addEventListener('click',function(){closeAll();a.blur()})});
 
   var yr=$('#year');if(yr)yr.textContent=new Date().getFullYear();
-
-  /* Bảng giá: mở đúng mục khi bấm từ menu hoặc vào bằng đường dẫn có #bang-gia-... */
-  function openPrice(){
-    var h=location.hash.slice(1);
-    if(!h)return;
-    var el=document.getElementById(h);
-    if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView({block:'start'})}
-    else if(h==='bang-gia'){var f=$('.pg');if(f&&!$('.pg[open]'))f.open=true}
-  }
-  window.addEventListener('hashchange',openPrice);
-  openPrice();
 })();

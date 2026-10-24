@@ -9,11 +9,14 @@ HTML + CSS + JS thuần, không cần cài đặt hay build.
 sge-viettrans/
 ├── index.html
 ├── blog.html             (trang Blog, 3 bài hướng dẫn)
+├── dich-vu.html          (danh sách 5 dịch vụ) + 5 trang chi tiết: chuyen-nha-tron-goi, chuyen-van-phong,
+│                         cho-thue-xe-tai, boc-xep, kho-bai-luu-tru (.html)
+├── bang-gia.html         (danh sách 3 bảng giá) + bang-gia-xe-tai, bang-gia-boc-xep, bang-gia-thao-lap (.html)
 ├── PRODUCT.md            (thông tin sản phẩm, dùng cho Claude khi chỉnh giao diện)
 ├── README.md
 └── assets/
     ├── style.css         (toàn bộ giao diện, dùng chung cho index.html và blog.html)
-    ├── site.js           (menu, menu xổ xuống, mở bảng giá)
+    ├── site.js           (menu thu gọn trên điện thoại, menu xổ xuống)
     ├── logo.jpg          (logo SGE Viettrans)
     ├── hero.jpg          (ảnh đầu trang, 2000 px ngang, từ ảnh mẫu đã bỏ chữ trên bầu trời)
     ├── hero-s.jpg        (cùng ảnh, 1100 px cho điện thoại)
@@ -38,7 +41,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 ## Những chỗ cần bổ sung (tìm chữ `TODO` trong index.html)
 
 - Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
-- Giá thật trong mục Bảng giá (`index.html`, tìm `TODO`: đang ghi "Liên hệ" vì chưa có giá được xác nhận)
+- Giá thật trong mục Bảng giá (3 trang `bang-gia-*.html`, tìm `TODO`: đang ghi "Liên hệ" vì chưa có giá được xác nhận)
 - Ảnh chụp thật tại hiện trường và đội xe thay cho ảnh minh họa (xem danh sách ảnh ở trên)
 - Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
 - Link Facebook, TikTok, Zalo ở chân trang
@@ -61,3 +64,7 @@ Taste skill đã được chuyển sang kho skill riêng: https://github.com/yam
 ## Tên miền riêng
 
 Khi có tên miền, vào **Settings → Pages → Custom domain** để gắn.
+
+## Sửa menu hoặc chân trang
+
+Menu và chân trang được chép giống nhau ở mọi trang `.html`. Khi đổi, sửa đủ ở tất cả các trang (hoặc nhờ Claude sửa hàng loạt).
