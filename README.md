@@ -47,7 +47,7 @@ Sửa các biến ở đầu phần `<style>` trong `index.html` (`--navy`, `--g
 
 ## Taste skill (thiết kế web)
 
-Thư mục `.claude/skills/design-taste-frontend/` chứa taste skill của Leonxlnx (giấy phép MIT, nguồn: https://github.com/leonxlnx/taste-skill). Claude Code dùng skill này tự động khi thiết kế hoặc chỉnh giao diện trong dự án. Thư mục bắt đầu bằng dấu chấm nên GitHub Pages không đưa lên web công khai.
+Taste skill đã được chuyển sang kho skill riêng: https://github.com/yamy-yup/Skill-Claude (thư mục `skills/design-taste-frontend/`). Khi cần thiết kế hoặc chỉnh giao diện trang này, nhờ Claude đọc skill trong kho đó trước.
 
 ## Tên miền riêng
 
