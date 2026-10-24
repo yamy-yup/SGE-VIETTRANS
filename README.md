@@ -45,6 +45,10 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 
 Sửa các biến ở đầu phần `<style>` trong `index.html` (`--navy`, `--gold`, `--sky`, `--red`).
 
+## Taste skill (thiết kế web)
+
+Thư mục `.claude/skills/design-taste-frontend/` chứa taste skill của Leonxlnx (giấy phép MIT, nguồn: https://github.com/leonxlnx/taste-skill). Claude Code dùng skill này tự động khi thiết kế hoặc chỉnh giao diện trong dự án. Thư mục bắt đầu bằng dấu chấm nên GitHub Pages không đưa lên web công khai.
+
 ## Tên miền riêng
 
 Khi có tên miền, vào **Settings → Pages → Custom domain** để gắn.
