@@ -16,6 +16,6 @@ Nguồn: ảnh mẫu do chủ công ty chốt (24/10/2026). Trang một cột, n
 ## Thành phần
 - Nút: viên thuốc, đỏ đặc (chính), trắng (trên ảnh), viền xanh (phụ); bóng mềm có độ lệch
 - Ô cam kết: ô vuông đỏ 56 px, biểu tượng nét 1.7 trắng
-- Dải ưu đãi: ảnh phủ xanh, người nhô lên trên dải; từ 1100 px chữ đè lên ảnh, dưới đó chữ nằm trong khối xanh bên dưới
+- Dải ảnh khẩu hiệu: ảnh phủ xanh, người nhô lên trên dải; từ 1100 px chữ đè lên ảnh, dưới đó chữ nằm trong khối xanh bên dưới
 - Hero: ảnh tràn ngang, chữ trên bầu trời; dưới 760 px ảnh nằm dưới khối chữ
 - Chuyển động: chỉ ảnh hero lắng xuống và chữ hero hiện lên khi tải trang; tôn trọng giảm chuyển động

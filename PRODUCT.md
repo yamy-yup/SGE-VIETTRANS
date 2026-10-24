@@ -29,7 +29,7 @@ Hoạt động chính tại TP. Hồ Chí Minh. Công ty mới thành lập (đ�
 ## Capabilities and Constraints
 
 - Dịch vụ: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ.
-- Chương trình hiện tại: giảm 25% tất cả dịch vụ (chưa có thời hạn và điều kiện; luôn ghi "liên hệ để biết điều kiện").
+- Không có chương trình giảm giá trên trang (chủ công ty đã yêu cầu bỏ giảm 25%, 24/10/2026).
 - Phiếu báo giá gửi qua mailto hoặc sao chép sang Zalo; chưa có backend.
 - Chưa có bảng giá, chứng nhận, số liệu, khách hàng hay đánh giá: không được bịa.
 - Thông tin pháp lý lấy từ GPKD, cần đối chiếu lại bản gốc.

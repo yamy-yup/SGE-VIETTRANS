@@ -15,7 +15,7 @@ sge-viettrans/
     ├── hero.jpg          (ảnh đầu trang, 2000 px ngang, từ ảnh mẫu đã bỏ chữ trên bầu trời)
     ├── hero-s.jpg        (cùng ảnh, 1100 px cho điện thoại)
     ├── truck.jpg         (xe tải thùng nhìn ngang, phần giới thiệu)
-    ├── band.jpg          (dải ảnh phủ xanh, phần giảm 25%)
+    ├── band.jpg          (dải ảnh phủ xanh, phần khẩu hiệu)
     ├── team.jpg          (đội ngũ trước xe tải)
     └── fonts/            (Montserrat, Be Vietnam Pro, kèm giấy phép OFL)
 ```
@@ -41,7 +41,6 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 - Link Facebook, TikTok, Zalo ở chân trang
 - Ảnh chia sẻ (og:image) và địa chỉ web (og:url)
 - Bảng giá từng dịch vụ
-- Điều kiện và thời hạn chương trình giảm 25%
 - Form báo giá hiện mở ứng dụng email. Muốn nhận thẳng về hộp thư không cần mở email, dùng Formspree hoặc Google Forms.
 
 ## Đổi màu thương hiệu
