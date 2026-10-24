@@ -7,6 +7,7 @@
 <meta name="description" content="SGE Viettrans: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ tại TP.HCM. Nhanh chóng - An toàn - Tiết kiệm. Tư vấn & báo giá 24/7. Hotline 0368 757 303.">
 <meta name="keywords" content="chuyển nhà trọn gói TP.HCM, thuê xe tải TP.HCM, chuyển văn phòng TP.HCM, bốc xếp, kho bãi lưu trữ, SGE Viettrans">
 <meta name="theme-color" content="#0a1f44">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -103,8 +104,9 @@ header.top{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(10,31,68,
 header.top.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.3)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
 .brand{display:flex;align-items:center;gap:10px;color:#fff}
-/* TODO: thay file assets/logo.png bằng logo thật. Nếu chưa có, chữ dự phòng sẽ hiện. */
-.brand img{height:42px;width:auto}
+/* Logo: assets/logo.jpg (bo tròn để che góc đen của file JPG). Nếu thiếu file, chữ dự phòng sẽ hiện. */
+.brand img{height:48px;width:48px;border-radius:50%;object-fit:cover;background:#fff}
+.foot-logo{width:84px;height:84px;border-radius:50%;object-fit:cover;background:#fff;margin-bottom:14px}
 .brand-fallback{font:800 1.05rem/1.1 var(--font-head);letter-spacing:.04em;color:#fff}
 .brand-fallback small{display:block;font-weight:500;font-size:.62rem;letter-spacing:.2em;color:var(--gold-2)}
 .menu{display:none;gap:26px;list-style:none}
@@ -279,8 +281,7 @@ footer a:hover{color:var(--gold-2)}
 <header class="top" id="top">
   <div class="container nav">
     <a class="brand" href="#top" aria-label="SGE Viettrans - Trang chủ">
-      <!-- TODO: đặt logo thật vào assets/logo.png -->
-      <img src="assets/logo.png" alt="Logo SGE Viettrans" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <img src="assets/logo.jpg" width="48" height="48" alt="Logo SGE Viettrans" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <span class="brand-fallback" style="display:none">SGE<small>VIETTRANS</small></span>
     </a>
     <ul class="menu">
@@ -564,6 +565,7 @@ footer a:hover{color:var(--gold-2)}
   <div class="container">
     <div class="foot-grid">
       <div>
+        <img class="foot-logo" src="assets/logo.jpg" width="84" height="84" alt="Logo SGE Viettrans" loading="lazy" onerror="this.remove()">
         <p class="co">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VẬN TẢI SGE VIETTRANS</p>
         <p style="margin-top:8px;font-size:.9rem">Trụ sở: Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh, Việt Nam</p>
         <p class="foot-tag">Một chữ tín - Vạn niềm tin<br>Vận tải Việt - Kết nối toàn cầu</p>

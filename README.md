@@ -10,14 +10,14 @@ sge-viettrans/
 ├── index.html
 ├── README.md
 └── assets/
-    ├── logo.png          (logo thật, nền trong suốt)
+    ├── logo.jpg          (logo SGE Viettrans, đã có)
     ├── gallery-1.jpg     (ảnh xe tải, bốc xếp)
     ├── gallery-2.jpg     (ảnh tháo lắp)
     ├── gallery-3.jpg     (ảnh chuyển nhà)
     └── gallery-4.jpg     (ảnh đội ngũ)
 ```
 
-Chưa có ảnh thì web vẫn chạy: logo hiện chữ dự phòng, gallery hiện khung chờ.
+Chưa có ảnh gallery thì web vẫn chạy: gallery hiện khung chờ. Thiếu logo thì header hiện chữ dự phòng.
 
 ## Đưa lên GitHub và bật website miễn phí
 
@@ -32,7 +32,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 
 ## Những chỗ cần bổ sung (tìm chữ `TODO` trong index.html)
 
-- Logo thật: `assets/logo.png`
+- Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
 - Ảnh thực tế: `assets/gallery-1.jpg` đến `gallery-4.jpg`
 - Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
 - Link Facebook, TikTok, Zalo ở chân trang
