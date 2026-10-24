@@ -8,18 +8,19 @@ HTML + CSS + JS thuần, không cần cài đặt hay build.
 ```
 sge-viettrans/
 ├── index.html
+├── PRODUCT.md            (thông tin sản phẩm, dùng cho Claude khi chỉnh giao diện)
 ├── README.md
 └── assets/
-    ├── logo.jpg          (logo SGE Viettrans, đã có)
-    ├── hero.jpg          (ảnh đầu trang, máy tính, 2000 px ngang)
-    ├── hero-m.jpg        (cùng ảnh, cắt cho điện thoại và máy tính bảng dọc)
-    ├── fonts/            (Cormorant Garamond, Be Vietnam Pro)
-    ├── field-1.jpg       (ảnh bốc xếp, chuyển đồ lên xe, dọc 4:5)
-    ├── field-2.jpg       (ảnh tháo lắp tại chỗ, dọc 4:5)
-    └── field-3.jpg       (ảnh xe tải thùng SGE, dọc 4:5)
+    ├── logo.jpg          (logo SGE Viettrans)
+    ├── hero.jpg          (ảnh đầu trang, 2000 px ngang, từ ảnh mẫu đã bỏ chữ trên bầu trời)
+    ├── hero-s.jpg        (cùng ảnh, 1100 px cho điện thoại)
+    ├── truck.jpg         (xe tải thùng nhìn ngang, phần giới thiệu)
+    ├── band.jpg          (dải ảnh phủ xanh, phần giảm 25%)
+    ├── team.jpg          (đội ngũ trước xe tải)
+    └── fonts/            (Montserrat, Be Vietnam Pro, kèm giấy phép OFL)
 ```
 
-Chưa có ảnh `field-*.jpg` thì mục "Công việc thực tế" tự ẩn, web vẫn chạy bình thường. Chép ảnh vào `assets/` là mục này tự hiện.
+Các ảnh `hero`, `hero-s`, `truck`, `band`, `team` được cắt từ ảnh mẫu (ảnh minh họa dựng bằng AI, gốc chỉ rộng 768 px nên hơi mềm khi xem trên màn hình lớn). Khi có ảnh chụp thật của xe và nhân viên, thay đúng tên file và giữ tỉ lệ: hero 16:9 có bầu trời ở phần trên để đặt chữ.
 
 ## Đưa lên GitHub và bật website miễn phí
 
@@ -35,7 +36,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 ## Những chỗ cần bổ sung (tìm chữ `TODO` trong index.html)
 
 - Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
-- Ảnh thực tế tại hiện trường: `assets/field-1.jpg` đến `field-3.jpg` (chưa có, mục "Công việc thực tế" đang ẩn). Ảnh đầu trang đã có (`hero.jpg`, `hero-m.jpg`). Muốn đổi ảnh đầu trang: giữ tỉ lệ ảnh gốc có phần mờ ở trên và dưới, chữ sẽ nằm trên các vùng mờ đó
+- Ảnh chụp thật tại hiện trường và đội xe thay cho ảnh minh họa (xem danh sách ảnh ở trên)
 - Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
 - Link Facebook, TikTok, Zalo ở chân trang
 - Ảnh chia sẻ (og:image) và địa chỉ web (og:url)
@@ -45,11 +46,11 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 
 ## Đổi màu thương hiệu
 
-Sửa các biến ở đầu phần `<style>` trong `index.html` (`--ground`, `--s1` đến `--s3` là các tầng navy, `--gold`, `--ivory`).
+Sửa các biến ở đầu phần `<style>` trong `index.html` (`--blue` xanh dương, `--navy` xanh đậm cho chữ, `--red` đỏ SGE, `--mist` nền xanh nhạt).
 
 ## Phông chữ
 
-Chữ tiêu đề dùng Cormorant Garamond, chữ thường dùng Be Vietnam Pro, đã đặt sẵn trong `assets/fonts/` (không gọi Google Fonts), giấy phép SIL OFL kèm theo trong cùng thư mục.
+Chữ tiêu đề dùng Montserrat, chữ thường dùng Be Vietnam Pro, đã đặt sẵn trong `assets/fonts/` (không gọi Google Fonts), giấy phép SIL OFL kèm theo trong cùng thư mục.
 
 ## Taste skill (thiết kế web)
 
