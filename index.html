@@ -4,23 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SGE Viettrans | Chuyển nhà trọn gói, thuê xe tải TP.HCM</title>
-<meta name="description" content="SGE Viettrans: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ tại TP.HCM. Nhanh chóng - An toàn - Tiết kiệm. Tư vấn & báo giá 24/7. Hotline 0368 757 303.">
+<meta name="description" content="SGE Viettrans: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ tại TP. Hồ Chí Minh. Nhanh chóng, an toàn, tiết kiệm. Tư vấn và báo giá 24/7. Hotline 0368 757 303.">
 <meta name="keywords" content="chuyển nhà trọn gói TP.HCM, thuê xe tải TP.HCM, chuyển văn phòng TP.HCM, bốc xếp, kho bãi lưu trữ, SGE Viettrans">
 <meta name="theme-color" content="#0a1f44">
 <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:title" content="SGE Viettrans | Một chữ tín - Vạn niềm tin">
-<meta property="og:description" content="Chuyển nhà trọn gói, chuyển văn phòng, thuê xe tải, bốc xếp, kho bãi tại TP.HCM. GIẢM 25% TẤT CẢ DỊCH VỤ. Hotline 0368 757 303.">
-<!-- TODO: thêm og:image (ảnh 1200x630) và og:url khi có tên miền / link GitHub Pages -->
+<meta property="og:description" content="Chuyển nhà trọn gói, chuyển văn phòng, thuê xe tải, bốc xếp, kho bãi tại TP.HCM. Giảm 25% tất cả dịch vụ. Hotline 0368 757 303.">
+<!-- TODO: thêm og:image (ảnh 1200x630) và og:url khi có địa chỉ web chính thức -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;900&display=swap" rel="stylesheet">
+<script>document.documentElement.className='js'</script>
 
-<!-- Dữ liệu có cấu trúc cho SEO địa phương -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,629 +53,797 @@
 </script>
 
 <style>
+/* ---------- Tokens (màu thương hiệu: navy, trắng, vàng kim) ---------- */
 :root{
-  /* Đổi màu thương hiệu tại đây */
-  --navy:#0a1f44;
-  --navy-2:#0f2b5e;
-  --navy-3:#163670;
-  --gold:#d4a843;
-  --gold-2:#f2d27a;
-  --sky:#2f9fe0;
-  --red:#d62828;
-  --white:#ffffff;
-  --ink:#0b1a35;
-  --muted:#5b6b86;
-  --bg-soft:#f4f7fc;
-  --radius:18px;
-  --shadow:0 10px 30px rgba(10,31,68,.14);
-  --font-head:'Be Vietnam Pro',system-ui,sans-serif;
-  --font-body:'Inter',system-ui,sans-serif;
+  --m:clamp(20px,2.4vw,32px);
+  --ground:#0a1f44;
+  --s1:#0f2b5e;
+  --s2:#163670;
+  --s3:#1f4488;
+  --ink:#ffffff;
+  --soft:#b9c8e4;
+  --accent:#d4a843;
+  --paper:#ffffff;
+  --paper-ink:#0a1f44;
+  --paper-soft:#3d5078;
+  --font:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --small:.875rem;
+  --body:1.125rem;
+  --lead:clamp(1.25rem,1.05rem + .8vw,1.625rem);
+  --h2:clamp(2.25rem,1.5rem + 2.6vw,3.75rem);
+  --big:clamp(2.75rem,7vw,8rem);
+  --bar:64px;
+  --wide:calc((100vw - 2 * var(--m)) / 8.2);
+  --F:min(calc((100vw - 2 * var(--m)) / 5.6), calc((100vh - 330px) / 2.5));
+  --ease:cubic-bezier(.2,.7,.2,1);
 }
+@supports (height:100svh){:root{--F:min(calc((100vw - 2 * var(--m)) / 5.6), calc((100svh - 330px) / 2.5))}}
+
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font-family:var(--font-body);color:var(--ink);line-height:1.65;background:#fff;-webkit-text-size-adjust:100%;padding-bottom:84px}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth;scroll-padding-top:var(--bar);-webkit-text-size-adjust:100%}
+body{font-family:var(--font);font-size:var(--body);line-height:1.55;color:var(--ink);background:var(--ground);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-h1,h2,h3,h4{font-family:var(--font-head);line-height:1.25}
-.container{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-.eyebrow{display:inline-block;font:600 .8rem/1 var(--font-head);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.sec-title{font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:800;color:var(--navy)}
-.sec-sub{color:var(--muted);max-width:640px;margin-top:10px}
-.center{text-align:center}.center .sec-sub{margin-inline:auto}
-:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--navy);padding:10px 16px;border-radius:8px;z-index:200;font-weight:600}
+ul,ol{list-style:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--ground);padding:12px 18px;font-weight:500;z-index:300}
 .skip:focus{left:8px}
+.wrap{padding-inline:var(--m)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(12px,1.4vw,24px)}
+h1,h2,h3{font-weight:900;letter-spacing:-.03em;line-height:.95;text-transform:uppercase;text-wrap:balance}
+h2{font-size:var(--h2)}
+.small{font-size:var(--small)}
+.soft{color:var(--soft)}
 
-/* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font:700 1rem/1 var(--font-head);border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;min-height:50px}
-.btn:hover{transform:translateY(-2px)}
-.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--navy);box-shadow:0 8px 22px rgba(212,168,67,.4)}
-.btn-gold:hover{box-shadow:0 12px 28px rgba(212,168,67,.55)}
-.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-sm{padding:10px 18px;min-height:42px;font-size:.9rem}
-.ico{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* ---------- Nút ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;background:var(--accent);color:var(--ground);font-weight:900;font-size:var(--body);border:0;border-radius:0;cursor:pointer;transition:transform .25s var(--ease),background .25s}
+.btn:hover{transform:translateY(-3px);background:#e6bd55}
+.btn:active{transform:translateY(0)}
+.btn-tone{background:var(--s3);color:var(--ink);font-weight:500}
+.btn-tone:hover{background:#2a56a6}
 
-/* Header */
-header.top{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(10,31,68,.96);backdrop-filter:blur(8px);transition:box-shadow .3s}
-header.top.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.3)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
-.brand{display:flex;align-items:center;gap:10px;color:#fff}
-/* Logo: assets/logo.jpg (bo tròn để che góc đen của file JPG). Nếu thiếu file, chữ dự phòng sẽ hiện. */
-.brand img{height:48px;width:48px;border-radius:50%;object-fit:cover;background:#fff}
-.foot-logo{width:84px;height:84px;border-radius:50%;object-fit:cover;background:#fff;margin-bottom:14px}
-.brand-fallback{font:800 1.05rem/1.1 var(--font-head);letter-spacing:.04em;color:#fff}
-.brand-fallback small{display:block;font-weight:500;font-size:.62rem;letter-spacing:.2em;color:var(--gold-2)}
-.menu{display:none;gap:26px;list-style:none}
-.menu a{color:#e6ecf8;font-weight:500;font-size:.95rem;transition:color .2s}
-.menu a:hover{color:var(--gold-2)}
-.nav-cta{display:none}
-.burger{background:none;border:0;color:#fff;width:46px;height:46px;display:grid;place-items:center;cursor:pointer}
-.burger svg{width:28px;height:28px}
-.mobile-menu{display:none;background:var(--navy-2);border-top:1px solid rgba(255,255,255,.1);padding:10px 20px 20px}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;color:#fff;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:500}
-.mobile-menu .btn{margin-top:16px;width:100%}
-@media(min-width:960px){
-  .menu{display:flex}.nav-cta{display:inline-flex}.burger,.mobile-menu{display:none!important}
+/* ---------- Thanh trên ---------- */
+.bar{position:fixed;inset:0 0 auto 0;height:var(--bar);z-index:100;background:var(--ground);display:flex;align-items:center;justify-content:space-between;padding-inline:var(--m);transition:transform .35s var(--ease)}
+.bar.hide{transform:translateY(-100%)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:var(--body);letter-spacing:-.01em}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--paper)}
+.nav{display:flex;align-items:center;gap:clamp(16px,2.4vw,36px);font-size:var(--small)}
+.nav a:not(.nav-call){padding:10px 0;transition:color .2s}
+.nav a:not(.nav-call):hover{color:var(--accent)}
+.nav-call{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;background:var(--accent);color:var(--ground);font-weight:900}
+@media(max-width:820px){.nav a:not(.nav-call){display:none}}
+
+/* ---------- Hero: cái tên là tượng đài ---------- */
+.hero{position:relative;height:250vh}
+@supports (height:100svh){.hero{height:250svh}}
+.hero-pin{position:sticky;top:0;height:100vh;min-height:620px;padding:calc(var(--bar) + 20px) var(--m) 20px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+@supports (height:100svh){.hero-pin{height:100svh}}
+.intro{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--m)}
+.lede-wrap{display:grid;max-width:34ch}
+.lede{grid-area:1/1;font-size:var(--lead);line-height:1.3;font-weight:500;transition:opacity .5s var(--ease),transform .5s var(--ease),visibility 0s}
+.js .lede.two{opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .5s var(--ease),transform .5s var(--ease),visibility 0s .5s}
+.hero.s2 .lede.one{opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .5s var(--ease),transform .5s var(--ease),visibility 0s .5s}
+.hero.s2 .lede.two{opacity:1;visibility:visible;transform:none;transition:opacity .5s var(--ease) .15s,transform .5s var(--ease) .15s,visibility 0s}
+.hero-act{flex:none}
+h1.name{position:relative;display:block;font-size:var(--F);line-height:.9}
+.name-top{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--m)}
+.n1{display:block;font-size:calc(var(--F) * 1.62);line-height:.82;letter-spacing:-.045em;margin-left:-.04em}
+.n2{display:block;letter-spacing:-.04em;line-height:.82;margin-left:-.03em;margin-top:.02em}
+.sky{flex:1 1 0;min-width:0;height:calc(var(--F) * 1.2);margin-bottom:.02em}
+.sky svg{width:100%;height:100%}
+.sk-a{fill:var(--s2)}
+.sk-b{fill:var(--s3)}
+.sk-w{fill:var(--ground)}
+.lane{position:relative;display:block;height:calc(var(--F) * .3);margin-block:calc(var(--F) * .05) calc(var(--F) * .03);overflow:hidden}
+.lane::after{content:"";position:absolute;left:0;right:0;bottom:0;height:calc(var(--F) * .045);background:var(--s2)}
+.truck{position:absolute;left:0;bottom:calc(var(--F) * .045 - 1px);height:calc(100% - var(--F) * .03);width:auto;transform:translate3d(var(--tx,0px),0,0);will-change:transform}
+.tk-box{fill:var(--s3)}.tk-cab{fill:var(--paper)}.tk-glass{fill:var(--ground)}.tk-dark{fill:#061430}.tk-line{fill:var(--s2)}.tk-txt{fill:var(--paper);font-weight:900;font-style:italic}
+.sky-back{transform:translate3d(calc(var(--p,0) * -26px),0,0)}
+.sky-front{transform:translate3d(calc(var(--p,0) * -48px),0,0)}
+@media(max-width:700px){
+  .intro{flex-direction:column;gap:20px}
+  .hero-act{width:100%}.hero-act .btn{width:100%}
+  .lede-wrap{max-width:28ch}
+  .name-top{flex-direction:column;align-items:stretch;gap:0}
+  .sky{order:-1;flex:none;height:calc(var(--F) * 3.1);margin-bottom:calc(var(--F) * .12)}
+}
+html:not(.js) .hero,.hero.static{height:auto}
+html:not(.js) .hero-pin,.hero.static .hero-pin{position:relative;height:auto;min-height:100vh}
+html:not(.js) .truck,.hero.static .truck{transform:none}
+html:not(.js) .lede.two,.hero.static .lede.two{display:none}
+
+/* ---------- Dịch vụ: cột tên cùng một cỡ ---------- */
+.services{padding-block:20vh}
+.services h2{font-size:var(--lead);line-height:1.1;grid-column:1/-1;margin-bottom:96px}
+.svc-col{grid-column:span 3}
+.svc-col:nth-of-type(1){grid-column:1/4}
+.svc-col:nth-of-type(2){grid-column:4/7}
+.svc-col:nth-of-type(3){grid-column:7/10}
+.svc-col h3{font-size:var(--body);text-transform:none;letter-spacing:0;font-weight:900;line-height:1.25;margin-bottom:.9em}
+.svc-col li{line-height:1.25}
+.svc-col li a{display:block;padding:6px 0;color:var(--soft);transition:color .2s,transform .25s var(--ease)}
+.svc-col li a:hover,.svc-col li a:focus-visible{color:var(--ink);transform:translateX(6px)}
+.svc-desc{grid-column:10/13;grid-row:2;color:var(--ink);min-height:4.5em;align-self:start}
+.svc-sum{display:none;color:var(--soft);margin-top:14px}
+.svc-col{grid-row:2}
+@media(max-width:820px){
+  .services{padding-block:96px}
+  .services h2{margin-bottom:48px}
+  .svc-col,.svc-col:nth-of-type(n){grid-column:1/-1;grid-row:auto;margin-bottom:40px}
+  .svc-desc{display:none}
+  .svc-sum{display:block}
+  .svc-col li a{padding:8px 0}
 }
 
-/* Hero */
-.hero{position:relative;color:#fff;padding:128px 0 72px;overflow:hidden;
-  background:
-    radial-gradient(900px 400px at 85% 10%,rgba(47,159,224,.22),transparent 60%),
-    radial-gradient(700px 400px at 0% 100%,rgba(212,168,67,.16),transparent 60%),
-    linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 60%,var(--navy-3) 100%)}
-.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:110px;opacity:.12;
-  background:repeating-linear-gradient(90deg,#fff 0 3px,transparent 3px 22px);
-  mask-image:linear-gradient(to top,#000,transparent);-webkit-mask-image:linear-gradient(to top,#000,transparent)}
-.hero-grid{display:grid;gap:36px;position:relative;z-index:1}
-.badge-promo{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--navy);font:800 .95rem/1 var(--font-head);padding:11px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(212,168,67,.4);margin-bottom:20px}
-.badge-promo .dot{width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 1.8s infinite}
-@keyframes pulse{50%{transform:scale(1.5);opacity:.5}}
-.hero h1{font-size:clamp(2rem,7.2vw,3.5rem);font-weight:800;letter-spacing:-.01em}
-.hero h1 .gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .slogan{margin-top:14px;font:600 1.1rem/1.4 var(--font-head);color:var(--gold-2)}
-.hero .slogan2{color:#c9d6ef;font-size:.98rem;margin-top:4px}
-.hero p.lead{margin-top:18px;color:#dbe5f7;max-width:560px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-note{margin-top:12px;font-size:.82rem;color:#a9b9d8}
-.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:26px;backdrop-filter:blur(6px)}
-.hero-card h2{font-size:1.1rem;color:var(--gold-2);margin-bottom:14px}
-.hero-card ul{list-style:none;display:grid;gap:12px}
-.hero-card li{display:flex;gap:12px;align-items:center;font-weight:500}
-.hero-card li .ico{color:var(--gold-2)}
-.hero-card .hl{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.9rem;color:#c9d6ef}
-.hero-card .hl a{display:block;font:800 1.7rem/1.2 var(--font-head);color:#fff;margin-top:4px}
-@media(min-width:900px){.hero{padding:150px 0 96px}.hero-grid{grid-template-columns:1.25fr .85fr;align-items:center}}
+/* ---------- Quy trình: các ô màu ---------- */
+.how{padding-block:clamp(96px,16vh,200px)}
+.how-intro{margin-bottom:64px;align-items:end}
+.how-intro h2{grid-column:1/6}
+.how-intro p{grid-column:7/12;font-size:var(--body)}
+.acc{display:flex;height:520px;margin-inline:var(--m)}
+.pn{flex:1 1 0;min-width:0;position:relative;background:var(--bg);color:var(--fg);transition:flex-grow .45s var(--ease);overflow:hidden}
+.pn.on{flex-grow:7}
+.pn-btn{position:absolute;inset:0;width:100%;height:100%;background:none;border:0;cursor:pointer;text-align:left;padding:24px;display:flex;align-items:flex-start;color:inherit}
+.pn-name{font-weight:900;font-size:var(--lead);letter-spacing:-.02em;line-height:1.1;transition:font-size .3s var(--ease)}
+.pn:not(.on) .pn-name{writing-mode:vertical-rl;transform:rotate(180deg);align-self:flex-end;margin-top:auto}
+.pn.on .pn-name{font-size:var(--h2);max-width:12ch;line-height:.98}
+.pn-body{position:absolute;left:24px;bottom:24px;max-width:36ch;font-size:var(--body);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility 0s .35s;pointer-events:none}
+.pn.on .pn-body{opacity:1;visibility:visible;transform:none;transition:opacity .35s var(--ease) .2s,transform .35s var(--ease) .2s,visibility 0s}
+.pn:hover:not(.on){filter:brightness(1.12)}
+@media(max-width:820px){
+  .how-intro h2,.how-intro p{grid-column:1/-1}
+  .how-intro p{margin-top:20px}
+  .acc{flex-direction:column;height:auto}
+  .pn{flex:none;height:64px;transition:height .4s var(--ease)}
+  .pn.on{height:300px}
+  .pn:not(.on) .pn-name{writing-mode:horizontal-tb;transform:none;align-self:center;margin-top:0}
+  .pn.on .pn-name{font-size:var(--lead)}
+  .pn-btn{align-items:flex-start}
+  .pn:not(.on) .pn-btn{align-items:center}
+  .pn-body{left:20px;right:20px;bottom:20px;max-width:none}
+}
 
-/* Commit strip */
-.strip{background:var(--navy);color:#fff;padding:0}
-.strip-grid{display:grid;grid-template-columns:repeat(2,1fr)}
-.strip-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:22px 10px;border:1px solid rgba(255,255,255,.07)}
-.strip-item .ico{width:30px;height:30px;color:var(--gold-2)}
-.strip-item b{font:700 .95rem/1.2 var(--font-head)}
-.strip-item span{font-size:.8rem;color:#b9c8e6}
-@media(min-width:760px){.strip-grid{grid-template-columns:repeat(4,1fr)}}
+/* ---------- Hình thực tế (chỉ hiện khi có ảnh trong assets/) ---------- */
+.field[hidden]{display:none}
+.field{padding-block:clamp(80px,14vh,180px)}
+.field h2{margin-bottom:48px}
+.field-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--m)}
+.field figure img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--s2)}
+.field figcaption{margin-top:12px;color:var(--soft);font-size:var(--small)}
+@media(max-width:820px){.field-grid{grid-template-columns:1fr}}
 
-/* Services */
-.services{background:var(--bg-soft)}
-.cards{display:grid;gap:20px;margin-top:40px}
-@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:980px){.cards{grid-template-columns:repeat(3,1fr)}}
-.card{background:#fff;border-radius:var(--radius);padding:28px 24px;box-shadow:0 4px 18px rgba(10,31,68,.07);border:1px solid #e6ecf6;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
-.card-ico{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,var(--navy),var(--navy-3));display:grid;place-items:center;margin-bottom:18px;color:var(--gold-2)}
-.card-ico .ico{width:28px;height:28px}
-.card h3{font-size:1.15rem;color:var(--navy);margin-bottom:8px}
-.card p{color:var(--muted);font-size:.96rem;flex:1}
-.card .btn{margin-top:20px;align-self:flex-start}
+/* ---------- Phiếu báo giá (việc khách làm được) ---------- */
+.quote{background:var(--s1);padding-block:clamp(96px,16vh,200px)}
+.quote-in{align-items:start}
+.q-left{grid-column:1/5;position:sticky;top:calc(var(--bar) + 32px)}
+.q-left h2{margin-bottom:24px}
+.q-left p{font-size:var(--lead);line-height:1.3;max-width:26ch}
+.q-right{grid-column:6/13}
+.q-items{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:40px}
+.q-row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--s2);padding:10px 12px 10px 18px;min-height:64px}
+.q-row label{font-weight:500}
+.ctr{display:flex;align-items:center;gap:4px}
+.ctr input{width:3.2ch;text-align:center;background:none;border:0;font-weight:900;font-size:var(--body);-moz-appearance:textfield;appearance:textfield}
+.ctr input::-webkit-outer-spin-button,.ctr input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.ctr button{display:none;width:44px;height:44px;border:0;background:var(--s3);font-weight:900;font-size:var(--body);cursor:pointer;transition:background .2s,transform .2s var(--ease)}
+.js .ctr button{display:inline-flex;align-items:center;justify-content:center}
+.ctr button:hover{background:#2a56a6}
+.ctr button:active{transform:scale(.92)}
+.q-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.q-fields .full{grid-column:1/-1}
+.q-fields label{display:block;font-size:var(--small);color:var(--soft);margin-bottom:6px}
+.q-fields input,.q-fields select,.q-fields textarea{width:100%;min-height:52px;padding:12px 16px;background:var(--s2);border:0;border-radius:0;color:var(--ink)}
+.q-fields select option{color:#0a1f44}
+.q-fields textarea{min-height:96px;resize:vertical}
+.q-fields input::placeholder,.q-fields textarea::placeholder{color:#8ea4cc}
+.q-fields .err{outline:3px solid #ff8a80;outline-offset:0}
+.q-msg{display:none;color:#ffb4ab;font-size:var(--small);margin-top:6px}
+.q-fields .err + .q-msg{display:block}
+.q-out{margin-top:32px}
+.q-out textarea{width:100%;min-height:210px;background:var(--ground);border:0;border-radius:0;padding:16px;font-size:var(--small);line-height:1.6;color:var(--soft);resize:vertical}
+.q-act{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.q-status{margin-top:14px;min-height:1.6em;color:var(--soft);font-size:var(--small)}
+@media(max-width:900px){
+  .q-left,.q-right{grid-column:1/-1;position:static}
+  .q-left{margin-bottom:40px}
+  .q-items{grid-template-columns:1fr}
+  .q-fields{grid-template-columns:1fr}
+  .q-act .btn{width:100%}
+}
 
-/* Process */
-.steps{display:grid;gap:18px;margin-top:40px;counter-reset:s}
-@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
-.step{position:relative;background:#fff;border:1px solid #e6ecf6;border-radius:var(--radius);padding:30px 22px 24px;box-shadow:0 4px 16px rgba(10,31,68,.06)}
-.step::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:22px;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--navy);font:800 1.1rem/40px var(--font-head);text-align:center;box-shadow:0 6px 14px rgba(212,168,67,.4)}
-.step h3{font-size:1.05rem;color:var(--navy);margin-bottom:6px}
-.step p{color:var(--muted);font-size:.93rem}
+/* ---------- Giới thiệu: số liệu bên, đoạn văn rộng ---------- */
+.about{padding-block:clamp(96px,16vh,200px)}
+.about h2{grid-column:1/-1;margin-bottom:64px;max-width:14ch}
+.facts{grid-column:1/4;font-size:var(--small)}
+.facts div{margin-bottom:20px}
+.facts dt{color:var(--soft)}
+.facts dd{color:var(--ink);font-size:1rem}
+.about-p{grid-column:5/12;font-size:var(--lead);line-height:1.35;max-width:36ch;font-weight:500}
+.pledge{margin-top:120px;align-items:start}
+.pledge > p{grid-column:1/4;font-size:var(--small);color:var(--soft)}
+.pledge dl{grid-column:5/13;display:grid;grid-template-columns:1fr 1fr;gap:28px 64px}
+.pledge dt{font-weight:900;font-size:var(--body)}
+.pledge dd{color:var(--soft);font-size:var(--body)}
+@media(max-width:820px){
+  .facts,.about-p,.pledge > p,.pledge dl{grid-column:1/-1}
+  .about h2{margin-bottom:40px}
+  .about-p{order:-1;margin-bottom:32px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+  .pledge{margin-top:72px}
+  .pledge > p{margin-bottom:20px;color:var(--ink)}
+  .pledge dl{grid-template-columns:1fr;gap:20px}
+}
 
-/* Why */
-.why{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff}
-.why .sec-title{color:#fff}.why .sec-sub{color:#c3d1ea}
-.why-grid{display:grid;gap:18px;margin-top:40px}
-@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:980px){.why-grid{grid-template-columns:repeat(3,1fr)}}
-.why-item{display:flex;gap:16px;padding:22px;border-radius:var(--radius);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
-.why-item .ico{width:30px;height:30px;color:var(--gold-2);margin-top:2px}
-.why-item h3{font-size:1.02rem;margin-bottom:4px;color:var(--gold-2)}
-.why-item p{font-size:.92rem;color:#d3def2}
+/* ---------- Lời kêu gọi: đảo màu ---------- */
+.cta{background:var(--paper);color:var(--paper-ink);min-height:72vh;padding:clamp(64px,12vh,140px) var(--m) 40px;display:flex;flex-direction:column;justify-content:space-between}
+@supports (height:100svh){.cta{min-height:72svh}}
+.cta h2{font-size:var(--big);line-height:.9;letter-spacing:-.04em}
+.cta-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--m);margin-top:64px}
+.cta-foot p{font-size:var(--lead);line-height:1.3;max-width:30ch;font-weight:500}
+.cta-foot .btn:hover{background:#c29a38}
+@media(max-width:700px){.cta{min-height:70vh}.cta-foot{flex-direction:column;align-items:stretch}.cta-foot .btn{width:100%}}
 
-/* Gallery */
-.gallery{display:grid;gap:14px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr)}}
-.ph{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#dfe8f7,#c7d6ee);display:grid;place-items:center;text-align:center;color:var(--navy-3);font-size:.85rem;font-weight:600;padding:12px;border:2px dashed #9db3d8}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ph span{position:relative;z-index:0}
-.gallery-note{margin-top:14px;font-size:.85rem;color:var(--muted);text-align:center}
-
-/* Pricing */
-.pricing{background:var(--bg-soft)}
-.price-box{max-width:760px;margin:36px auto 0;background:#fff;border:2px dashed var(--gold);border-radius:24px;padding:36px 26px;text-align:center;box-shadow:0 6px 24px rgba(10,31,68,.07)}
-.price-box h3{font-size:1.3rem;color:var(--navy);margin-bottom:10px}
-.price-box p{color:var(--muted);margin-bottom:22px}
-.price-box .tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px}
-.price-box .tags span{background:var(--bg-soft);border:1px solid #dbe4f3;color:var(--navy);font-size:.82rem;font-weight:600;padding:7px 14px;border-radius:999px}
-.price-promo{display:inline-block;margin-bottom:18px;background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--navy);font:800 .95rem/1 var(--font-head);padding:10px 18px;border-radius:999px}
-.price-promo small{display:block;font:500 .72rem/1.3 var(--font-body);margin-top:3px}
-
-/* Quote form */
-.quote-wrap{display:grid;gap:34px}
-@media(min-width:900px){.quote-wrap{grid-template-columns:.85fr 1.15fr;align-items:start}}
-.quote-info .contact-line{display:flex;gap:14px;align-items:center;margin-top:20px;font-weight:600}
-.quote-info .contact-line .ico{width:40px;height:40px;padding:10px;border-radius:12px;background:var(--navy);color:var(--gold-2)}
-.quote-info .contact-line small{display:block;font-weight:500;color:var(--muted);font-size:.8rem}
-form.qf{background:#fff;border:1px solid #e1e8f5;border-radius:24px;padding:28px 22px;box-shadow:var(--shadow);display:grid;gap:16px}
-@media(min-width:560px){form.qf{padding:34px 32px;grid-template-columns:1fr 1fr}.qf .full{grid-column:1/-1}}
-.field label{display:block;font:600 .88rem/1.3 var(--font-head);color:var(--navy);margin-bottom:6px}
-.field label i{color:var(--red);font-style:normal}
-.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1.5px solid #cfd9ec;border-radius:12px;font:inherit;color:var(--ink);background:#fbfcff;transition:border-color .2s,box-shadow .2s;min-height:48px}
-.field textarea{min-height:96px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 4px rgba(47,159,224,.18)}
-.field.err input,.field.err select{border-color:var(--red)}
-.field .msg{display:none;color:var(--red);font-size:.8rem;margin-top:5px}
-.field.err .msg{display:block}
-.qf .submit{margin-top:4px}
-.form-status{display:none;padding:14px 16px;border-radius:12px;background:#e8f6ee;color:#14633a;font-size:.92rem;font-weight:500}
-.form-status.show{display:block}
-.form-hint{font-size:.8rem;color:var(--muted)}
-
-/* FAQ */
-.faq{background:var(--bg-soft)}
-.faq-list{max-width:800px;margin:36px auto 0;display:grid;gap:12px}
-details{background:#fff;border:1px solid #e1e8f5;border-radius:14px;padding:0 20px;transition:box-shadow .2s,border-color .2s}
-details[open]{border-color:var(--gold);box-shadow:0 6px 20px rgba(10,31,68,.08)}
-summary{cursor:pointer;list-style:none;padding:18px 0;font:600 1rem/1.4 var(--font-head);color:var(--navy);display:flex;justify-content:space-between;gap:14px;align-items:center}
+/* ---------- Câu hỏi thường gặp ---------- */
+.faq{padding-block:clamp(96px,16vh,200px)}
+.faq h2{font-size:var(--big);line-height:.92;grid-column:1/-1;margin-bottom:80px}
+.faq-list{grid-column:5/13}
+details{padding:18px 0;margin-bottom:18px}
+details[open]{background:var(--s1);margin-inline:-24px;padding:18px 24px 24px}
+summary{display:flex;align-items:center;justify-content:space-between;gap:24px;list-style:none;cursor:pointer;font-size:var(--lead);line-height:1.25;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.5rem;color:var(--gold);font-weight:700;flex:none;transition:transform .25s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding:0 0 18px;color:var(--muted);font-size:.96rem}
+summary::after{content:"";flex:none;width:12px;height:12px;border-right:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:rotate(45deg);transition:transform .3s var(--ease);margin-top:-6px}
+details[open] summary::after{transform:rotate(225deg);margin-top:6px}
+details p{margin-top:14px;max-width:48ch;color:var(--soft)}
+@media(max-width:820px){
+  .faq-list{grid-column:1/-1}
+  .faq h2{margin-bottom:48px}
+  details[open]{margin-inline:calc(var(--m) * -1);padding-inline:var(--m)}
+}
 
-/* Footer */
-footer{background:var(--navy);color:#c9d6ef;padding:56px 0 28px}
-.foot-grid{display:grid;gap:30px}
-@media(min-width:800px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
-footer h4{color:#fff;font-size:1rem;margin-bottom:14px}
-footer .co{color:#fff;font:700 1rem/1.4 var(--font-head)}
-footer ul{list-style:none;display:grid;gap:10px;font-size:.93rem}
-footer a:hover{color:var(--gold-2)}
-.foot-tag{margin-top:14px;color:var(--gold-2);font:600 .95rem/1.4 var(--font-head)}
-.social{display:flex;gap:10px;margin-top:6px;flex-wrap:wrap}
-.social a{padding:9px 16px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:.85rem}
-.copy{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.82rem;text-align:center;color:#8fa3c8}
+/* ---------- Liên hệ: số điện thoại là chữ lớn ---------- */
+.contact{background:var(--paper);color:var(--paper-ink);padding:clamp(64px,10vh,120px) var(--m) 32px;display:flex;flex-direction:column}
+.contact h2{font-size:var(--lead);line-height:1.2;max-width:24ch;text-transform:none;letter-spacing:-.01em;font-weight:500}
+.tel{display:block;font-weight:900;letter-spacing:-.05em;line-height:.9;font-size:var(--wide);white-space:nowrap;margin-top:18vh;transition:color .25s}
+.tel:hover{color:var(--paper-soft)}
+.mail{display:block;margin-top:28px;font-size:var(--lead);font-weight:500;overflow-wrap:anywhere}
+.mail:hover{text-decoration:underline}
+.c-bot{display:flex;justify-content:space-between;gap:var(--m);margin-top:16vh;font-size:var(--small)}
+.c-bot a:hover{text-decoration:underline}
+@media(max-width:700px){.c-bot{flex-direction:column;gap:12px;margin-top:10vh}.tel{margin-top:8vh}}
 
-/* Floating buttons */
-.float{position:fixed;right:14px;bottom:14px;z-index:120;display:flex;flex-direction:column;gap:10px}
-.float a{display:flex;align-items:center;gap:8px;padding:0 18px;height:52px;border-radius:999px;color:#fff;font:700 .95rem/1 var(--font-head);box-shadow:0 8px 22px rgba(0,0,0,.28)}
-.float .call{background:linear-gradient(135deg,#e53935,var(--red));animation:ring 2.6s infinite}
-.float .zalo{background:#0068ff}
-@keyframes ring{0%,88%,100%{transform:rotate(0)}91%{transform:rotate(-6deg)}94%{transform:rotate(6deg)}97%{transform:rotate(-4deg)}}
-@media(min-width:960px){body{padding-bottom:0}}
+/* ---------- Chân trang: tên đứng đầu ---------- */
+footer{background:var(--ground);padding:clamp(64px,10vh,120px) var(--m) 28px}
+.f-name{font-weight:900;text-transform:uppercase;letter-spacing:-.045em;line-height:.85;white-space:nowrap;font-size:var(--wide);margin-left:-.03em}
+.f-main{margin-top:72px;align-items:start}
+.f-reach{grid-column:1/6}
+.f-reach a{display:block;font-size:var(--lead);line-height:1.3;color:var(--accent);overflow-wrap:anywhere}
+.f-reach a:hover{color:#f0cb72}
+.f-reach p{margin-top:20px;color:var(--soft);font-size:var(--small);max-width:36ch}
+.f-links{grid-column:7/13;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;font-size:var(--body)}
+.f-links h3{font-size:var(--small);text-transform:none;letter-spacing:0;color:var(--soft);font-weight:500;margin-bottom:12px;line-height:1.2}
+.f-links li{margin-bottom:8px}
+.f-links a:hover{color:var(--accent)}
+.f-legal{display:flex;justify-content:space-between;gap:var(--m);margin-top:96px;font-size:var(--small);color:var(--soft)}
+.f-legal a:hover{color:var(--ink)}
+@media(max-width:820px){
+  .f-reach,.f-links{grid-column:1/-1}
+  .f-reach{margin-bottom:40px}
+  .f-links{grid-template-columns:1fr 1fr}
+  .f-main{margin-top:48px}
+  .f-legal{flex-direction:column;margin-top:56px;gap:12px}
+}
 
-/* Reveal */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* ---------- Nút gọi nhanh (chỉ trên điện thoại) ---------- */
+.fab{display:none}
+@media(max-width:700px){
+  .fab{display:flex;flex-direction:column;gap:8px;position:fixed;right:var(--m);bottom:16px;z-index:150;visibility:hidden;opacity:0;transform:translateY(16px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s .3s}
+  .fab.show{visibility:visible;opacity:1;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s}
+  .fab a{display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;font-weight:900;font-size:var(--body)}
+  .fab .f-call{background:var(--accent);color:var(--ground)}
+  footer{padding-bottom:150px}
+}
+
+/* ---------- Chuyển động ---------- */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-r].in{opacity:1;transform:none}
+.js .n1,.js .n2{animation:rise .9s var(--ease) both}
+.js .n2{animation-delay:.12s}
+.js .sky{animation:rise 1s var(--ease) .25s both}
+.js .intro{animation:rise .9s var(--ease) .35s both}
+@keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none;transition:none}
-  .float .call,.badge-promo .dot{animation:none}
+  .js [data-r]{opacity:1;transform:none;transition:none}
+  .js .n1,.js .n2,.js .sky,.js .intro{animation:none}
+  .pn,.pn-body,.btn,.lede,details summary::after{transition:none}
 }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Bỏ qua đến nội dung chính</a>
+<a class="skip" href="#noi-dung">Bỏ qua đến nội dung chính</a>
 
-<!-- 1. HEADER -->
-<header class="top" id="top">
-  <div class="container nav">
-    <a class="brand" href="#top" aria-label="SGE Viettrans - Trang chủ">
-      <img src="assets/logo.jpg" width="48" height="48" alt="Logo SGE Viettrans" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-      <span class="brand-fallback" style="display:none">SGE<small>VIETTRANS</small></span>
-    </a>
-    <ul class="menu">
-      <li><a href="#dich-vu">Dịch vụ</a></li>
-      <li><a href="#quy-trinh">Quy trình</a></li>
-      <li><a href="#vi-sao">Vì sao chọn chúng tôi</a></li>
-      <li><a href="#bang-gia">Bảng giá</a></li>
-      <li><a href="#lien-he">Liên hệ</a></li>
-    </ul>
-    <a class="btn btn-gold btn-sm nav-cta" href="tel:0368757303">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-      0368 757 303
-    </a>
-    <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false" aria-controls="mmenu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
-  </div>
-  <nav class="mobile-menu" id="mmenu" aria-label="Menu di động">
+<header class="bar">
+  <a class="brand" href="#top" aria-label="SGE Viettrans, về đầu trang">
+    <img src="assets/logo.jpg" width="44" height="44" alt="Logo SGE Viettrans" onerror="this.style.display='none'">
+    <span>SGE Viettrans</span>
+  </a>
+  <nav class="nav" aria-label="Menu chính">
     <a href="#dich-vu">Dịch vụ</a>
     <a href="#quy-trinh">Quy trình</a>
-    <a href="#vi-sao">Vì sao chọn chúng tôi</a>
-    <a href="#bang-gia">Bảng giá</a>
+    <a href="#phieu">Báo giá</a>
     <a href="#lien-he">Liên hệ</a>
-    <a class="btn btn-gold" href="tel:0368757303">Gọi 0368 757 303</a>
+    <a class="nav-call" href="tel:0368757303">Gọi ngay</a>
   </nav>
 </header>
 
-<main id="main">
+<main id="noi-dung">
 
-<!-- 2. HERO -->
-<section class="hero" aria-labelledby="h1">
-  <div class="container hero-grid">
-    <div>
-      <div class="badge-promo"><span class="dot"></span> GIẢM 25% TẤT CẢ DỊCH VỤ</div>
-      <h1 id="h1">Chuyển nhà &amp; vận tải <span class="gold">trọn gói</span> tại TP. Hồ Chí Minh</h1>
-      <p class="slogan">Một chữ tín - Vạn niềm tin</p>
-      <p class="slogan2">Vận tải Việt - Kết nối toàn cầu</p>
-      <p class="lead">Chuyển nhà, chuyển văn phòng, thuê xe tải, bốc xếp và kho bãi lưu trữ. Đội ngũ đồng phục chuyên nghiệp, làm việc cẩn thận, báo giá rõ ràng.</p>
-      <div class="hero-cta">
-        <a class="btn btn-gold" href="tel:0368757303">
-          <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-          Gọi 0368 757 303
-        </a>
-        <a class="btn btn-ghost" href="#bao-gia">Nhận báo giá nhanh</a>
+<!-- 1. HERO: cái tên là tượng đài, xe chạy dọc đường chân trời thành phố -->
+<section class="hero" id="top">
+  <div class="hero-pin">
+    <div class="intro">
+      <div class="lede-wrap">
+        <p class="lede one">Chuyển nhà, văn phòng, thuê xe tải, bốc xếp và kho bãi tại TP. Hồ Chí Minh, giảm 25% mọi dịch vụ.</p>
+        <p class="lede two" aria-hidden="true">Một chữ tín - Vạn niềm tin. Vận tải Việt - Kết nối toàn cầu.</p>
       </div>
-      <p class="hero-note">Liên hệ để biết điều kiện áp dụng ưu đãi.</p>
+      <div class="hero-act"><a class="btn" href="tel:0368757303">Gọi 0368 757 303</a></div>
     </div>
-    <aside class="hero-card reveal" aria-label="Cam kết dịch vụ">
-      <h2>Cam kết của SGE Viettrans</h2>
+
+    <h1 class="name">
+      <span class="name-top">
+        <span class="n1">SGE</span>
+        <span class="sky" aria-hidden="true">
+          <svg viewBox="0 0 520 300" preserveAspectRatio="xMaxYMax meet" focusable="false">
+            <defs>
+              <pattern id="win" width="9" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="4" height="5" class="sk-w"/></pattern>
+            </defs>
+            <g class="sky-back">
+              <rect class="sk-a" x="10" y="150" width="46" height="150"/>
+              <rect class="sk-a" x="62" y="110" width="34" height="190"/>
+              <rect class="sk-a" x="102" y="172" width="40" height="128"/>
+              <rect class="sk-a" x="148" y="132" width="36" height="168"/>
+              <rect class="sk-a" x="250" y="142" width="34" height="158"/>
+              <rect class="sk-a" x="352" y="122" width="38" height="178"/>
+              <rect class="sk-a" x="394" y="162" width="40" height="138"/>
+              <rect class="sk-a" x="440" y="100" width="34" height="200"/>
+              <rect class="sk-a" x="478" y="152" width="40" height="148"/>
+            </g>
+            <g class="sky-front">
+              <polygon class="sk-b" points="190,300 190,122 214,72 238,122 238,300"/>
+              <rect class="sk-b" x="232" y="112" width="36" height="7"/>
+              <rect class="sk-b" x="296" y="130" width="52" height="170"/>
+              <rect class="sk-b" x="304" y="84" width="36" height="46"/>
+              <rect class="sk-b" x="311" y="44" width="22" height="40"/>
+              <rect class="sk-b" x="319" y="4" width="6" height="40"/>
+              <rect fill="url(#win)" opacity=".55" x="190" y="130" width="48" height="170"/>
+              <rect fill="url(#win)" opacity=".55" x="296" y="136" width="52" height="164"/>
+            </g>
+          </svg>
+        </span>
+      </span>
+      <span class="lane" aria-hidden="true">
+        <svg class="truck" viewBox="0 0 150 62" focusable="false">
+          <rect class="tk-line" x="0" y="18" width="22" height="4"/>
+          <rect class="tk-line" x="6" y="28" width="28" height="4"/>
+          <rect class="tk-line" x="0" y="38" width="20" height="4"/>
+          <rect class="tk-box" x="36" y="4" width="82" height="42"/>
+          <text class="tk-txt" x="77" y="34" text-anchor="middle" font-size="24">SGE</text>
+          <path class="tk-cab" d="M118 15h18l12 15v16h-30z"/>
+          <path class="tk-glass" d="M124 20h10l7 10h-17z"/>
+          <rect class="tk-dark" x="36" y="46" width="112" height="6"/>
+          <circle class="tk-dark" cx="58" cy="54" r="8"/><circle class="tk-cab" cx="58" cy="54" r="3"/>
+          <circle class="tk-dark" cx="134" cy="54" r="8"/><circle class="tk-cab" cx="134" cy="54" r="3"/>
+        </svg>
+      </span>
+      <span class="n2">VIETTRANS</span>
+      <span class="sr">: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải tại TP. Hồ Chí Minh</span>
+    </h1>
+  </div>
+</section>
+
+<!-- 2. DỊCH VỤ -->
+<section class="services wrap" id="dich-vu" aria-labelledby="h-dv">
+  <div class="grid">
+    <h2 id="h-dv" data-r>Dịch vụ</h2>
+
+    <div class="svc-col" data-r style="--d:60ms">
+      <h3>Chuyển dọn</h3>
       <ul>
-        <li><svg class="ico" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Nhanh chóng, đúng hẹn</li>
-        <li><svg class="ico" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> An toàn cho đồ đạc của bạn</li>
-        <li><svg class="ico" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Chi phí tiết kiệm, minh bạch</li>
-        <li><svg class="ico" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Tư vấn &amp; báo giá 24/7</li>
+        <li><a href="#phieu" data-service="Chuyển nhà trọn gói" data-desc="Tháo lắp, đóng gói, bốc xếp và vận chuyển đồ đạc từ nhà cũ đến nhà mới.">Chuyển nhà trọn gói</a></li>
+        <li><a href="#phieu" data-service="Chuyển văn phòng" data-desc="Di dời văn phòng, thiết bị và hồ sơ có kế hoạch rõ ràng.">Chuyển văn phòng</a></li>
+        <li><a href="#phieu" data-service="Chuyển nhà trọn gói" data-desc="Tháo lắp giường, nệm và đồ nội thất ngay tại phòng.">Tháo lắp giường, nệm</a></li>
+        <li><a href="#phieu" data-service="Chuyển văn phòng" data-desc="Tháo dỡ, lắp đặt tại cửa hàng và nhà khách.">Tháo lắp tại cửa hàng</a></li>
       </ul>
-      <div class="hl">Hotline hỗ trợ 24/7<a href="tel:0368757303">0368 757 303</a></div>
-    </aside>
+      <p class="svc-sum">Từ nhà ở đến văn phòng, mọi thứ được tháo lắp và chuyển gọn gàng.</p>
+    </div>
+
+    <div class="svc-col" data-r style="--d:120ms">
+      <h3>Vận tải</h3>
+      <ul>
+        <li><a href="#phieu" data-service="Cho thuê xe tải" data-desc="Xe tải phù hợp với khối lượng hàng, thuê theo nhu cầu của bạn.">Cho thuê xe tải</a></li>
+        <li><a href="#phieu" data-service="Cho thuê xe tải" data-desc="Xe tải thùng mang thương hiệu SGE.">Xe tải thùng SGE</a></li>
+        <li><a href="#phieu" data-service="Chuyển nhà trọn gói" data-desc="Chở máy giặt, ghế xếp và các đồ gia dụng cồng kềnh.">Chở đồ gia dụng</a></li>
+      </ul>
+      <p class="svc-sum">Xe đúng cỡ cho đúng khối lượng hàng của bạn.</p>
+    </div>
+
+    <div class="svc-col" data-r style="--d:180ms">
+      <h3>Bốc xếp và lưu trữ</h3>
+      <ul>
+        <li><a href="#phieu" data-service="Bốc xếp" data-desc="Nhân viên có găng tay bảo hộ, bốc xếp hàng hóa và đồ nặng cẩn thận.">Bốc xếp hàng hóa</a></li>
+        <li><a href="#phieu" data-service="Kho bãi lưu trữ" data-desc="Lưu trữ hàng hóa, đồ đạc ngắn hạn hoặc dài hạn.">Kho bãi lưu trữ</a></li>
+        <li><a href="#phieu" data-service="Kho bãi lưu trữ" data-desc="Liên hệ để biết diện tích và thời gian phù hợp.">Lưu trữ hàng hóa</a></li>
+      </ul>
+      <p class="svc-sum">Có người bốc xếp, có chỗ cất giữ khi chưa dọn vào kịp.</p>
+    </div>
+
+    <p class="svc-desc" id="svc-desc" data-r style="--d:240ms">Chạm vào một dịch vụ để bắt đầu phiếu báo giá.</p>
   </div>
 </section>
 
-<!-- 3. DẢI CAM KẾT -->
-<div class="strip" aria-label="Cam kết">
-  <div class="container strip-grid">
-    <div class="strip-item"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg><b>Nhanh chóng</b><span>Đến đúng giờ, làm gọn gàng</span></div>
-    <div class="strip-item"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><b>An toàn</b><span>Đóng gói, bốc xếp cẩn thận</span></div>
-    <div class="strip-item"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M15 9.5a3 3 0 0 0-3-1.5c-1.7 0-3 .9-3 2.2s1.3 1.8 3 2.1 3 .8 3 2.2-1.3 2.2-3 2.2a3 3 0 0 1-3-1.5M12 6v2m0 8v2"/></svg><b>Tiết kiệm</b><span>Giá rõ ràng, không phát sinh mập mờ</span></div>
-    <div class="strip-item"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><b>Tư vấn 24/7</b><span>Báo giá bất cứ lúc nào</span></div>
+<!-- 3. QUY TRÌNH -->
+<section class="how" id="quy-trinh" aria-labelledby="h-how">
+  <div class="grid how-intro wrap">
+    <h2 id="h-how" data-r>Từ cuộc gọi đến bàn giao</h2>
+    <p class="soft" data-r style="--d:100ms">Không có bước nào làm trong im lặng: bạn biết ai đến, đến khi nào và chi phí ra sao trước khi chúng tôi bắt đầu.</p>
   </div>
-</div>
-
-<!-- 4. DỊCH VỤ -->
-<section class="services" id="dich-vu" aria-labelledby="t-dv">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Dịch vụ</span>
-      <h2 class="sec-title" id="t-dv">Giải pháp vận chuyển trọn gói</h2>
-      <p class="sec-sub">Một đầu mối cho mọi nhu cầu chuyển dọn và vận tải trong TP. Hồ Chí Minh.</p>
-    </div>
-    <div class="cards">
-      <article class="card reveal">
-        <div class="card-ico"><svg class="ico" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
-        <h3>Chuyển nhà trọn gói</h3>
-        <p>Tháo lắp, đóng gói, bốc xếp và vận chuyển đồ đạc từ nhà cũ đến nhà mới, gọn gàng và đúng hẹn.</p>
-        <a class="btn btn-navy btn-sm" href="#bao-gia" data-service="Chuyển nhà trọn gói">Báo giá</a>
-      </article>
-      <article class="card reveal">
-        <div class="card-ico"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div>
-        <h3>Chuyển văn phòng</h3>
-        <p>Di dời văn phòng, thiết bị và hồ sơ có kế hoạch rõ ràng để doanh nghiệp ít bị gián đoạn công việc.</p>
-        <a class="btn btn-navy btn-sm" href="#bao-gia" data-service="Chuyển văn phòng">Báo giá</a>
-      </article>
-      <article class="card reveal">
-        <div class="card-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M1 6h13v10H1zM14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div>
-        <h3>Cho thuê xe tải</h3>
-        <p>Xe tải phù hợp với khối lượng hàng hóa, thuê theo nhu cầu của bạn. Liên hệ để được tư vấn loại xe.</p>
-        <a class="btn btn-navy btn-sm" href="#bao-gia" data-service="Cho thuê xe tải">Báo giá</a>
-      </article>
-      <article class="card reveal">
-        <div class="card-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></div>
-        <h3>Bốc xếp</h3>
-        <p>Nhân viên có găng tay bảo hộ, bốc xếp hàng hóa, đồ nội thất, thiết bị nặng cẩn thận và an toàn.</p>
-        <a class="btn btn-navy btn-sm" href="#bao-gia" data-service="Bốc xếp">Báo giá</a>
-      </article>
-      <article class="card reveal">
-        <div class="card-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg></div>
-        <h3>Kho bãi lưu trữ</h3>
-        <p>Lưu trữ hàng hóa, đồ đạc ngắn hạn hoặc dài hạn. Liên hệ để biết diện tích và thời gian phù hợp.</p>
-        <a class="btn btn-navy btn-sm" href="#bao-gia" data-service="Kho bãi lưu trữ">Báo giá</a>
-      </article>
-    </div>
+  <div class="acc" id="acc" data-r>
+    <article class="pn on" style="--bg:#12306a;--fg:#ffffff">
+      <button class="pn-btn" type="button" aria-expanded="true" aria-controls="pb1"><span class="pn-name">Liên hệ</span></button>
+      <p class="pn-body" id="pb1">Gọi hotline hoặc điền phiếu báo giá. Chúng tôi tư vấn và báo giá 24/7.</p>
+    </article>
+    <article class="pn" style="--bg:#1d4488;--fg:#ffffff">
+      <button class="pn-btn" type="button" aria-expanded="false" aria-controls="pb2"><span class="pn-name">Khảo sát và báo giá</span></button>
+      <p class="pn-body" id="pb2">Nắm khối lượng đồ, quãng đường, tầng và thang máy, rồi báo giá rõ ràng trước khi làm.</p>
+    </article>
+    <article class="pn" style="--bg:#3a6dbd;--fg:#ffffff">
+      <button class="pn-btn" type="button" aria-expanded="false" aria-controls="pb3"><span class="pn-name">Vận chuyển</span></button>
+      <p class="pn-body" id="pb3">Đội ngũ đồng phục đến đúng hẹn, tháo lắp, đóng gói, bốc xếp và chở đồ bằng xe tải thùng SGE.</p>
+    </article>
+    <article class="pn" style="--bg:#9bbcec;--fg:#0a1f44">
+      <button class="pn-btn" type="button" aria-expanded="false" aria-controls="pb4"><span class="pn-name">Bàn giao</span></button>
+      <p class="pn-body" id="pb4">Sắp xếp đồ tại nơi mới và kiểm tra cùng bạn trước khi kết thúc.</p>
+    </article>
   </div>
 </section>
 
-<!-- 5. QUY TRÌNH -->
-<section id="quy-trinh" aria-labelledby="t-qt">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Quy trình</span>
-      <h2 class="sec-title" id="t-qt">4 bước đơn giản</h2>
-      <p class="sec-sub">Từ cuộc gọi đầu tiên đến lúc bàn giao, mọi việc đều rõ ràng.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal"><h3>Liên hệ</h3><p>Gọi hotline hoặc điền form. Chúng tôi tư vấn 24/7.</p></div>
-      <div class="step reveal"><h3>Khảo sát &amp; báo giá</h3><p>Nắm nhu cầu, khối lượng, quãng đường và báo giá rõ ràng.</p></div>
-      <div class="step reveal"><h3>Vận chuyển</h3><p>Đội ngũ đồng phục đến đúng hẹn, đóng gói và vận chuyển cẩn thận.</p></div>
-      <div class="step reveal"><h3>Bàn giao</h3><p>Sắp xếp, bàn giao tại nơi mới và kiểm tra cùng bạn.</p></div>
-    </div>
+<!-- 3b. HÌNH THỰC TẾ: tự hiện khi có ảnh thật trong assets/ -->
+<section class="field wrap" id="hinh-anh" aria-labelledby="h-field" hidden>
+  <h2 id="h-field">Công việc thực tế</h2>
+  <div class="field-grid">
+    <!-- TODO: chép ảnh thật vào assets/ với tên field-1.jpg, field-2.jpg, field-3.jpg, mục này tự hiện -->
+    <figure><img src="assets/field-1.jpg" width="800" height="1000" alt="Nhân viên SGE Viettrans bốc xếp đồ lên xe tải" onload="this.closest('section').hidden=false" onerror="this.closest('figure').remove()"><figcaption>Bốc xếp và chuyển đồ lên xe</figcaption></figure>
+    <figure><img src="assets/field-2.jpg" width="800" height="1000" alt="Nhân viên SGE Viettrans tháo lắp đồ nội thất" onload="this.closest('section').hidden=false" onerror="this.closest('figure').remove()"><figcaption>Tháo lắp tại chỗ</figcaption></figure>
+    <figure><img src="assets/field-3.jpg" width="800" height="1000" alt="Xe tải thùng SGE Viettrans" onload="this.closest('section').hidden=false" onerror="this.closest('figure').remove()"><figcaption>Xe tải thùng SGE</figcaption></figure>
   </div>
 </section>
 
-<!-- 6. VÌ SAO CHỌN -->
-<section class="why" id="vi-sao" aria-labelledby="t-why">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Vì sao chọn chúng tôi</span>
-      <h2 class="sec-title" id="t-why">Một chữ tín - Vạn niềm tin</h2>
-      <p class="sec-sub">Uy tín được xây từ từng chuyến hàng, từng cam kết nhỏ.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M1 6h13v10H1zM14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><div><h3>Đội xe sẵn sàng</h3><p>Xe tải thùng mang thương hiệu SGE, phục vụ nhiều nhu cầu vận chuyển.</p></div></div>
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><div><h3>Nhân viên đồng phục</h3><p>Áo polo xanh, mũ lưỡi trai, găng tay bảo hộ. Chuyên nghiệp và lịch sự.</p></div></div>
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg><div><h3>Đóng gói cẩn thận</h3><p>Tháo lắp và đóng gói đồ đạc kỹ lưỡng để hạn chế va chạm khi di chuyển.</p></div></div>
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><h3>Giá minh bạch</h3><p>Báo giá rõ ràng trước khi thực hiện, trao đổi thẳng thắn với khách hàng.</p></div></div>
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><h3>Hỗ trợ 24/7</h3><p>Tư vấn và báo giá bất cứ lúc nào qua hotline 0368 757 303.</p></div></div>
-      <div class="why-item reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg><div><h3>Nhanh chóng, đúng hẹn</h3><p>Sắp xếp lịch hợp lý, triển khai nhanh để bạn tiết kiệm thời gian.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 7. HÌNH ẢNH THỰC TẾ -->
-<section aria-labelledby="t-gal">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Hình ảnh thực tế</span>
-      <h2 class="sec-title" id="t-gal">Công việc của chúng tôi</h2>
-    </div>
-    <!-- TODO: thay ảnh thật vào thư mục assets/ (gallery-1.jpg ... gallery-4.jpg). Ảnh lỗi sẽ hiện khung chờ. -->
-    <div class="gallery">
-      <div class="ph reveal"><img loading="lazy" src="assets/gallery-1.jpg" alt="Xe tải SGE Viettrans chở đồ gia dụng" onerror="this.remove()"><span>Ảnh xe tải &amp; bốc xếp</span></div>
-      <div class="ph reveal"><img loading="lazy" src="assets/gallery-2.jpg" alt="Nhân viên SGE Viettrans tháo lắp đồ nội thất" onerror="this.remove()"><span>Ảnh tháo lắp</span></div>
-      <div class="ph reveal"><img loading="lazy" src="assets/gallery-3.jpg" alt="Nhân viên SGE Viettrans chuyển nhà trọn gói" onerror="this.remove()"><span>Ảnh chuyển nhà</span></div>
-      <div class="ph reveal"><img loading="lazy" src="assets/gallery-4.jpg" alt="Đội ngũ SGE Viettrans mặc đồng phục" onerror="this.remove()"><span>Ảnh đội ngũ</span></div>
-    </div>
-    <p class="gallery-note">Hình ảnh thực tế sẽ được cập nhật.</p>
-  </div>
-</section>
-
-<!-- 8. BẢNG GIÁ -->
-<section class="pricing" id="bang-gia" aria-labelledby="t-gia">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Bảng giá</span>
-      <h2 class="sec-title" id="t-gia">Báo giá theo nhu cầu thực tế</h2>
-    </div>
-    <!-- TODO: khi có bảng giá chính thức, thay khung này bằng bảng giá từng dịch vụ -->
-    <div class="price-box reveal">
-      <div class="price-promo">GIẢM 25% TẤT CẢ DỊCH VỤ<small>Liên hệ để biết điều kiện áp dụng</small></div>
-      <h3>Liên hệ để được báo giá chính xác</h3>
-      <p>Chi phí phụ thuộc vào khối lượng, quãng đường và yêu cầu thực tế. Chúng tôi báo giá rõ ràng trước khi thực hiện.</p>
-      <div class="tags">
-        <span>Khối lượng đồ đạc</span><span>Quãng đường</span><span>Tầng / thang máy</span><span>Dịch vụ đi kèm</span>
-      </div>
-      <a class="btn btn-gold" href="#bao-gia">Nhận báo giá nhanh</a>
-    </div>
-  </div>
-</section>
-
-<!-- 9. FORM BÁO GIÁ -->
-<section id="lien-he" aria-labelledby="t-bg">
-  <div class="container quote-wrap">
-    <div class="quote-info reveal">
-      <span class="eyebrow">Liên hệ</span>
-      <h2 class="sec-title" id="t-bg">Nhận báo giá nhanh</h2>
-      <p class="sec-sub">Điền thông tin, chúng tôi sẽ liên hệ lại sớm nhất. Cần gấp? Gọi ngay hotline.</p>
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        <div><small>Hotline 24/7</small><a href="tel:0368757303">0368 757 303</a></div>
-      </div>
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        <div><small>Email</small><a href="mailto:sgexpress.6868@gmail.com">sgexpress.6868@gmail.com</a></div>
-      </div>
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div><small>Trụ sở</small>Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh</div>
-      </div>
-      <!-- TODO: có thể nhúng Google Maps vào đây khi cần -->
+<!-- 4. PHIẾU BÁO GIÁ: việc khách làm được ngay -->
+<section class="quote" id="phieu" aria-labelledby="h-q">
+  <div class="grid quote-in wrap">
+    <div class="q-left" data-r>
+      <h2 id="h-q">Lập phiếu báo giá</h2>
+      <p>Chọn đồ cần chuyển, điền địa chỉ, mất khoảng một phút. Chúng tôi dựa vào phiếu để báo giá sát nhất.</p>
     </div>
 
-    <form class="qf reveal" id="bao-gia" novalidate>
-      <div class="field">
-        <label for="f-name">Họ và tên <i>*</i></label>
-        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" required>
-        <span class="msg">Vui lòng nhập họ tên.</span>
+    <form class="q-right" id="qf" action="mailto:sgexpress.6868@gmail.com?subject=Phi%E1%BA%BFu%20b%C3%A1o%20gi%C3%A1" method="post" enctype="text/plain" novalidate>
+      <div class="q-items" data-r>
+        <div class="q-row"><label for="i-giuong">Giường</label><div class="ctr"><button type="button" aria-label="Giảm giường">−</button><input id="i-giuong" name="Giường" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng giường">+</button></div></div>
+        <div class="q-row"><label for="i-nem">Nệm</label><div class="ctr"><button type="button" aria-label="Giảm nệm">−</button><input id="i-nem" name="Nệm" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng nệm">+</button></div></div>
+        <div class="q-row"><label for="i-tu">Tủ quần áo</label><div class="ctr"><button type="button" aria-label="Giảm tủ quần áo">−</button><input id="i-tu" name="Tủ quần áo" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng tủ quần áo">+</button></div></div>
+        <div class="q-row"><label for="i-ban">Bàn, ghế</label><div class="ctr"><button type="button" aria-label="Giảm bàn ghế">−</button><input id="i-ban" name="Bàn, ghế" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng bàn ghế">+</button></div></div>
+        <div class="q-row"><label for="i-lanh">Tủ lạnh</label><div class="ctr"><button type="button" aria-label="Giảm tủ lạnh">−</button><input id="i-lanh" name="Tủ lạnh" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng tủ lạnh">+</button></div></div>
+        <div class="q-row"><label for="i-giat">Máy giặt</label><div class="ctr"><button type="button" aria-label="Giảm máy giặt">−</button><input id="i-giat" name="Máy giặt" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng máy giặt">+</button></div></div>
+        <div class="q-row"><label for="i-dh">Điều hòa</label><div class="ctr"><button type="button" aria-label="Giảm điều hòa">−</button><input id="i-dh" name="Điều hòa" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng điều hòa">+</button></div></div>
+        <div class="q-row"><label for="i-tv">Tivi</label><div class="ctr"><button type="button" aria-label="Giảm tivi">−</button><input id="i-tv" name="Tivi" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng tivi">+</button></div></div>
+        <div class="q-row"><label for="i-thung">Thùng carton</label><div class="ctr"><button type="button" aria-label="Giảm thùng carton">−</button><input id="i-thung" name="Thùng carton" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng thùng carton">+</button></div></div>
+        <div class="q-row"><label for="i-khac">Đồ khác (ghi ở ô ghi chú)</label><div class="ctr"><button type="button" aria-label="Giảm đồ khác">−</button><input id="i-khac" name="Đồ khác" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng đồ khác">+</button></div></div>
       </div>
-      <div class="field">
-        <label for="f-phone">Số điện thoại <i>*</i></label>
-        <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" required>
-        <span class="msg">Số điện thoại chưa hợp lệ.</span>
+
+      <div class="q-fields" data-r>
+        <div class="full">
+          <label for="f-service">Dịch vụ cần báo giá</label>
+          <select id="f-service" name="Dịch vụ">
+            <option>Chuyển nhà trọn gói</option>
+            <option>Chuyển văn phòng</option>
+            <option>Cho thuê xe tải</option>
+            <option>Bốc xếp</option>
+            <option>Kho bãi lưu trữ</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-name">Họ và tên</label>
+          <input id="f-name" name="Họ tên" type="text" autocomplete="name" placeholder="Nguyễn Văn A" required>
+          <p class="q-msg">Vui lòng nhập họ tên.</p>
+        </div>
+        <div>
+          <label for="f-phone">Số điện thoại</label>
+          <input id="f-phone" name="Số điện thoại" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" required>
+          <p class="q-msg">Số điện thoại chưa đúng.</p>
+        </div>
+        <div>
+          <label for="f-from">Địa chỉ đi</label>
+          <input id="f-from" name="Địa chỉ đi" type="text" placeholder="Số nhà, đường, phường">
+        </div>
+        <div>
+          <label for="f-to">Địa chỉ đến</label>
+          <input id="f-to" name="Địa chỉ đến" type="text" placeholder="Số nhà, đường, phường">
+        </div>
+        <div class="full">
+          <label for="f-date">Ngày dự kiến</label>
+          <input id="f-date" name="Ngày dự kiến" type="date">
+          <p class="q-msg">Ngày này đã qua.</p>
+        </div>
+        <div class="full">
+          <label for="f-note">Ghi chú (tầng mấy, có thang máy không, đồ cồng kềnh...)</label>
+          <textarea id="f-note" name="Ghi chú"></textarea>
+        </div>
       </div>
-      <div class="field full">
-        <label for="f-service">Dịch vụ cần báo giá <i>*</i></label>
-        <select id="f-service" name="service" required>
-          <option value="">-- Chọn dịch vụ --</option>
-          <option>Chuyển nhà trọn gói</option>
-          <option>Chuyển văn phòng</option>
-          <option>Cho thuê xe tải</option>
-          <option>Bốc xếp</option>
-          <option>Kho bãi lưu trữ</option>
-        </select>
-        <span class="msg">Vui lòng chọn dịch vụ.</span>
+
+      <div class="q-out" data-r>
+        <label class="sr" for="f-out">Nội dung phiếu</label>
+        <textarea id="f-out" readonly aria-live="polite">Điền thông tin ở trên, nội dung phiếu sẽ hiện ở đây.</textarea>
+        <div class="q-act">
+          <button class="btn" type="submit">Gửi phiếu qua email</button>
+          <button class="btn btn-tone" type="button" id="copy">Sao chép để gửi Zalo</button>
+        </div>
+        <p class="q-status" id="q-status" role="status"></p>
       </div>
-      <div class="field">
-        <label for="f-from">Địa chỉ đi</label>
-        <input id="f-from" name="from" type="text" autocomplete="street-address" placeholder="Số nhà, đường, phường">
-      </div>
-      <div class="field">
-        <label for="f-to">Địa chỉ đến</label>
-        <input id="f-to" name="to" type="text" placeholder="Số nhà, đường, phường">
-      </div>
-      <div class="field full">
-        <label for="f-date">Ngày dự kiến</label>
-        <input id="f-date" name="date" type="date">
-        <span class="msg">Ngày không được ở quá khứ.</span>
-      </div>
-      <div class="field full">
-        <label for="f-note">Ghi chú</label>
-        <textarea id="f-note" name="note" placeholder="Ví dụ: tầng mấy, có thang máy không, đồ cồng kềnh..."></textarea>
-      </div>
-      <div class="full">
-        <button class="btn btn-gold submit" type="submit" style="width:100%">Gửi yêu cầu báo giá</button>
-        <p class="form-hint" style="margin-top:10px">Khi bấm gửi, ứng dụng email trên thiết bị sẽ mở với nội dung đã điền. Bạn chỉ cần bấm Gửi.</p>
-      </div>
-      <div class="form-status full" id="form-status" role="status" aria-live="polite"></div>
     </form>
   </div>
 </section>
 
-<!-- 10. FAQ -->
-<section class="faq" aria-labelledby="t-faq">
-  <div class="container">
-    <div class="center reveal">
-      <span class="eyebrow">Câu hỏi thường gặp</span>
-      <h2 class="sec-title" id="t-faq">Giải đáp nhanh</h2>
-    </div>
+<!-- 5. GIỚI THIỆU -->
+<section class="about wrap" id="gioi-thieu" aria-labelledby="h-ab">
+  <div class="grid">
+    <h2 id="h-ab" data-r>Vì sao khách tin SGE Viettrans</h2>
+    <dl class="facts" data-r style="--d:80ms">
+      <div><dt>Trụ sở</dt><dd>Phường An Khánh, TP. Hồ Chí Minh</dd></div>
+      <div><dt>Tư vấn và báo giá</dt><dd>24/7</dd></div>
+      <div><dt>Khu vực hoạt động</dt><dd>TP. Hồ Chí Minh</dd></div>
+    </dl>
+    <p class="about-p" data-r style="--d:140ms">Chúng tôi làm việc bằng chữ tín: nhân viên đồng phục đến đúng hẹn, đồ đạc được tháo lắp và đóng gói cẩn thận, chi phí nói rõ trước khi bắt đầu. Xe tải thùng SGE chở đồ của bạn đi trong thành phố mà chúng tôi sống và làm việc.</p>
+  </div>
+  <div class="grid pledge">
+    <p data-r>Bốn cam kết</p>
+    <dl data-r style="--d:80ms">
+      <div><dt>Nhanh chóng</dt><dd>Đến đúng giờ, làm gọn, không kéo dài.</dd></div>
+      <div><dt>An toàn</dt><dd>Đóng gói và bốc xếp cẩn thận, có đồ bảo hộ cho nhân viên.</dd></div>
+      <div><dt>Tiết kiệm</dt><dd>Báo giá rõ ràng, không phát sinh mập mờ.</dd></div>
+      <div><dt>Tư vấn 24/7</dt><dd>Gọi hoặc nhắn bất cứ lúc nào để được báo giá.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 6. LỜI KÊU GỌI (đảo màu) -->
+<section class="cta" aria-labelledby="h-cta">
+  <h2 id="h-cta" data-r>Một chữ tín,<br>vạn niềm tin.</h2>
+  <div class="cta-foot" data-r style="--d:120ms">
+    <p>Giảm 25% tất cả dịch vụ. Liên hệ để biết điều kiện áp dụng.</p>
+    <a class="btn" href="tel:0368757303">Gọi 0368 757 303</a>
+  </div>
+</section>
+
+<!-- 7. CÂU HỎI THƯỜNG GẶP -->
+<section class="faq wrap" id="hoi-dap" aria-labelledby="h-faq">
+  <div class="grid">
+    <h2 id="h-faq" data-r>Câu hỏi thường gặp</h2>
     <div class="faq-list">
-      <details class="reveal"><summary>SGE Viettrans phục vụ ở khu vực nào?</summary><p>Chúng tôi hoạt động chính tại TP. Hồ Chí Minh. Nếu cần vận chuyển đi tỉnh, vui lòng gọi hotline để được tư vấn.</p></details>
-      <details class="reveal"><summary>Báo giá được tính như thế nào?</summary><p>Giá phụ thuộc vào khối lượng đồ đạc, quãng đường, tầng và thang máy, cùng các dịch vụ đi kèm. Hãy gọi 0368 757 303 hoặc điền form để được báo giá cụ thể.</p></details>
-      <details class="reveal"><summary>Chương trình giảm 25% áp dụng thế nào?</summary><p>Chương trình áp dụng cho tất cả dịch vụ. Điều kiện và thời gian áp dụng vui lòng liên hệ hotline để được xác nhận.</p></details>
-      <details class="reveal"><summary>Chuyển nhà trọn gói gồm những gì?</summary><p>Gồm tháo lắp, đóng gói, bốc xếp và vận chuyển đồ đạc. Chi tiết từng hạng mục sẽ được tư vấn rõ khi báo giá.</p></details>
-      <details class="reveal"><summary>Tôi muốn thuê xe tải thì cần chuẩn bị gì?</summary><p>Bạn chỉ cần cho biết loại hàng, khối lượng và quãng đường. Chúng tôi sẽ tư vấn loại xe phù hợp.</p></details>
-      <details class="reveal"><summary>Tôi có thể gửi hàng vào kho lưu trữ không?</summary><p>Có. Chúng tôi cung cấp dịch vụ kho bãi lưu trữ hàng hóa. Vui lòng liên hệ để biết thời gian và diện tích phù hợp.</p></details>
+      <details data-r><summary>SGE Viettrans phục vụ ở khu vực nào?</summary><p>Chúng tôi hoạt động chính tại TP. Hồ Chí Minh. Nếu cần vận chuyển đi tỉnh, vui lòng gọi hotline để được tư vấn.</p></details>
+      <details data-r><summary>Báo giá được tính như thế nào?</summary><p>Giá phụ thuộc vào khối lượng đồ đạc, quãng đường, tầng và thang máy, cùng các dịch vụ đi kèm. Lập phiếu ở trên hoặc gọi 0368 757 303 để được báo giá cụ thể.</p></details>
+      <details data-r><summary>Chương trình giảm 25% áp dụng thế nào?</summary><p>Chương trình áp dụng cho tất cả dịch vụ. Điều kiện và thời gian áp dụng vui lòng liên hệ hotline để được xác nhận.</p></details>
+      <details data-r><summary>Chuyển nhà trọn gói gồm những gì?</summary><p>Gồm tháo lắp, đóng gói, bốc xếp và vận chuyển đồ đạc. Chi tiết từng hạng mục sẽ được tư vấn rõ khi báo giá.</p></details>
+      <details data-r><summary>Tôi muốn thuê xe tải thì cần chuẩn bị gì?</summary><p>Bạn chỉ cần cho biết loại hàng, khối lượng và quãng đường. Chúng tôi sẽ tư vấn loại xe phù hợp.</p></details>
+      <details data-r><summary>Tôi có thể gửi hàng vào kho lưu trữ không?</summary><p>Có. Chúng tôi cung cấp dịch vụ kho bãi lưu trữ hàng hóa. Vui lòng liên hệ để biết thời gian và diện tích phù hợp.</p></details>
     </div>
+  </div>
+</section>
+
+<!-- 8. LIÊN HỆ -->
+<section class="contact" id="lien-he" aria-labelledby="h-ct">
+  <h2 id="h-ct" data-r>Gọi hoặc nhắn để nhận báo giá cho việc chuyển dọn của bạn.</h2>
+  <div>
+    <a class="tel" href="tel:0368757303" data-r>0368 757 303</a>
+    <a class="mail" href="mailto:sgexpress.6868@gmail.com" data-r style="--d:80ms">sgexpress.6868@gmail.com</a>
+  </div>
+  <div class="c-bot" data-r>
+    <span>Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh</span>
+    <span>
+      <!-- TODO: thay href="#" bằng link fanpage, TikTok chính thức; đổi link Zalo nếu dùng số khác -->
+      <a href="https://zalo.me/0368757303" target="_blank" rel="noopener">Zalo</a> ·
+      <a href="#">Facebook</a> ·
+      <a href="#">TikTok</a>
+    </span>
   </div>
 </section>
 
 </main>
 
-<!-- 11. FOOTER -->
+<!-- 9. CHÂN TRANG -->
 <footer>
-  <div class="container">
-    <div class="foot-grid">
+  <p class="f-name" aria-hidden="true">SGE Viettrans</p>
+  <div class="grid f-main">
+    <div class="f-reach">
+      <a href="tel:0368757303">0368 757 303</a>
+      <a href="mailto:sgexpress.6868@gmail.com">sgexpress.6868@gmail.com</a>
+      <p>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VẬN TẢI SGE VIETTRANS. Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh, Việt Nam.</p>
+    </div>
+    <div class="f-links">
       <div>
-        <img class="foot-logo" src="assets/logo.jpg" width="84" height="84" alt="Logo SGE Viettrans" loading="lazy" onerror="this.remove()">
-        <p class="co">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VẬN TẢI SGE VIETTRANS</p>
-        <p style="margin-top:8px;font-size:.9rem">Trụ sở: Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh, Việt Nam</p>
-        <p class="foot-tag">Một chữ tín - Vạn niềm tin<br>Vận tải Việt - Kết nối toàn cầu</p>
-      </div>
-      <div>
-        <h4>Liên hệ</h4>
+        <h3>Dịch vụ</h3>
         <ul>
-          <li>Hotline: <a href="tel:0368757303">0368 757 303</a></li>
-          <li>Email: <a href="mailto:sgexpress.6868@gmail.com">sgexpress.6868@gmail.com</a></li>
-          <li>Tư vấn &amp; báo giá 24/7</li>
+          <li><a href="#dich-vu">Chuyển nhà trọn gói</a></li>
+          <li><a href="#dich-vu">Chuyển văn phòng</a></li>
+          <li><a href="#dich-vu">Cho thuê xe tải</a></li>
+          <li><a href="#dich-vu">Bốc xếp</a></li>
+          <li><a href="#dich-vu">Kho bãi lưu trữ</a></li>
         </ul>
       </div>
       <div>
-        <h4>Dịch vụ</h4>
+        <h3>Trang</h3>
         <ul>
-          <li>Chuyển nhà trọn gói</li>
-          <li>Chuyển văn phòng</li>
-          <li>Cho thuê xe tải</li>
-          <li>Bốc xếp</li>
-          <li>Kho bãi lưu trữ</li>
+          <li><a href="#quy-trinh">Quy trình</a></li>
+          <li><a href="#phieu">Phiếu báo giá</a></li>
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#hoi-dap">Câu hỏi thường gặp</a></li>
         </ul>
-        <h4 style="margin-top:20px">Mạng xã hội</h4>
-        <!-- TODO: thay href="#" bằng link fanpage, TikTok, Zalo chính thức -->
-        <div class="social"><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">Zalo</a></div>
+      </div>
+      <div>
+        <h3>Kết nối</h3>
+        <ul>
+          <li><a href="https://zalo.me/0368757303" target="_blank" rel="noopener">Zalo</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
       </div>
     </div>
-    <p class="copy">&copy; <span id="year">2026</span> SGE Viettrans. Bảo lưu mọi quyền.</p>
+  </div>
+  <div class="f-legal">
+    <span>© <span id="year">2026</span> SGE Viettrans. Một chữ tín - Vạn niềm tin.</span>
+    <a href="#top">Lên đầu trang</a>
   </div>
 </footer>
 
-<!-- 12. NÚT NỔI -->
-<div class="float">
-  <!-- TODO: đổi link Zalo nếu tài khoản Zalo dùng số khác hoặc đã có link chính thức -->
-  <a class="zalo" href="https://zalo.me/0368757303" target="_blank" rel="noopener" aria-label="Chat Zalo">Zalo</a>
-  <a class="call" href="tel:0368757303" aria-label="Gọi ngay 0368 757 303">
-    <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-    Gọi ngay
-  </a>
+<div class="fab">
+  <a class="f-call" href="tel:0368757303" aria-label="Gọi ngay 0368 757 303">Gọi ngay</a>
 </div>
 
 <script>
 (function(){
   var $=function(s,c){return (c||document).querySelector(s)};
   var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Năm ở footer
   $('#year').textContent=new Date().getFullYear();
 
-  // Header đổ bóng khi cuộn
-  var header=$('#top');
-  window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>10)},{passive:true});
-
-  // Menu di động
-  var burger=$('#burger'),mm=$('#mmenu');
-  burger.addEventListener('click',function(){
-    var open=mm.classList.toggle('open');
-    burger.setAttribute('aria-expanded',open);
-  });
-  $$('a',mm).forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');burger.setAttribute('aria-expanded','false')})});
-
-  // Hiện dần khi cuộn
-  var items=$$('.reveal');
+  /* Hero: giữ nguyên màn hình, xe chạy dọc đường khi cuộn */
+  var hero=$('.hero'),lane=$('.lane'),truck=$('.truck');
+  if(reduce){hero.classList.add('static')}
+  function heroMove(){
+    if(hero.classList.contains('static'))return;
+    var total=hero.offsetHeight-window.innerHeight;
+    if(total<=0)return;
+    var p=Math.min(1,Math.max(0,-hero.getBoundingClientRect().top/total));
+    var room=lane.clientWidth-truck.getBoundingClientRect().width;
+    hero.style.setProperty('--p',p.toFixed(3));
+    truck.style.setProperty('--tx',(p*Math.max(0,room)).toFixed(1)+'px');
+    hero.classList.toggle('s2',p>.5);
+  }
+  var bar=$('.bar'),fab=$('.fab'),lastY=window.scrollY,pastHero=false,busy=0;
+  function fabUpdate(){fab.classList.toggle('show',pastHero&&busy===0)}
   if('IntersectionObserver' in window){
+    var fio=new IntersectionObserver(function(es){
+      es.forEach(function(e){e.target._in=e.isIntersecting});
+      busy=$$('.quote,.cta,.contact,footer').filter(function(n){return n._in}).length;
+      fabUpdate();
+    });
+    $$('.quote,.cta,.contact,footer').forEach(function(n){fio.observe(n)});
+  }
+  function onScroll(){
+    heroMove();
+    var y=window.scrollY;
+    if(y>lastY+4&&y>120)bar.classList.add('hide');
+    else if(y<lastY-4||y<=120)bar.classList.remove('hide');
+    lastY=y;
+    pastHero=hero.getBoundingClientRect().bottom<window.innerHeight*.6;
+    fabUpdate();
+  }
+  bar.addEventListener('focusin',function(){bar.classList.remove('hide')});
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',heroMove);
+  heroMove();
+
+  /* Hiện dần từng phần khi cuộn tới */
+  var items=$$('[data-r]');
+  if('IntersectionObserver' in window&&!reduce){
     var io=new IntersectionObserver(function(es){
       es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
     },{threshold:.12});
     items.forEach(function(el){io.observe(el)});
   }else{items.forEach(function(el){el.classList.add('in')})}
 
-  // Chọn sẵn dịch vụ khi bấm "Báo giá"
-  $$('[data-service]').forEach(function(a){
-    a.addEventListener('click',function(){$('#f-service').value=a.getAttribute('data-service')});
+  /* Dịch vụ: chạm để chọn sẵn, rê chuột để xem mô tả */
+  var desc=$('#svc-desc'),svc=$('#f-service');
+  $$('.svc-col a').forEach(function(a){
+    function show(){desc.textContent=a.getAttribute('data-desc')}
+    a.addEventListener('mouseenter',show);
+    a.addEventListener('focus',show);
+    a.addEventListener('click',function(){svc.value=a.getAttribute('data-service');build()});
   });
 
-  // Ngày tối thiểu là hôm nay
-  var d=$('#f-date'),t=new Date();
+  /* Quy trình: các ô mở ra */
+  $$('.pn').forEach(function(p){
+    $('.pn-btn',p).addEventListener('click',function(){
+      $$('.pn').forEach(function(o){o.classList.remove('on');$('.pn-btn',o).setAttribute('aria-expanded','false')});
+      p.classList.add('on');$('.pn-btn',p).setAttribute('aria-expanded','true');
+    });
+  });
+
+  /* Phiếu báo giá */
+  var form=$('#qf'),out=$('#f-out'),status=$('#q-status');
+  var name=$('#f-name'),phone=$('#f-phone'),date=$('#f-date');
+  var t=new Date();
   var today=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
-  d.min=today;
+  date.min=today;
 
-  // Kiểm tra & gửi form
-  var form=$('#bao-gia'),status=$('#form-status');
-  function setErr(input,bad){input.closest('.field').classList.toggle('err',bad);input.setAttribute('aria-invalid',bad)}
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var name=$('#f-name'),phone=$('#f-phone'),svc=$('#f-service');
-    var ok=true;
-    var nameBad=name.value.trim().length<2;setErr(name,nameBad);ok=ok&&!nameBad;
-    var p=phone.value.replace(/[\s.\-]/g,'');
-    var phoneBad=!/^(0|\+84)\d{9}$/.test(p);setErr(phone,phoneBad);ok=ok&&!phoneBad;
-    var svcBad=!svc.value;setErr(svc,svcBad);ok=ok&&!svcBad;
-    var dateBad=d.value&&d.value<today;setErr(d,dateBad);ok=ok&&!dateBad;
-    if(!ok){var first=$('.field.err input,.field.err select',form);if(first)first.focus();return}
+  $$('.ctr').forEach(function(c){
+    var input=$('input',c),b=$$('button',c);
+    b[0].addEventListener('click',function(){input.value=Math.max(0,(+input.value||0)-1);build()});
+    b[1].addEventListener('click',function(){input.value=Math.min(99,(+input.value||0)+1);build()});
+  });
 
-    var body=[
-      'YÊU CẦU BÁO GIÁ',
-      'Họ tên: '+name.value.trim(),
-      'Số điện thoại: '+phone.value.trim(),
+  function build(){
+    var rows=[];
+    $$('.q-row').forEach(function(r){
+      var n=+$('input',r).value||0;
+      if(n>0)rows.push('- '+$('input',r).name+': '+n);
+    });
+    var hasInput=name.value||phone.value||$('#f-from').value||$('#f-to').value||date.value||$('#f-note').value||rows.length;
+    if(!hasInput){out.value='Điền thông tin ở trên, nội dung phiếu sẽ hiện ở đây.';return}
+    var lines=['PHIẾU BÁO GIÁ - SGE VIETTRANS',
       'Dịch vụ: '+svc.value,
+      'Họ tên: '+(name.value.trim()||'-'),
+      'Số điện thoại: '+(phone.value.trim()||'-'),
       'Địa chỉ đi: '+($('#f-from').value.trim()||'-'),
       'Địa chỉ đến: '+($('#f-to').value.trim()||'-'),
-      'Ngày dự kiến: '+(d.value||'-'),
-      'Ghi chú: '+($('#f-note').value.trim()||'-')
-    ].join('\n');
-    // TODO: có thể thay mailto bằng dịch vụ nhận form (Formspree, Google Forms...) để gửi thẳng không cần mở email
-    window.location.href='mailto:sgexpress.6868@gmail.com?subject='+encodeURIComponent('Báo giá '+svc.value+' - '+name.value.trim())+'&body='+encodeURIComponent(body);
-    status.textContent='Đã mở ứng dụng email với nội dung của bạn. Nếu không thấy, hãy gọi hotline 0368 757 303 để được hỗ trợ ngay.';
-    status.classList.add('show');
+      'Ngày dự kiến: '+(date.value?date.value.split('-').reverse().join('/'):'-'),
+      'Đồ cần chuyển:'].concat(rows.length?rows:['- (chưa chọn)'],['Ghi chú: '+($('#f-note').value.trim()||'-')]);
+    out.value=lines.join('\n');
+  }
+  $$('input,select,textarea',form).forEach(function(el){
+    el.addEventListener('input',function(){el.classList.remove('err');build()});
+    el.addEventListener('change',build);
   });
-  $$('input,select',form).forEach(function(el){
-    el.addEventListener('input',function(){setErr(el,false)});
-    el.addEventListener('change',function(){setErr(el,false)});
+
+  function setErr(el,bad){el.classList.toggle('err',bad);el.setAttribute('aria-invalid',bad?'true':'false')}
+  function valid(){
+    var ok=true;
+    var nb=name.value.trim().length<2;setErr(name,nb);ok=ok&&!nb;
+    var pb=!/^(0|\+84)\d{9}$/.test(phone.value.replace(/[\s.\-]/g,''));setErr(phone,pb);ok=ok&&!pb;
+    var db=!!date.value&&date.value<today;setErr(date,db);ok=ok&&!db;
+    if(!ok){var f=$('.err',form);if(f)f.focus()}
+    return ok;
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!valid())return;
+    build();
+    var subject='Phiếu báo giá '+svc.value+' - '+name.value.trim();
+    // TODO: có thể thay mailto bằng dịch vụ nhận form (Formspree, Google Forms...) để gửi thẳng, không cần mở email
+    window.location.href='mailto:sgexpress.6868@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(out.value);
+    status.textContent='Đã mở ứng dụng email với nội dung phiếu. Nếu không thấy, hãy gọi 0368 757 303 để được hỗ trợ ngay.';
+  });
+
+  $('#copy').addEventListener('click',function(){
+    if(!valid())return;
+    build();
+    function done(){status.textContent='Đã sao chép. Dán vào Zalo hoặc tin nhắn để gửi cho chúng tôi.'}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(out.value).then(done,function(){out.select();document.execCommand('copy');done()});
+    }else{out.select();document.execCommand('copy');done()}
   });
 })();
 </script>

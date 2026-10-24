@@ -11,13 +11,12 @@ sge-viettrans/
 ├── README.md
 └── assets/
     ├── logo.jpg          (logo SGE Viettrans, đã có)
-    ├── gallery-1.jpg     (ảnh xe tải, bốc xếp)
-    ├── gallery-2.jpg     (ảnh tháo lắp)
-    ├── gallery-3.jpg     (ảnh chuyển nhà)
-    └── gallery-4.jpg     (ảnh đội ngũ)
+    ├── field-1.jpg       (ảnh bốc xếp, chuyển đồ lên xe, dọc 4:5)
+    ├── field-2.jpg       (ảnh tháo lắp tại chỗ, dọc 4:5)
+    └── field-3.jpg       (ảnh xe tải thùng SGE, dọc 4:5)
 ```
 
-Chưa có ảnh gallery thì web vẫn chạy: gallery hiện khung chờ. Thiếu logo thì header hiện chữ dự phòng.
+Chưa có ảnh `field-*.jpg` thì mục "Công việc thực tế" tự ẩn, web vẫn chạy bình thường. Chép ảnh vào `assets/` là mục này tự hiện.
 
 ## Đưa lên GitHub và bật website miễn phí
 
@@ -33,7 +32,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 ## Những chỗ cần bổ sung (tìm chữ `TODO` trong index.html)
 
 - Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
-- Ảnh thực tế: `assets/gallery-1.jpg` đến `gallery-4.jpg`
+- Ảnh thực tế của công ty: `assets/field-1.jpg` đến `field-3.jpg` (hiện chưa có ảnh nào, trang đang dùng hình vẽ thành phố và xe tải)
 - Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
 - Link Facebook, TikTok, Zalo ở chân trang
 - Ảnh chia sẻ (og:image) và địa chỉ web (og:url)
