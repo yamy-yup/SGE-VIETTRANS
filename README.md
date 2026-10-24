@@ -13,6 +13,7 @@ sge-viettrans/
     ├── logo.jpg          (logo SGE Viettrans, đã có)
     ├── hero.jpg          (ảnh đầu trang, máy tính, 2000 px ngang)
     ├── hero-m.jpg        (cùng ảnh, cắt cho điện thoại và máy tính bảng dọc)
+    ├── fonts/            (Cormorant Garamond, Be Vietnam Pro)
     ├── field-1.jpg       (ảnh bốc xếp, chuyển đồ lên xe, dọc 4:5)
     ├── field-2.jpg       (ảnh tháo lắp tại chỗ, dọc 4:5)
     └── field-3.jpg       (ảnh xe tải thùng SGE, dọc 4:5)
@@ -44,7 +45,11 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 
 ## Đổi màu thương hiệu
 
-Sửa các biến ở đầu phần `<style>` trong `index.html` (`--navy`, `--gold`, `--sky`, `--red`).
+Sửa các biến ở đầu phần `<style>` trong `index.html` (`--ground`, `--s1` đến `--s3` là các tầng navy, `--gold`, `--ivory`).
+
+## Phông chữ
+
+Chữ tiêu đề dùng Cormorant Garamond, chữ thường dùng Be Vietnam Pro, đã đặt sẵn trong `assets/fonts/` (không gọi Google Fonts), giấy phép SIL OFL kèm theo trong cùng thư mục.
 
 ## Taste skill (thiết kế web)
 
