@@ -67,3 +67,7 @@ Khi có tên miền, vào **Settings → Pages → Custom domain** để gắn.
 ## Sửa menu hoặc chân trang
 
 Menu và chân trang được chép giống nhau ở mọi trang `.html`. Khi đổi, sửa đủ ở tất cả các trang (hoặc nhờ Claude sửa hàng loạt).
+
+## Trang khu vực
+
+Mỗi dịch vụ có thư mục riêng (ví dụ `boc-xep/`) chứa 25 trang khu vực: 22 quận, huyện của TP. Hồ Chí Minh và Bình Dương, Long An, Biên Hòa. Nội dung giống nhau, chỉ đổi tên dịch vụ và khu vực.
