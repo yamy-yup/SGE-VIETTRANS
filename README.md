@@ -71,3 +71,17 @@ Menu và chân trang được chép giống nhau ở mọi trang `.html`. Khi đ
 ## Trang khu vực
 
 Mỗi dịch vụ có thư mục riêng (ví dụ `boc-xep/`) chứa 25 trang khu vực: 22 quận, huyện của TP. Hồ Chí Minh và Bình Dương, Long An, Biên Hòa. Nội dung giống nhau, chỉ đổi tên dịch vụ và khu vực.
+
+## Dựng lại các trang con (dịch vụ, bảng giá, khu vực, blog)
+
+Các trang con được tạo tự động từ nội dung trong thư mục `_tools/` (GitHub Pages không xuất bản thư mục này):
+
+- `_tools/content_services.py`: nội dung 5 trang dịch vụ
+- `_tools/content_areas.py`: 25 khu vực và các mẫu câu
+- `_tools/content_blog.py`: các bài Blog
+- `_tools/images.py`: dựng ảnh bìa và ảnh minh họa (`python3 _tools/images.py`)
+- `_tools/build.py`: dựng toàn bộ trang và `sitemap.xml` (`python3 _tools/build.py`)
+
+Sửa nội dung trong các file trên rồi chạy lại `build.py`, đừng sửa trực tiếp các trang `.html` được tạo ra. Trang chủ `index.html` vẫn sửa tay.
+
+Đổi tên miền: sửa `BASE` trong `_tools/engine.py` và các đường dẫn trong `index.html`, rồi dựng lại.

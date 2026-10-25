@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yamy-yup.github.io/SGE-VIETTRANS/sitemap.xml
