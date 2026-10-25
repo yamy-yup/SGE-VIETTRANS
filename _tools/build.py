@@ -218,7 +218,7 @@ def build_404():
 <div class="head-act"><a class="btn" href="index.html">Về trang chủ</a><a class="btn btn-ghost" href="dich-vu.html">Xem dịch vụ</a><a class="btn btn-ghost" href="tel:{PHONE}">Gọi {PHONE_TXT}</a></div></div></section>'''
     doc = page('404.html', 'Không tìm thấy trang | SGE Viettrans', 'Trang không tồn tại.', body)
     PAGES.pop()
-    doc = doc.replace('<head>', '<head>\n<base href="/SGE-VIETTRANS/">', 1).replace('content="index, follow, max-image-preview:large"', 'content="noindex"')
+    doc = doc.replace('<head>', '<head>\n<base href="/">', 1).replace('content="index, follow, max-image-preview:large"', 'content="noindex"')
     open(ROOT + '404.html', 'w', encoding='utf8').write(doc)
 
 

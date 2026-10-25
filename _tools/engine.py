@@ -3,7 +3,7 @@
 import json, re, html, os, urllib.parse, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
-BASE = 'https://yamy-yup.github.io/SGE-VIETTRANS/'   # đổi khi có tên miền riêng
+BASE = 'https://sgeviettrans.vn/'   # đổi khi có tên miền riêng
 PHONE = '0368757303'
 PHONE_TXT = '0368 757 303'
 EMAIL = 'sgexpress.6868@gmail.com'

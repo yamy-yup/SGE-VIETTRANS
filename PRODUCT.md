@@ -24,7 +24,7 @@ Giới thiệu SGE Viettrans và đưa khách đến hai hành động: gọi ho
 
 ## Operating Context
 
-Hoạt động chính tại TP. Hồ Chí Minh. Công ty mới thành lập (đăng ký lần đầu 04/08/2026), kênh chính thức do chủ công ty cung cấp (25/10/2026): Zalo trùng hotline, Facebook https://www.facebook.com/share/1CRS1PLvNv/, TikTok https://www.tiktok.com/@sge6868. Chưa có website riêng.
+Hoạt động chính tại TP. Hồ Chí Minh. Công ty mới thành lập (đăng ký lần đầu 04/08/2026), kênh chính thức do chủ công ty cung cấp (25/10/2026): Zalo trùng hotline, Facebook https://www.facebook.com/share/1CRS1PLvNv/, TikTok https://www.tiktok.com/@sge6868. Website: https://sgeviettrans.vn (tên miền mua tại P.A Việt Nam, 25/10/2026).
 
 ## Capabilities and Constraints
 
