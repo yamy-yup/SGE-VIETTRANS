@@ -3,6 +3,7 @@
 @font-face{font-family:'Be Vietnam Pro';src:url(fonts/bevietnam-Medium.woff) format('woff');font-weight:500;font-style:normal;font-display:swap}
 
 :root{
+  color-scheme:only light;
   --blue:#184e94;
   --navy:#0f2f63;
   --red:#d52b2c;

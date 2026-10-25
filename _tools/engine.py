@@ -182,6 +182,7 @@ def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', o
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#184e94">
+<meta name="color-scheme" content="only light">
 <meta property="og:type" content="{og_type}">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:site_name" content="SGE Viettrans">
