@@ -20,6 +20,7 @@
 <meta property="og:image" content="https://yamy-yup.github.io/SGE-VIETTRANS/assets/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="preload" as="image" type="image/webp" imagesrcset="assets/hero-640.webp 640w, assets/hero-1024.webp 1024w, assets/hero-1600.webp 1600w, assets/hero-2304.webp 2304w" imagesizes="100vw">
 <link rel="preload" href="assets/fonts/montserrat.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="assets/fonts/bevietnam-Regular.woff" as="font" type="font/woff" crossorigin>
 <script>document.documentElement.className='js'</script>
@@ -124,9 +125,7 @@
 
 <!-- 1. HERO: ảnh bãi xe và đội ngũ, tên công ty trên bầu trời -->
 <section class="hero" id="top">
-  <picture>
-    <img src="assets/hero.jpg" srcset="assets/hero-s.jpg 1100w, assets/hero.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Đội xe tải SGE Viettrans và nhân viên mặc đồng phục tại bãi xe" fetchpriority="high" decoding="async">
-  </picture>
+  <picture><source type="image/webp" srcset="assets/hero-640.webp 640w, assets/hero-1024.webp 1024w, assets/hero-1600.webp 1600w, assets/hero-2304.webp 2304w" sizes="100vw"><img src="assets/hero.jpg" width="1600" height="900" alt="Đội xe tải SGE Viettrans và nhân viên mặc đồng phục tại bãi xe" fetchpriority="high" decoding="async"></picture>
   <div class="hero-in">
     <h1><span>SGE </span><span>VIETTRANS</span></h1>
     <p class="sub">Vận tải Việt - Kết nối toàn cầu</p>
@@ -147,7 +146,7 @@
       <a class="btn" href="#phieu">Nhận báo giá</a>
     </div>
     <figure>
-      <img src="assets/truck.jpg" width="760" height="299" alt="Xe tải thùng SGE Viettrans màu trắng, xanh và đỏ nhìn từ bên hông" loading="lazy" decoding="async">
+      <picture><source type="image/webp" srcset="assets/truck-534.webp 534w, assets/truck-1068.webp 1068w" sizes="(max-width: 1000px) 90vw, 560px"><img src="assets/truck.jpg" width="1068" height="420" alt="Xe tải thùng SGE Viettrans màu trắng, xanh và đỏ nhìn từ bên hông" loading="lazy" decoding="async"></picture>
     </figure>
   </div>
 </section>
@@ -179,7 +178,7 @@
 
 <!-- 4. DẢI ƯU ĐÃI: ảnh phủ xanh, người nhô lên khỏi dải -->
 <section class="promo" aria-labelledby="h-promo">
-  <img src="assets/band.jpg" width="1600" height="341" alt="Nhân viên SGE Viettrans đứng trò chuyện trước đội xe tải" loading="lazy" decoding="async">
+  <picture><source type="image/webp" srcset="assets/band-768.webp 768w, assets/band-1280.webp 1280w, assets/band-2304.webp 2304w" sizes="100vw"><img src="assets/band.jpg" width="1600" height="444" alt="Nhân viên SGE Viettrans đứng trò chuyện trước đội xe tải" loading="lazy" decoding="async"></picture>
   <div class="promo-txt">
     <div class="in wrap">
       <div class="box">

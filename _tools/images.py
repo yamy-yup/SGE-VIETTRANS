@@ -170,12 +170,15 @@ if __name__ == '__main__':
     json.dump(spec, open(TMP + 'spec.json', 'w'))
     js = '''const {chromium}=require('playwright');const s=require(process.argv[2]);
 (async()=>{const b=await chromium.launch({args:['--no-sandbox','--allow-file-access-from-files']});
-for(const j of s){const p=await b.newPage({viewport:{width:j.w,height:j.h},deviceScaleFactor:1});
+for(const j of s){const p=await b.newPage({viewport:{width:j.w,height:j.h},deviceScaleFactor:2});
 await p.goto('file://'+j.html);await p.waitForTimeout(250);await p.screenshot({path:j.png});await p.close();}
 await b.close();})();'''
     open(TMP + 'r.js', 'w').write(js)
     subprocess.run(['node', TMP + 'r.js', TMP + 'spec.json'], check=True)
-    from PIL import Image
+    import optimize
+    m = optimize.load()
     for j in spec:
-        Image.open(j['png']).convert('RGB').save(j['jpg'], quality=84, optimize=True, progressive=True)
+        base = 'assets/blog/' + os.path.basename(j['jpg'])[:-4]
+        m[base + '.jpg'] = optimize.make(j['png'], base, [600, 1200, 2400], 1200, q_webp=82, q_jpg=86)
+    optimize.save(m)
     print(len(spec), 'images')

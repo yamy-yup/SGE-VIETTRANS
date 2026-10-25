@@ -22,13 +22,9 @@ def steps_li(steps):
     return ''.join(f'<li><b>{a}</b>{b}</li>' for a, b in steps)
 
 
-def img(p, src, alt, w, h, cls='fig', lazy=True, caption=''):
-    srcset = ''
-    if src == 'assets/hero.jpg':
-        srcset = f' srcset="{p}assets/hero-s.jpg 1100w, {p}assets/hero.jpg 2000w" sizes="(max-width: 1000px) 100vw, 60vw"'
+def img(p, src, alt, w, h, cls='fig', lazy=True, caption='', sizes='(max-width: 1000px) 100vw, 760px'):
     cap = f'<figcaption>{caption}</figcaption>' if caption else ''
-    return (f'<figure class="{cls}"><img src="{p}{src}"{srcset} width="{w}" height="{h}" alt="{esc(alt)}"'
-            f'{" loading=\"lazy\"" if lazy else ""} decoding="async">{cap}</figure>')
+    return f'<figure class="{cls}">{picture(p, src, alt, sizes, lazy=lazy, w=w, h=h)}{cap}</figure>'
 
 
 def fill(html, p, d=None, sv=None):
@@ -72,7 +68,7 @@ def related_posts(p, slugs, limit=3, exclude=None):
     if len(out) < limit:
         out += [q for q in POSTS if q not in out and q['slug'] != exclude][:limit - len(out)]
     return '<ul class="rel">' + ''.join(
-        f'<li><a href="{p}blog/{q["slug"]}.html"><img src="{p}assets/blog/cover-{q["slug"]}.jpg" width="1200" height="630" alt="" loading="lazy"><span>{q["h1"]}</span></a></li>'
+        f'<li><a href="{p}blog/{q["slug"]}.html">{picture(p, f"assets/blog/cover-{q['slug']}.jpg", "", "112px")}<span>{q["h1"]}</span></a></li>'
         for q in out) + '</ul>'
 
 
@@ -292,7 +288,7 @@ def build_lists():
 
 # ---------------- Blog ----------------
 def build_blog():
-    cards = ''.join(f'''<li class="card"><a href="blog/{q["slug"]}.html"><img src="assets/blog/cover-{q["slug"]}.jpg" width="1200" height="630" alt="{esc(q["h1"])}" loading="lazy"></a>
+    cards = ''.join(f'''<li class="card"><a href="blog/{q["slug"]}.html">{picture("", f"assets/blog/cover-{q['slug']}.jpg", q["h1"], "(max-width: 760px) 100vw, (max-width: 1000px) 50vw, 400px")}</a>
 <div class="card-in"><span class="tag">{q["cat"]}</span><h2><a href="blog/{q["slug"]}.html">{q["h1"]}</a></h2><p>{q["desc"]}</p></div></li>''' for q in POSTS)
     cats = sorted(set(q['cat'] for q in POSTS))
     filt = '<div class="filters" role="group" aria-label="Lọc theo chủ đề"><button type="button" class="on" data-cat="">Tất cả</button>' + ''.join(

@@ -1,0 +1,807 @@
+{
+ "assets/hero.jpg": {
+  "w": 1600,
+  "h": 900,
+  "ratio": [
+   2304,
+   1296
+  ],
+  "webp": [
+   [
+    640,
+    "assets/hero-640.webp"
+   ],
+   [
+    1024,
+    "assets/hero-1024.webp"
+   ],
+   [
+    1600,
+    "assets/hero-1600.webp"
+   ],
+   [
+    2304,
+    "assets/hero-2304.webp"
+   ]
+  ],
+  "jpg": "assets/hero.jpg"
+ },
+ "assets/band.jpg": {
+  "w": 1600,
+  "h": 444,
+  "ratio": [
+   2304,
+   639
+  ],
+  "webp": [
+   [
+    768,
+    "assets/band-768.webp"
+   ],
+   [
+    1280,
+    "assets/band-1280.webp"
+   ],
+   [
+    2304,
+    "assets/band-2304.webp"
+   ]
+  ],
+  "jpg": "assets/band.jpg"
+ },
+ "assets/truck.jpg": {
+  "w": 1068,
+  "h": 420,
+  "ratio": [
+   1068,
+   420
+  ],
+  "webp": [
+   [
+    534,
+    "assets/truck-534.webp"
+   ],
+   [
+    1068,
+    "assets/truck-1068.webp"
+   ]
+  ],
+  "jpg": "assets/truck.jpg"
+ },
+ "assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha.jpg"
+ },
+ "assets/blog/cover-dong-goi-do-de-vo.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-dong-goi-do-de-vo-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-dong-goi-do-de-vo-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-dong-goi-do-de-vo-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-dong-goi-do-de-vo.jpg"
+ },
+ "assets/blog/cover-gio-cam-xe-tai-tphcm.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-gio-cam-xe-tai-tphcm-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-gio-cam-xe-tai-tphcm-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-gio-cam-xe-tai-tphcm-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-gio-cam-xe-tai-tphcm.jpg"
+ },
+ "assets/blog/cover-chon-xe-tai-phu-hop.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chon-xe-tai-phu-hop-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chon-xe-tai-phu-hop-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chon-xe-tai-phu-hop-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chon-xe-tai-phu-hop.jpg"
+ },
+ "assets/blog/cover-chuyen-van-phong-gon-gang.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chuyen-van-phong-gon-gang-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chuyen-van-phong-gon-gang-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chuyen-van-phong-gon-gang-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chuyen-van-phong-gon-gang.jpg"
+ },
+ "assets/blog/cover-van-chuyen-tu-lanh-may-giat.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-van-chuyen-tu-lanh-may-giat-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-van-chuyen-tu-lanh-may-giat-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-van-chuyen-tu-lanh-may-giat-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-van-chuyen-tu-lanh-may-giat.jpg"
+ },
+ "assets/blog/cover-chuyen-nha-chung-cu.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chuyen-nha-chung-cu-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chuyen-nha-chung-cu-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chuyen-nha-chung-cu-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chuyen-nha-chung-cu.jpg"
+ },
+ "assets/blog/cover-chuyen-phong-tro-tiet-kiem.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chuyen-phong-tro-tiet-kiem-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chuyen-phong-tro-tiet-kiem-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chuyen-phong-tro-tiet-kiem-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chuyen-phong-tro-tiet-kiem.jpg"
+ },
+ "assets/blog/cover-co-nen-thue-kho-khi-chuyen-nha.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-co-nen-thue-kho-khi-chuyen-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-co-nen-thue-kho-khi-chuyen-nha-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-co-nen-thue-kho-khi-chuyen-nha-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-co-nen-thue-kho-khi-chuyen-nha.jpg"
+ },
+ "assets/blog/cover-chi-phi-chuyen-nha.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chi-phi-chuyen-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chi-phi-chuyen-nha-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chi-phi-chuyen-nha-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chi-phi-chuyen-nha.jpg"
+ },
+ "assets/blog/cover-xem-ngay-chuyen-nha.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-xem-ngay-chuyen-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-xem-ngay-chuyen-nha-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-xem-ngay-chuyen-nha-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-xem-ngay-chuyen-nha.jpg"
+ },
+ "assets/blog/cover-dong-thung-carton-dung-cach.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-dong-thung-carton-dung-cach-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-dong-thung-carton-dung-cach-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-dong-thung-carton-dung-cach-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-dong-thung-carton-dung-cach.jpg"
+ },
+ "assets/blog/cover-chuyen-phong-tro-xem-ngay-cung.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-chuyen-phong-tro-xem-ngay-cung-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-chuyen-phong-tro-xem-ngay-cung-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-chuyen-phong-tro-xem-ngay-cung-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-chuyen-phong-tro-xem-ngay-cung.jpg"
+ },
+ "assets/blog/cover-mua-thung-carton-chuyen-nha.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-mua-thung-carton-chuyen-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-mua-thung-carton-chuyen-nha-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-mua-thung-carton-chuyen-nha-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-mua-thung-carton-chuyen-nha.jpg"
+ },
+ "assets/blog/cover-boc-xep-duoi-xe-la-gi.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-boc-xep-duoi-xe-la-gi-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-boc-xep-duoi-xe-la-gi-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-boc-xep-duoi-xe-la-gi-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-boc-xep-duoi-xe-la-gi.jpg"
+ },
+ "assets/blog/cover-thue-xe-tai-hay-ung-dung-giao-hang.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-thue-xe-tai-hay-ung-dung-giao-hang-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-thue-xe-tai-hay-ung-dung-giao-hang-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-thue-xe-tai-hay-ung-dung-giao-hang-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-thue-xe-tai-hay-ung-dung-giao-hang.jpg"
+ },
+ "assets/blog/cover-kinh-nghiem-chuyen-nha-lien-tinh.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-kinh-nghiem-chuyen-nha-lien-tinh-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-kinh-nghiem-chuyen-nha-lien-tinh-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-kinh-nghiem-chuyen-nha-lien-tinh-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-kinh-nghiem-chuyen-nha-lien-tinh.jpg"
+ },
+ "assets/blog/cover-ke-hoach-chuyen-kho-xuong.jpg": {
+  "w": 1200,
+  "h": 630,
+  "ratio": [
+   2400,
+   1260
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/cover-ke-hoach-chuyen-kho-xuong-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/cover-ke-hoach-chuyen-kho-xuong-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/cover-ke-hoach-chuyen-kho-xuong-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/cover-ke-hoach-chuyen-kho-xuong.jpg"
+ },
+ "assets/blog/lich-chuan-bi.jpg": {
+  "w": 1200,
+  "h": 560,
+  "ratio": [
+   2400,
+   1120
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/lich-chuan-bi-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/lich-chuan-bi-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/lich-chuan-bi-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/lich-chuan-bi.jpg"
+ },
+ "assets/blog/dong-goi-de-vo.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/dong-goi-de-vo-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/dong-goi-de-vo-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/dong-goi-de-vo-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/dong-goi-de-vo.jpg"
+ },
+ "assets/blog/gio-cam-xe-tai.jpg": {
+  "w": 1200,
+  "h": 560,
+  "ratio": [
+   2400,
+   1120
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/gio-cam-xe-tai-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/gio-cam-xe-tai-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/gio-cam-xe-tai-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/gio-cam-xe-tai.jpg"
+ },
+ "assets/blog/chon-xe.jpg": {
+  "w": 1200,
+  "h": 580,
+  "ratio": [
+   2400,
+   1160
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/chon-xe-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/chon-xe-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/chon-xe-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/chon-xe.jpg"
+ },
+ "assets/blog/checklist-van-phong.jpg": {
+  "w": 1200,
+  "h": 560,
+  "ratio": [
+   2400,
+   1120
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/checklist-van-phong-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/checklist-van-phong-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/checklist-van-phong-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/checklist-van-phong.jpg"
+ },
+ "assets/blog/tu-lanh-may-giat.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/tu-lanh-may-giat-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/tu-lanh-may-giat-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/tu-lanh-may-giat-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/tu-lanh-may-giat.jpg"
+ },
+ "assets/blog/lien-tinh.jpg": {
+  "w": 1200,
+  "h": 520,
+  "ratio": [
+   2400,
+   1040
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/lien-tinh-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/lien-tinh-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/lien-tinh-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/lien-tinh.jpg"
+ },
+ "assets/blog/quy-trinh-chuyen-nha-tron-goi.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-chuyen-nha-tron-goi-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-chuyen-nha-tron-goi-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-chuyen-nha-tron-goi-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-chuyen-nha-tron-goi.jpg"
+ },
+ "assets/blog/quy-trinh-chuyen-van-phong.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-chuyen-van-phong-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-chuyen-van-phong-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-chuyen-van-phong-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-chuyen-van-phong.jpg"
+ },
+ "assets/blog/quy-trinh-cho-thue-xe-tai.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-cho-thue-xe-tai-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-cho-thue-xe-tai-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-cho-thue-xe-tai-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-cho-thue-xe-tai.jpg"
+ },
+ "assets/blog/quy-trinh-boc-xep.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-boc-xep-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-boc-xep-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-boc-xep-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-boc-xep.jpg"
+ },
+ "assets/blog/quy-trinh-kho-bai-luu-tru.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-kho-bai-luu-tru-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-kho-bai-luu-tru-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-kho-bai-luu-tru-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-kho-bai-luu-tru.jpg"
+ },
+ "assets/blog/quy-trinh-chuyen-nha-lien-tinh.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-chuyen-nha-lien-tinh-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-chuyen-nha-lien-tinh-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-chuyen-nha-lien-tinh-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-chuyen-nha-lien-tinh.jpg"
+ },
+ "assets/blog/quy-trinh-chuyen-kho-xuong.jpg": {
+  "w": 1200,
+  "h": 600,
+  "ratio": [
+   2400,
+   1200
+  ],
+  "webp": [
+   [
+    600,
+    "assets/blog/quy-trinh-chuyen-kho-xuong-600.webp"
+   ],
+   [
+    1200,
+    "assets/blog/quy-trinh-chuyen-kho-xuong-1200.webp"
+   ],
+   [
+    2400,
+    "assets/blog/quy-trinh-chuyen-kho-xuong-2400.webp"
+   ]
+  ],
+  "jpg": "assets/blog/quy-trinh-chuyen-kho-xuong.jpg"
+ }
+}

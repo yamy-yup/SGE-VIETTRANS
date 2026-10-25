@@ -236,3 +236,22 @@ def write_sitemap(today):
     open(ROOT + 'sitemap.xml', 'w', encoding='utf8').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
     open(ROOT + 'robots.txt', 'w', encoding='utf8').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
+
+
+try:
+    VARIANTS = json.load(open(ROOT + '_tools/variants.json'))
+except Exception:
+    VARIANTS = {}
+
+
+def picture(p, src, alt, sizes='100vw', lazy=True, cls='', priority=False, w=None, h=None):
+    """Ảnh có nhiều kích thước: WebP theo srcset, JPG dự phòng."""
+    m = VARIANTS.get(src)
+    load = ' fetchpriority="high"' if priority else (' loading="lazy"' if lazy else '')
+    c = f' class="{cls}"' if cls else ''
+    if not m:
+        wh = f' width="{w}" height="{h}"' if w else ''
+        return f'<img{c} src="{p}{src}"{wh} alt="{esc(alt)}"{load} decoding="async">'
+    ss = ', '.join(f'{p}{path} {wd}w' for wd, path in m['webp'])
+    return (f'<picture><source type="image/webp" srcset="{ss}" sizes="{sizes}">'
+            f'<img{c} src="{p}{m["jpg"]}" width="{m["w"]}" height="{m["h"]}" alt="{esc(alt)}"{load} decoding="async"></picture>')

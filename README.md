@@ -81,6 +81,7 @@ Các trang con được tạo tự động từ nội dung trong thư mục `_to
 - `_tools/content_blog.py`: các bài Blog
 - `_tools/content_routes.py`: các tuyến chuyển nhà liên tỉnh
 - `_tools/images.py`: dựng ảnh bìa và ảnh minh họa (`python3 _tools/images.py`)
+- `_tools/optimize.py`: tạo ảnh nhiều kích thước WebP + JPG từ ảnh gốc trong `_tools/masters/` (`python3 _tools/optimize.py`)
 - `_tools/build.py`: dựng toàn bộ trang và `sitemap.xml` (`python3 _tools/build.py`)
 
 Sửa nội dung trong các file trên rồi chạy lại `build.py`, đừng sửa trực tiếp các trang `.html` được tạo ra. Trang chủ `index.html` vẫn sửa tay.
