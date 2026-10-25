@@ -29,6 +29,7 @@ a{color:inherit;text-underline-offset:.2em}
 ::selection{background:var(--red);color:#fff}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:3px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .skip{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--navy);color:#fff;padding:.7rem 1rem;border-radius:6px;transition:top .2s}
 .skip:focus{top:1rem}
 .wrap{width:100%;max-width:calc(var(--max) + 2*var(--gut));margin-inline:auto;padding-inline:var(--gut)}

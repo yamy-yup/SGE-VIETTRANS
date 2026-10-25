@@ -231,7 +231,7 @@
       <a class="call" href="tel:0368757303">0368 757 303</a>
       <small>Hoặc gọi trực tiếp, tư vấn 24/7</small>
     </div>
-    <form class="q-right" id="qf" action="mailto:lienhe@sgeviettrans.vn?subject=Phi%E1%BA%BFu%20b%C3%A1o%20gi%C3%A1" method="post" enctype="text/plain" novalidate>
+    <form class="q-right" id="qf" novalidate>
       <div class="q-items" data-r>
         <div class="q-row"><label for="i-giuong">Giường</label><div class="ctr"><button type="button" aria-label="Giảm giường">−</button><input id="i-giuong" name="Giường" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng giường">+</button></div></div>
         <div class="q-row"><label for="i-nem">Nệm</label><div class="ctr"><button type="button" aria-label="Giảm nệm">−</button><input id="i-nem" name="Nệm" type="number" min="0" max="99" value="0" inputmode="numeric"><button type="button" aria-label="Tăng nệm">+</button></div></div>
@@ -254,6 +254,8 @@
             <option>Cho thuê xe tải</option>
             <option>Bốc xếp</option>
             <option>Kho bãi lưu trữ</option>
+            <option>Chuyển nhà liên tỉnh</option>
+            <option>Chuyển kho xưởng</option>
           </select>
         </div>
         <div>
@@ -285,11 +287,12 @@
         </div>
       </div>
 
+      <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
       <div class="q-out" data-r>
         <label class="sr" for="f-out">Nội dung phiếu</label>
         <textarea id="f-out" readonly aria-live="polite">Điền thông tin ở trên, nội dung phiếu sẽ hiện ở đây.</textarea>
         <div class="q-act">
-          <button class="btn" type="submit">Gửi phiếu qua email</button>
+          <button class="btn" type="submit">Gửi phiếu báo giá</button>
           <button class="btn btn-ghost" type="button" id="copy">Sao chép để gửi Zalo</button>
         </div>
         <p class="q-status" id="q-status" role="status"></p>
@@ -434,14 +437,41 @@
     return ok;
   }
 
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!valid())return;
-    build();
-    var subject='Phiếu báo giá '+svc.value+' - '+name.value.trim();
-    // TODO: có thể thay mailto bằng dịch vụ nhận form (Formspree, Google Forms...) để gửi thẳng, không cần mở email
+  /* Gửi phiếu thẳng về Google Sheet + email lienhe@ (Apps Script). Để trống thì dùng mailto. */
+  var FORM_ENDPOINT='';
+  var sending=false,btn=$('button[type=submit]',form);
+  function mailto(subject){
     window.location.href='mailto:lienhe@sgeviettrans.vn?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(out.value);
     status.textContent='Đã mở ứng dụng email với nội dung phiếu. Nếu không thấy, hãy gọi 0368 757 303 để được hỗ trợ ngay.';
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(sending||!valid())return;
+    build();
+    var subject='Phiếu báo giá '+svc.value+' - '+name.value.trim();
+    if(!FORM_ENDPOINT){mailto(subject);return}
+    var items=[];
+    $$('.q-row').forEach(function(r){var n=+$('input',r).value||0;if(n>0)items.push($('input',r).name+': '+n)});
+    var data=new URLSearchParams({
+      service:svc.value,name:name.value.trim(),phone:phone.value.trim(),
+      from:$('#f-from').value.trim(),to:$('#f-to').value.trim(),
+      date:date.value?date.value.split('-').reverse().join('/'):'',
+      items:items.join('; '),note:$('#f-note').value.trim(),
+      page:location.href,summary:out.value,website:$('#f-web').value
+    });
+    sending=true;btn.disabled=true;status.textContent='Đang gửi phiếu...';
+    fetch(FORM_ENDPOINT,{method:'POST',body:data})
+      .then(function(r){return r.json()})
+      .then(function(j){
+        if(!j.ok)throw new Error('fail');
+        status.textContent='Đã gửi phiếu. SGE Viettrans sẽ gọi lại cho anh/chị sớm nhất. Cần gấp, gọi 0368 757 303.';
+        form.reset();$$('.q-row input').forEach(function(i){i.value=0});build();
+      })
+      .catch(function(){
+        status.innerHTML='Chưa gửi được phiếu. Vui lòng gọi <a href="tel:0368757303">0368 757 303</a>, bấm "Sao chép để gửi Zalo", hoặc <a href="#" id="q-mail">gửi qua email</a>.';
+        var m=$('#q-mail');if(m)m.addEventListener('click',function(ev){ev.preventDefault();mailto(subject)});
+      })
+      .then(function(){sending=false;btn.disabled=false});
   });
 
   $('#copy').addEventListener('click',function(){
