@@ -43,8 +43,7 @@ Mở `index.html` trên GitHub, bấm biểu tượng bút chì để sửa, r�
 - Logo độ phân giải cao hơn (file hiện tại chỉ 160x160 px, hơi mờ trên màn hình lớn): thay `assets/logo.jpg`, nên dùng ảnh PNG nền trong suốt từ 512x512 px
 - Giá thật trong mục Bảng giá (3 trang `bang-gia-*.html`, tìm `TODO`: đang ghi "Liên hệ" vì chưa có giá được xác nhận)
 - Ảnh chụp thật tại hiện trường và đội xe thay cho ảnh minh họa (xem danh sách ảnh ở trên)
-- Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`)
-- Link Facebook, TikTok, Zalo ở chân trang
+- Link Zalo chính thức (hiện đang dùng `zalo.me/0368757303`; Facebook và TikTok đã gắn)
 - Ảnh chia sẻ (og:image) và địa chỉ web (og:url)
 - Bảng giá từng dịch vụ
 - Form báo giá hiện mở ứng dụng email. Muốn nhận thẳng về hộp thư không cần mở email, dùng Formspree hoặc Google Forms.
