@@ -212,8 +212,7 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
 
 /* Máy tính bảng */
 @media (max-width:900px){
-  .top li:nth-child(n+2){display:none}
-  .top ul{display:flex}
+  .top .wrap>ul li:nth-child(n+2){display:none}
 }
 @media (max-width:1000px){
   .intro .grid,.quote .in,.faq .grid,.contact .grid{grid-template-columns:minmax(0,1fr)}
@@ -261,10 +260,8 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
 /* Điện thoại */
 @media (max-width:760px){
   :root{--head:0px}
-  .top ul li:not(:first-child){display:none}
-  .top .t-r a:not(.tel-top){display:none}
   .top .wrap{justify-content:center}
-  .top ul{display:none}
+  .top .wrap>ul{display:none}
 
   .hero{height:auto;min-height:0;background:linear-gradient(#bccde0,#d9e5f1 70%,#d9e5f1);overflow:visible}
   .hero picture,.hero img{position:relative;inset:auto}
@@ -367,3 +364,33 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+/* Kênh liên hệ: Zalo, Email, Facebook, TikTok */
+.soc{display:flex;align-items:center;gap:.5rem;list-style:none;margin:0;padding:0}
+.soc a{display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--c);color:#fff;text-decoration:none;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.soc a[hidden]{display:none}
+.soc a:hover{transform:translateY(-2px);box-shadow:0 8px 16px -8px rgba(0,0,0,.5);text-decoration:none}
+.soc svg{width:1.2rem;height:1.2rem;fill:currentColor}
+.soc-top{gap:.4rem}
+.soc-top a{width:1.65rem;height:1.65rem;background:rgba(255,255,255,.18)}
+.soc-top a:hover{background:#fff;color:var(--c);box-shadow:none}
+.soc-top svg{width:.95rem;height:.95rem}
+.top .t-r a.tel-top+ul{margin-left:.25rem}
+.soc-foot{margin-top:1.1rem}
+.soc-foot a{background:rgba(255,255,255,.14)}
+.soc-foot a:hover{background:#fff;color:var(--c)}
+.chan{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.28)}
+.chan li{border-bottom:1px solid rgba(255,255,255,.28)}
+.chan li[hidden]{display:none}
+.contact .info .chan a{display:flex;align-items:center;gap:1rem;padding:.9rem 0;text-decoration:none;color:#fff;font-size:1.0625rem}
+.chan .bd{flex:none;display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--c);color:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.9)}
+.chan svg{width:1.3rem;height:1.3rem;fill:currentColor}
+.chan b{display:block;font:700 .75rem/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:#bcd0ee;margin-bottom:.1rem}
+.contact .info .chan a:hover span:last-child{text-decoration:underline}
+.contact .info .addr b{display:block;font:700 .75rem/1.3 var(--display);letter-spacing:.08em;text-transform:uppercase;color:#bcd0ee;margin-bottom:.2rem}
+.soc svg.z,.chan svg.z{width:1.9rem;height:1.9rem}
+.top .soc{gap:.4rem;margin:0 0 0 .25rem}
+.top .soc li,.top .soc li+li{padding:0;border:0}
+.soc-top svg.z{width:1.3rem;height:1.3rem}
+@media (max-width:760px){.top .t-r{gap:.5rem}}
+.top .soc svg{stroke:none}
