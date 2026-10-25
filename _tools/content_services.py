@@ -41,7 +41,7 @@ SERVICES = {
       ('Chuyển nhà trọn gói có bao gồm tháo lắp giường tủ không?', 'Có. Tháo lắp giường, tủ, kệ và bàn ghế là một phần của dịch vụ chuyển nhà trọn gói. Bạn chỉ cần cho biết số lượng khi đặt lịch để chúng tôi chuẩn bị đủ người và dụng cụ.'),
       ('Tôi cần đặt lịch trước bao lâu?', 'Nên liên hệ sớm vài ngày để chọn được giờ phù hợp, nhất là vào cuối tuần và cuối tháng. Trường hợp gấp, hãy gọi 0368 757 303 để kiểm tra lịch trống.'),
       ('Giá chuyển nhà trọn gói được tính như thế nào?', 'Giá dựa trên khối lượng đồ, quãng đường, số tầng, thang máy và mức độ đóng gói. Chúng tôi báo giá rõ trước khi làm, bạn đồng ý rồi mới bắt đầu.'),
-      ('SGE Viettrans có chuyển nhà đi Bình Dương, Long An, Biên Hòa không?', 'Có. Ngoài các quận, huyện của TP. Hồ Chí Minh, chúng tôi nhận chuyển nhà đi và đến Bình Dương, Long An, Biên Hòa. Tuyến khác vui lòng gọi hotline để được tư vấn.'),
+      ('SGE Viettrans có chuyển nhà đi tỉnh không?', 'Có. Ngoài các quận, huyện của TP. Hồ Chí Minh, chúng tôi nhận <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a> từ TP. Hồ Chí Minh đi các tỉnh và ngược lại.'),
       ('Tôi có cần tự chuẩn bị thùng carton không?', 'Không bắt buộc. Với gói trọn gói, chúng tôi lo phần đóng gói. Nếu bạn muốn tự đóng một phần đồ cá nhân, hãy báo trước để chúng tôi tính đúng khối lượng công việc.'),
     ]),
 
@@ -84,9 +84,9 @@ SERVICES = {
 
 'cho-thue-xe-tai': dict(
     name='Cho thuê xe tải',
-    title='Cho thuê xe tải chở hàng TPHCM: xe van, xe tải nhỏ, xe tải lớn | SGE Viettrans',
-    desc='Cho thuê xe tải chở hàng, chuyển đồ tại TP.HCM: xe van, xe tải nhỏ, xe tải lớn mang thương hiệu SGE, có thể thêm nhân công bốc xếp. Gọi 0368 757 303.',
-    h1='Cho thuê xe tải chở hàng tại TP. Hồ Chí Minh',
+    title='Cho thuê xe tải, taxi tải chở hàng TPHCM giá tốt | SGE Viettrans',
+    desc='Cho thuê xe tải, taxi tải chở hàng, chuyển đồ tại TP.HCM: xe van, xe tải nhỏ, xe tải lớn có tài xế, thêm bốc xếp khi cần. Gọi 0368 757 303.',
+    h1='Cho thuê xe tải, taxi tải chở hàng tại TP. Hồ Chí Minh',
     lead='Cần chở ít đồ, chuyển phòng trọ hay chở hàng cho cửa hàng? Thuê xe tải thùng SGE theo đúng khối lượng hàng của bạn, có tài xế, có thể thêm người bốc xếp khi cần.',
     img=('assets/truck.jpg', 'Xe tải thùng SGE Viettrans màu trắng, xanh, đỏ cho thuê chở hàng', 760, 299),
     price='bang-gia-xe-tai',
@@ -101,8 +101,10 @@ SERVICES = {
        '<li><strong>Xe tải nhỏ:</strong> phù hợp căn hộ, nhà nhỏ, cửa hàng cần chở hàng định kỳ.</li>'
        '<li><strong>Xe tải lớn:</strong> phù hợp nhà phố nhiều đồ, văn phòng, hàng hóa số lượng lớn.</li></ul>'
        '<p>Không chắc nên chọn xe nào? Cứ mô tả đồ của bạn, chúng tôi tư vấn cỡ xe sát nhất để bạn không phải trả tiền cho chỗ trống. Đọc thêm: <a href="{p}blog/chon-xe-tai-phu-hop.html">Cách chọn xe tải phù hợp khi chuyển đồ</a>.</p>'),
+      ('Taxi tải là gì?',
+       '<p>"Taxi tải" là cách gọi quen thuộc của dịch vụ thuê xe tải có tài xế theo chuyến: bạn gọi, xe đến chở đồ rồi tính tiền theo chuyến, giống như gọi taxi nhưng chở hàng. Dịch vụ cho thuê xe tải của SGE Viettrans hoạt động đúng như vậy, kèm tư vấn chọn cỡ xe và có thể thêm người bốc xếp.</p>'),
       ('Thuê xe tải để làm gì',
-       '<ul><li>Chuyển phòng trọ, chuyển căn hộ nhỏ.</li><li>Chở hàng cho cửa hàng, kho, xưởng.</li><li>Chở đồ nội thất mới mua, máy móc, vật liệu.</li><li>Chuyển đồ đi Bình Dương, Long An, Biên Hòa.</li></ul>'),
+       '<ul><li>Thuê xe tải nhỏ chuyển nhà, chuyển phòng trọ, căn hộ nhỏ.</li><li>Thuê xe tải chở đồ về quê hoặc đi tỉnh (xem <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a>).</li><li>Chở hàng cho cửa hàng, kho, xưởng.</li><li>Chở đồ nội thất mới mua, máy móc, vật liệu.</li></ul>'),
       ('Quy trình thuê xe',
        '{steps_img}<ol class="mini-steps">{steps_li}</ol>'),
       ('Lưu ý giờ cấm xe tải trong nội thành',
@@ -114,7 +116,8 @@ SERVICES = {
       ('Thuê xe tải có kèm tài xế không?', 'Có, xe cho thuê có tài xế của SGE Viettrans. Bạn không cần tự lái.'),
       ('Có thể thuê thêm người bốc xếp không?', 'Có. Bạn có thể thuê xe kèm <a href="{p}boc-xep.html">nhân công bốc xếp</a>, nhất là khi có đồ nặng như tủ lạnh, máy giặt.'),
       ('Tôi nên thuê xe loại nào?', 'Xe van hợp với ít đồ và phòng trọ; xe tải nhỏ cho căn hộ, nhà nhỏ; xe tải lớn cho nhà phố, văn phòng. Hãy mô tả đồ của bạn để được tư vấn chính xác.'),
-      ('Có chở hàng đi tỉnh không?', 'Có nhận các tuyến Bình Dương, Long An, Biên Hòa. Tuyến khác vui lòng gọi 0368 757 303.'),
+      ('Có thuê xe tải chở đồ về quê, đi tỉnh được không?', 'Có. SGE Viettrans nhận chở đồ, chuyển nhà liên tỉnh từ TP. Hồ Chí Minh đi các tỉnh và ngược lại. Xem <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a>.'),
+      ('Taxi tải và thuê xe tải khác nhau thế nào?', 'Về cơ bản là một: thuê xe tải có tài xế theo chuyến. Gọi taxi tải SGE, xe đến chở đồ của bạn và báo giá trước theo chuyến.'),
     ]),
 
 'boc-xep': dict(
@@ -183,5 +186,76 @@ SERVICES = {
       ('Có chở đồ đến kho giúp không?', 'Có. Chúng tôi có xe tải thùng và nhân công bốc xếp để chở đồ từ nhà hoặc văn phòng của bạn vào kho.'),
       ('Những đồ nào không nên gửi kho?', 'Không gửi đồ dễ cháy nổ, hóa chất, thực phẩm tươi sống. Tiền mặt và giấy tờ quan trọng bạn nên tự giữ.'),
       ('Làm sao biết giá thuê kho?', 'Giá phụ thuộc diện tích và thời gian. Gọi 0368 757 303 hoặc lập phiếu báo giá để được tư vấn.'),
+    ]),
+
+'chuyen-nha-lien-tinh': dict(
+    name='Chuyển nhà liên tỉnh',
+    title='Chuyển nhà liên tỉnh, Bắc Nam từ TPHCM trọn gói | SGE Viettrans',
+    desc='Dịch vụ chuyển nhà liên tỉnh từ TP.HCM đi Hà Nội, Đà Nẵng, Nha Trang, Đà Lạt, Cần Thơ và các tỉnh: đóng gói kỹ, xe tải thùng, báo giá trọn chuyến. Gọi 0368 757 303.',
+    h1='Chuyển nhà liên tỉnh, Bắc Nam từ TP. Hồ Chí Minh',
+    lead='Chuyển nhà đi tỉnh, về quê hay ra Bắc: SGE Viettrans đóng gói kỹ cho chặng đường dài, chở bằng xe tải thùng, báo giá trọn chuyến trước khi đi để bạn chủ động.',
+    img=('assets/truck.jpg', 'Xe tải thùng SGE Viettrans chuyển nhà liên tỉnh', 760, 299),
+    price='bang-gia-xe-tai',
+    steps=[('Liên hệ', 'Cho biết điểm đi, điểm đến, ngày dự kiến.'),
+           ('Khảo sát', 'Nắm khối lượng đồ, đồ dễ vỡ, đồ giá trị.'),
+           ('Báo giá trọn chuyến', 'Báo giá theo quãng đường và khối lượng.'),
+           ('Đóng gói, vận chuyển', 'Đóng gói kỹ, chằng buộc chắc, xe thùng kín.'),
+           ('Giao nhận', 'Dỡ đồ, sắp xếp và kiểm tra cùng bạn.')],
+    sections=[
+      ('Chuyển nhà liên tỉnh khác gì chuyển trong thành phố',
+       '<p>Đường dài, xe chạy nhiều giờ, đồ đạc chịu rung lắc liên tục. Vì vậy chuyển nhà liên tỉnh cần đóng gói kỹ hơn, chằng buộc chắc hơn và lên kế hoạch thời gian rõ ràng ở cả hai đầu. Một sai sót nhỏ như thùng đóng lỏng hay đồ dễ vỡ để sai chỗ có thể thành hư hỏng sau vài trăm cây số.</p>'),
+      ('Dịch vụ chuyển nhà liên tỉnh gồm những gì',
+       '<ul><li><strong>Tháo lắp và đóng gói kỹ cho đường dài:</strong> đồ dễ vỡ bọc nhiều lớp, đồ điện tử chèn chống sốc, nội thất bọc góc.</li>'
+       '<li><strong>Bốc xếp và chằng buộc:</strong> đồ nặng xếp dưới, đồ nhẹ trên, cố định bằng dây để không xê dịch.</li>'
+       '<li><strong>Vận chuyển bằng xe tải thùng:</strong> thùng kín che mưa nắng, chọn cỡ xe theo khối lượng đồ.</li>'
+       '<li><strong>Giao nhận và sắp xếp:</strong> dỡ đồ, lắp lại nội thất và kiểm tra cùng bạn ở nhà mới.</li></ul>'),
+      ('Các tuyến thường chuyển',
+       '<p>Chúng tôi nhận chuyển nhà từ TP. Hồ Chí Minh đi các tỉnh và ngược lại. Chọn tuyến của bạn để xem chi tiết:</p>{routes}'),
+      ('Quy trình chuyển nhà liên tỉnh',
+       '{steps_img}<ol class="mini-steps">{steps_li}</ol>'),
+      ('Chi phí chuyển nhà liên tỉnh',
+       '<p>Chi phí phụ thuộc chủ yếu vào quãng đường và khối lượng đồ, cùng với mức độ đóng gói, số món cần tháo lắp và điều kiện ở hai đầu (tầng, thang máy, đường vào). Chúng tôi báo giá trọn chuyến trước khi đi. Xem thêm <a href="{p}blog/kinh-nghiem-chuyen-nha-lien-tinh.html">kinh nghiệm chuyển nhà liên tỉnh</a> và <a href="{p}blog/chi-phi-chuyen-nha.html">chi phí chuyển nhà phụ thuộc vào đâu</a>.</p>'),
+    ],
+    faq=[
+      ('Chuyển nhà liên tỉnh mất bao lâu?', 'Phụ thuộc quãng đường và lịch xe. Khi đặt lịch, chúng tôi báo cụ thể ngày đi và ngày giao để bạn sắp xếp.'),
+      ('Có nhận chuyển nhà từ tỉnh về TP. Hồ Chí Minh không?', 'Có. SGE Viettrans nhận cả hai chiều: từ TP. Hồ Chí Minh đi tỉnh và từ tỉnh về TP. Hồ Chí Minh.'),
+      ('Đồ dễ vỡ đi đường dài được đóng gói thế nào?', 'Bọc từng món nhiều lớp, đóng thùng nhỏ, chèn kín và ghi nhãn rõ; khi xếp lên xe, thùng dễ vỡ luôn nằm trên và được cố định chắc.'),
+      ('Giá chuyển nhà liên tỉnh tính thế nào?', 'Theo quãng đường, khối lượng đồ và các dịch vụ đi kèm như đóng gói, tháo lắp. Chúng tôi báo giá trọn chuyến trước khi đi.'),
+    ]),
+
+'chuyen-kho-xuong': dict(
+    name='Chuyển kho xưởng',
+    title='Chuyển kho xưởng trọn gói TPHCM, Bình Dương, Đồng Nai | SGE Viettrans',
+    desc='Dịch vụ chuyển kho xưởng trọn gói tại TP.HCM, Bình Dương, Đồng Nai: lập kế hoạch, tháo dỡ kệ, bốc xếp hàng hóa, máy móc, vận chuyển và sắp xếp lại. Gọi 0368 757 303.',
+    h1='Chuyển kho xưởng trọn gói tại TP. Hồ Chí Minh và khu vực lân cận',
+    lead='Chuyển kho, chuyển xưởng sao cho hàng hóa không thất lạc và sản xuất dừng ít nhất. SGE Viettrans lập kế hoạch cùng bạn, bốc xếp, vận chuyển và sắp xếp lại theo sơ đồ mới.',
+    img=('assets/hero.jpg', 'Đội xe tải SGE Viettrans phục vụ chuyển kho xưởng', 2000, 1125),
+    price='bang-gia-boc-xep',
+    steps=[('Khảo sát', 'Xem kho cũ, kho mới, khối lượng hàng, máy móc.'),
+           ('Lên kế hoạch', 'Thứ tự chuyển, số xe, số người, thời gian.'),
+           ('Báo giá', 'Báo giá rõ theo hạng mục.'),
+           ('Bốc xếp, vận chuyển', 'Đóng gói, ghi nhãn, chở theo đợt.'),
+           ('Sắp xếp lại', 'Đặt hàng, kệ theo sơ đồ kho mới.')],
+    sections=[
+      ('Vì sao chuyển kho xưởng cần đơn vị có kinh nghiệm bốc xếp',
+       '<p>Kho xưởng có khối lượng lớn, hàng hóa nhiều mã, kệ sắt nặng và máy móc cồng kềnh. Chuyển không có kế hoạch dễ dẫn đến thất lạc hàng, nhầm mã, hư hỏng máy và kéo dài thời gian ngừng sản xuất. Điều quan trọng nhất là thứ tự: hàng nào chuyển trước, đặt ở đâu, để kho mới vận hành lại ngay.</p>'),
+      ('Dịch vụ chuyển kho xưởng gồm những gì',
+       '<ul><li><strong>Khảo sát và lập kế hoạch:</strong> khối lượng hàng, số đợt xe, thứ tự chuyển theo khu vực.</li>'
+       '<li><strong>Tháo dỡ và lắp lại kệ:</strong> kệ sắt, kệ hàng, bàn thao tác.</li>'
+       '<li><strong>Đóng gói, ghi nhãn hàng hóa:</strong> theo mã hàng, theo khu vực để dễ kiểm đếm.</li>'
+       '<li><strong>Bốc xếp và vận chuyển:</strong> nhân công đồng phục, có đồ bảo hộ, xe tải thùng SGE.</li>'
+       '<li><strong>Sắp xếp tại kho mới:</strong> đặt hàng và kệ theo sơ đồ bạn cung cấp.</li></ul>'),
+      ('Quy trình chuyển kho xưởng',
+       '{steps_img}<ol class="mini-steps">{steps_li}</ol>'),
+      ('Khu vực phục vụ',
+       '<p>Chúng tôi nhận chuyển kho xưởng trong TP. Hồ Chí Minh và các khu công nghiệp lân cận như Bình Dương, Long An, Biên Hòa. Tuyến xa hơn, xem <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a> hoặc gọi hotline.</p>'),
+      ('Chi phí chuyển kho xưởng',
+       '<p>Chi phí phụ thuộc khối lượng hàng, số lượng kệ và máy móc, quãng đường, số đợt xe và điều kiện bốc xếp ở hai đầu. Chúng tôi khảo sát và báo giá rõ trước khi làm. Đọc thêm <a href="{p}blog/ke-hoach-chuyen-kho-xuong.html">kế hoạch chuyển kho xưởng</a>.</p>'),
+    ],
+    faq=[
+      ('Có chuyển máy móc nặng không?', 'Có nhận bốc xếp và vận chuyển máy móc. Với máy đặc biệt nặng hoặc cần thiết bị nâng chuyên dụng, hãy báo trước để chúng tôi khảo sát và tư vấn phương án.'),
+      ('Có chuyển kho vào cuối tuần, ban đêm để không dừng sản xuất không?', 'Hãy báo khung thời gian bạn muốn khi đặt lịch, chúng tôi sẽ kiểm tra lịch xe, nhân công và quy định giờ chạy xe tải rồi xác nhận.'),
+      ('Hàng hóa được kiểm đếm thế nào?', 'Hàng được ghi nhãn theo mã và khu vực, kèm danh sách. Bạn nên cử người kiểm đếm ở cả kho cũ và kho mới.'),
+      ('Giá chuyển kho xưởng tính thế nào?', 'Theo khối lượng hàng, kệ, máy móc, quãng đường và số đợt xe. Chúng tôi khảo sát và báo giá trước khi làm.'),
     ]),
 }

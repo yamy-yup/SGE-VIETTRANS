@@ -79,6 +79,7 @@ Các trang con được tạo tự động từ nội dung trong thư mục `_to
 - `_tools/content_services.py`: nội dung 5 trang dịch vụ
 - `_tools/content_areas.py`: 25 khu vực và các mẫu câu
 - `_tools/content_blog.py`: các bài Blog
+- `_tools/content_routes.py`: các tuyến chuyển nhà liên tỉnh
 - `_tools/images.py`: dựng ảnh bìa và ảnh minh họa (`python3 _tools/images.py`)
 - `_tools/build.py`: dựng toàn bộ trang và `sitemap.xml` (`python3 _tools/build.py`)
 

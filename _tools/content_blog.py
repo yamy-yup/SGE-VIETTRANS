@@ -214,4 +214,105 @@ dict(slug='dong-thung-carton-dung-cach', date='2026-10-25', cat='Đóng gói',
 <h2>Thùng đầy nhưng không phồng</h2>
 <p>Thùng còn trống dễ móp khi chồng lên nhau; thùng nhồi quá đầy thì phồng, khó xếp. Chèn giấy hoặc khăn vào chỗ trống, đóng nắp phẳng.</p>
 <p>Xem thêm <a href="{p}blog/dong-goi-do-de-vo.html">cách đóng gói đồ dễ vỡ</a>, hoặc để nhân viên SGE Viettrans đóng gói giúp với <a href="{p}chuyen-nha-tron-goi.html">chuyển nhà trọn gói</a>.</p>'''),
+
+dict(slug='chuyen-phong-tro-xem-ngay-cung', date='2026-10-25', cat='Chuyển nhà',
+ title='Chuyển phòng trọ có cần xem ngày, có cần cúng không? Chuyển trọ mới nên làm gì',
+ h1='Chuyển phòng trọ có cần xem ngày, có cần cúng không?',
+ desc='Chuyển phòng trọ có cần xem ngày, cúng hay thắp hương không, chuyển vào tháng 7 âm lịch có sao không, và những việc nên làm ngay khi về phòng trọ mới.',
+ svc=['cho-thue-xe-tai', 'chuyen-nha-tron-goi'],
+ body='''<p>Đây là câu hỏi rất nhiều bạn sinh viên, người đi làm tìm kiếm mỗi lần đổi chỗ ở. Câu trả lời ngắn gọn: <strong>không bắt buộc</strong>. Xem ngày hay cúng là phong tục, tùy niềm tin của mỗi người. Bài viết tổng hợp những gì nhiều người thường làm để bạn tự quyết định.</p>
+<h2>Có cần xem ngày khi chuyển phòng trọ?</h2>
+<p>Phòng trọ là chỗ ở thuê, nhiều người không xem ngày như khi về nhà mới mua. Nếu bạn hoặc gia đình quan tâm, có thể chọn một ngày được cho là tốt theo lịch; nếu không, hãy ưu tiên ngày thuận tiện: ngày nghỉ, không mưa, kịp trả phòng cũ đúng hạn hợp đồng.</p>
+<h2>Có cần cúng, thắp hương khi vào phòng mới?</h2>
+<p>Một số người làm một mâm cúng đơn giản hoặc thắp nén hương để "chào" chỗ ở mới cho yên tâm. Nhiều người khác chỉ dọn dẹp sạch sẽ và bắt đầu ở. Nếu làm, hãy chú ý an toàn cháy nổ trong phòng trọ và quy định của chủ nhà.</p>
+<h2>Chuyển phòng trọ vào tháng 7 âm lịch có sao không?</h2>
+<p>Theo quan niệm dân gian, tháng 7 âm lịch nhiều người kiêng chuyển nhà. Tuy nhiên với phòng trọ, rất nhiều người vẫn chuyển vì lý do công việc, học tập hay hợp đồng thuê. Đây là lựa chọn cá nhân; quan trọng là bạn thấy thoải mái.</p>
+<h2>Chuyển trọ mới nên làm gì</h2>
+<ul><li>Chụp ảnh tình trạng phòng lúc nhận, ghi chỉ số điện nước.</li><li>Kiểm tra khóa cửa, ổ điện, vòi nước, đổi khóa nếu cần.</li><li>Lưu số điện thoại chủ nhà, hỏi quy định giờ giấc, gửi xe, đổ rác.</li><li>Lau dọn, sắp xếp đồ lớn trước, đồ nhỏ sau.</li></ul>
+<p>Phòng trọ ít đồ thường chỉ cần xe van hoặc xe tải nhỏ. Xem <a href="{p}blog/chuyen-phong-tro-tiet-kiem.html">mẹo chuyển phòng trọ tiết kiệm</a> hoặc gọi <a href="{p}cho-thue-xe-tai.html">taxi tải SGE</a>.</p>'''),
+
+dict(slug='mua-thung-carton-chuyen-nha', date='2026-10-25', cat='Đóng gói',
+ title='Mua thùng carton chuyển nhà: cần bao nhiêu thùng, chọn cỡ nào, mua ở đâu',
+ h1='Mua thùng carton chuyển nhà: cần bao nhiêu, chọn cỡ nào?',
+ desc='Kinh nghiệm mua thùng carton chuyển nhà: ước lượng số thùng theo diện tích, chọn thùng 3 lớp hay 5 lớp, cỡ thùng cho sách, quần áo, đồ bếp và nơi mua.',
+ svc=['chuyen-nha-tron-goi'],
+ body='''<p>Mua thiếu thùng thì ngày chuyển phải chạy đi mua thêm, mua thừa thì tốn tiền và chỗ để. Dưới đây là cách ước lượng và chọn thùng cho đúng.</p>
+<h2>Thùng 3 lớp hay 5 lớp?</h2>
+<ul><li><strong>Thùng 3 lớp:</strong> nhẹ, rẻ, hợp với quần áo, chăn gối, đồ nhẹ.</li><li><strong>Thùng 5 lớp:</strong> cứng hơn, chịu lực tốt, nên dùng cho sách, đồ bếp, đồ dễ vỡ và khi chuyển đường dài.</li></ul>
+<h2>Chọn cỡ thùng theo đồ</h2>
+<ul><li><strong>Thùng nhỏ:</strong> sách, giấy tờ, chén bát, đồ nặng.</li><li><strong>Thùng vừa:</strong> đồ bếp, đồ nhà tắm, đồ chơi, đồ điện nhỏ.</li><li><strong>Thùng lớn:</strong> quần áo, chăn màn, gối, đồ nhẹ cồng kềnh.</li></ul>
+<h2>Cần bao nhiêu thùng?</h2>
+<p>Cách ước lượng nhanh là đếm theo phòng: mỗi phòng ngủ thường cần một số thùng cho quần áo và đồ cá nhân, bếp cần nhiều thùng nhỏ vì đồ nặng, phòng khách tùy số sách và đồ trang trí. Hãy mua thêm vài thùng dự phòng; thùng chưa dùng có thể để dành cho lần sau.</p>
+<h2>Mua ở đâu</h2>
+<p>Thùng carton có thể mua ở cửa hàng bao bì, cửa hàng văn phòng phẩm, sàn thương mại điện tử, hoặc xin thùng cũ còn chắc từ siêu thị. Đừng quên băng keo, bút lông và màng bọc.</p>
+<h2>Không muốn tự lo thùng?</h2>
+<p>Với <a href="{p}chuyen-nha-tron-goi.html">chuyển nhà trọn gói</a>, SGE Viettrans lo phần đóng gói. Xem thêm <a href="{p}blog/dong-thung-carton-dung-cach.html">cách đóng thùng carton đúng cách</a>.</p>'''),
+
+dict(slug='boc-xep-duoi-xe-la-gi', date='2026-10-25', cat='Kinh nghiệm',
+ title='Bốc xếp đuôi xe là gì? Bốc xếp tận nơi khác gì và tính giá thế nào',
+ h1='Bốc xếp đuôi xe là gì? Bốc xếp tận nơi khác gì?',
+ desc='Giải thích bốc xếp đuôi xe và bốc xếp tận nơi, khi nào nên chọn loại nào, giá bốc xếp phụ thuộc vào gì và cách mô tả để được báo giá chính xác.',
+ svc=['boc-xep', 'cho-thue-xe-tai'],
+ body='''<p>Khi thuê xe chở hàng, bạn sẽ hay gặp hai khái niệm: bốc xếp đuôi xe và bốc xếp tận nơi. Hiểu đúng giúp bạn chọn đúng dịch vụ và không bất ngờ khi tính tiền.</p>
+<h2>Bốc xếp đuôi xe là gì?</h2>
+<p>Bốc xếp đuôi xe nghĩa là tài xế hoặc nhân công chỉ hỗ trợ đưa hàng lên và xuống ở <strong>vị trí đuôi xe</strong>. Bạn phải tự mang hàng từ trong nhà ra đến xe, và từ xe vào nhà ở điểm đến.</p>
+<h2>Bốc xếp tận nơi là gì?</h2>
+<p>Bốc xếp tận nơi nghĩa là nhân công mang hàng từ vị trí trong nhà, kể cả lên xuống cầu thang, ra xe và đưa vào đúng chỗ ở nơi đến. Phù hợp với đồ nặng như tủ lạnh, máy giặt, nhà nhiều tầng hoặc hẻm sâu.</p>
+<h2>Nên chọn loại nào?</h2>
+<ul><li><strong>Đuôi xe:</strong> hàng nhẹ, ít, bạn có người phụ khiêng, xe đỗ sát cửa.</li><li><strong>Tận nơi:</strong> đồ nặng, cồng kềnh, nhà tầng cao không thang máy, xe không vào sát được.</li></ul>
+<h2>Giá bốc xếp phụ thuộc vào gì?</h2>
+<p>Khối lượng và loại hàng, số người cần, số tầng, có thang máy hay không và quãng đường từ chỗ để hàng ra xe. Câu hỏi "bốc xếp 1 tấn bao nhiêu tiền" khó có một con số chung, vì 1 tấn gạo ở tầng trệt khác hẳn 1 tấn đồ nội thất trên tầng 5.</p>
+<p>Xem <a href="{p}bang-gia-boc-xep.html">bảng giá nhân công bốc xếp</a> hoặc dịch vụ <a href="{p}boc-xep.html">bốc xếp tận nơi</a> của SGE Viettrans.</p>'''),
+
+dict(slug='thue-xe-tai-hay-ung-dung-giao-hang', date='2026-10-25', cat='Kinh nghiệm',
+ title='Chuyển nhà nên thuê xe tải trọn gói hay gọi xe qua ứng dụng giao hàng?',
+ h1='Chuyển nhà nên thuê xe tải hay gọi xe qua ứng dụng?',
+ desc='So sánh thuê xe tải, dịch vụ chuyển nhà trọn gói và gọi xe qua ứng dụng giao hàng như Lalamove, Ahamove khi chuyển nhà: ưu nhược điểm và khi nào nên chọn.',
+ svc=['cho-thue-xe-tai', 'chuyen-nha-tron-goi'],
+ body='''<p>Nhiều người tìm giá chuyển nhà trên các ứng dụng gọi xe tải như Lalamove, Ahamove và so với dịch vụ chuyển nhà. Mỗi cách có chỗ mạnh riêng; chọn đúng tùy vào lượng đồ và việc bạn tự làm được bao nhiêu.</p>
+<h2>Gọi xe qua ứng dụng</h2>
+<ul><li><strong>Hợp khi:</strong> ít đồ, đồ đã đóng gói sẵn, cần đi ngay, quãng đường ngắn.</li><li><strong>Lưu ý:</strong> thường chỉ hỗ trợ bốc xếp đuôi xe hoặc tính thêm phí bốc xếp; không có khảo sát, không tháo lắp nội thất; tài xế mỗi lần một người khác nhau.</li></ul>
+<h2>Thuê xe tải có tư vấn</h2>
+<ul><li><strong>Hợp khi:</strong> đồ nhiều hơn, cần chọn đúng cỡ xe, cần thêm người bốc xếp.</li><li><strong>Ưu điểm:</strong> được tư vấn cỡ xe, báo giá trước, có thể kèm nhân công bốc xếp tận nơi.</li></ul>
+<h2>Chuyển nhà trọn gói</h2>
+<ul><li><strong>Hợp khi:</strong> nhà nhiều đồ, cần tháo lắp giường tủ, đóng gói đồ dễ vỡ, bạn không có thời gian.</li><li><strong>Ưu điểm:</strong> một đơn vị lo từ đầu đến cuối, có khảo sát và kế hoạch.</li></ul>
+<h2>Cách chọn nhanh</h2>
+<p>Vài thùng đồ và một chiếc xe máy: ứng dụng là đủ. Một phòng trọ có tủ lạnh, máy giặt: thuê xe tải kèm bốc xếp. Một căn hộ hay nhà phố: chuyển nhà trọn gói sẽ nhẹ nhàng hơn nhiều.</p>
+<p>Tham khảo <a href="{p}cho-thue-xe-tai.html">cho thuê xe tải</a>, <a href="{p}chuyen-nha-tron-goi.html">chuyển nhà trọn gói</a> và <a href="{p}blog/chi-phi-chuyen-nha.html">chi phí chuyển nhà phụ thuộc vào đâu</a>.</p>'''),
+
+dict(slug='kinh-nghiem-chuyen-nha-lien-tinh', date='2026-10-25', cat='Chuyển nhà',
+ title='Kinh nghiệm chuyển nhà liên tỉnh, Bắc Nam: chuẩn bị gì để đồ đến nơi an toàn',
+ h1='Kinh nghiệm chuyển nhà liên tỉnh, Bắc Nam',
+ desc='Kinh nghiệm chuyển nhà liên tỉnh, từ TP.HCM ra Hà Nội, Đà Nẵng hay về quê: giảm đồ, đóng gói cho đường dài, chọn xe nguyên chuyến, giấy tờ và lịch nhận đồ.',
+ svc=['chuyen-nha-lien-tinh'],
+ body='''<p>Chuyển nhà liên tỉnh, nhất là tuyến Bắc – Nam, khác hẳn chuyển trong thành phố: đồ đi đường dài nhiều giờ, có khi nhiều ngày, và bạn không thể chạy về lấy món quên. Chuẩn bị kỹ là yếu tố quyết định.</p>
+{img:lien-tinh}
+<h2>1. Cân nhắc đồ nào nên mang</h2>
+<p>Chi phí liên tỉnh phụ thuộc nhiều vào khối lượng. Đồ cũ, đồ rẻ, đồ dễ mua lại ở nơi mới thường nên bán hoặc cho trước khi đi. Ưu tiên mang đồ có giá trị, đồ kỷ niệm và nội thất tốt.</p>
+<h2>2. Đóng gói cho đường dài</h2>
+<ul><li>Dùng thùng 5 lớp, dán đáy chắc, chèn kín không để đồ xê dịch.</li><li>Đồ dễ vỡ bọc nhiều lớp; tivi, màn hình để đứng.</li><li>Nội thất gỗ bọc góc, bọc màng chống trầy; tháo rời nếu được.</li><li>Ghi nhãn rõ phòng và danh sách đồ từng thùng.</li></ul>
+<h2>3. Giữ riêng đồ quan trọng</h2>
+<p>Giấy tờ tùy thân, hợp đồng, trang sức, tiền, laptop và thuốc nên mang theo người, không gửi theo xe.</p>
+<h2>4. Thống nhất lịch ở hai đầu</h2>
+<p>Hỏi rõ ngày đi, ngày dự kiến giao, người nhận ở nơi đến. Báo trước điều kiện đường vào nhà mới để chọn cỡ xe phù hợp.</p>
+<h2>5. Chọn đơn vị báo giá trọn chuyến</h2>
+<p>Hỏi rõ giá đã gồm đóng gói, bốc xếp hai đầu, tháo lắp chưa để tránh phát sinh. SGE Viettrans nhận <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a> và báo giá trọn chuyến trước khi đi.</p>'''),
+
+dict(slug='ke-hoach-chuyen-kho-xuong', date='2026-10-25', cat='Chuyển văn phòng',
+ title='Kế hoạch chuyển kho xưởng: chuyển nhanh, không thất lạc hàng, ít ngừng sản xuất',
+ h1='Kế hoạch chuyển kho xưởng không thất lạc hàng',
+ desc='Hướng dẫn lập kế hoạch chuyển kho xưởng: kiểm kê, mã hóa khu vực, chia đợt chuyển, chuẩn bị kho mới, an toàn bốc xếp máy móc và kiểm đếm khi nhận.',
+ svc=['chuyen-kho-xuong', 'boc-xep'],
+ body='''<p>Chuyển kho xưởng là bài toán hậu cần: hàng nghìn món, nhiều mã, kệ nặng và máy móc. Một kế hoạch tốt giúp chuyển nhanh, không thất lạc và kho mới vận hành lại ngay.</p>
+<h2>1. Kiểm kê trước khi chuyển</h2>
+<p>Cập nhật tồn kho, thanh lý hàng hỏng, hàng chậm luân chuyển. Ít hàng hơn là ít đợt xe hơn.</p>
+<h2>2. Mã hóa khu vực</h2>
+<p>Đặt mã cho từng khu ở kho mới (ví dụ A1, A2, B1) và dán cùng mã lên kệ, thùng hàng ở kho cũ. Người bốc xếp chỉ cần nhìn mã là biết đặt đâu.</p>
+<h2>3. Chia đợt chuyển</h2>
+<ul><li>Đợt đầu: kệ, giá đỡ, thiết bị để dựng kho mới.</li><li>Đợt giữa: hàng ít dùng, hàng dự trữ.</li><li>Đợt cuối: hàng bán chạy, nguyên liệu đang sản xuất, để ngừng hoạt động ngắn nhất.</li></ul>
+<h2>4. An toàn khi bốc xếp máy móc</h2>
+<p>Ngắt điện, tháo rời bộ phận dễ gãy, cố định phần chuyển động. Máy quá nặng cần khảo sát để dùng thiết bị nâng phù hợp.</p>
+<h2>5. Kiểm đếm khi nhận</h2>
+<p>Đối chiếu danh sách theo mã từng đợt, ghi nhận ngay nếu thiếu hoặc hư hỏng.</p>
+<p>SGE Viettrans nhận <a href="{p}chuyen-kho-xuong.html">chuyển kho xưởng trọn gói</a> và <a href="{p}boc-xep.html">bốc xếp hàng hóa</a> tại TP. Hồ Chí Minh và khu vực lân cận.</p>'''),
 ]

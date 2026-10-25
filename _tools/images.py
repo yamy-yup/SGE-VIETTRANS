@@ -32,14 +32,19 @@ IC = {
  'box': '<path d="M8 20 32 8l24 12v26L32 58 8 46z"/><path d="M8 20l24 12 24-12M32 32v26"/>',
  'coin': '<circle cx="26" cy="30" r="16"/><path d="M26 22v16M21 26h8a3 3 0 0 1 0 6h-6a3 3 0 0 0 0 6h8"/><path d="M44 18a16 16 0 0 1 0 26"/>',
  'home': '<path d="M8 30 32 10l24 20M14 26v30h36V26"/><path d="M26 56V40h12v16"/><path d="M44 8v8"/>',
+ 'phone': '<rect x="18" y="6" width="28" height="52" rx="5"/><path d="M28 50h8M24 18l8 8 8-8M32 26v12"/>',
+ 'route': '<circle cx="14" cy="48" r="6"/><circle cx="50" cy="16" r="6"/><path d="M20 48h18a8 8 0 0 0 0-16H26a8 8 0 0 1 0-16h18"/>',
+ 'factory': '<path d="M6 56V30l14 8v-8l14 8v-8l14 8V12h10v44z"/><path d="M14 48h6M28 48h6M42 48h6"/>',
  'tape': '<path d="M8 22h48v32H8zM8 22l8-12h32l8 12M28 10v12M36 10v12M28 22v8M36 22v8"/>',
 }
 COVER_IC = {'chuan-bi-truoc-ngay-chuyen-nha': 'calendar', 'dong-goi-do-de-vo': 'glass', 'gio-cam-xe-tai-tphcm': 'clock',
             'chon-xe-tai-phu-hop': 'truck', 'chuyen-van-phong-gon-gang': 'office', 'van-chuyen-tu-lanh-may-giat': 'fridge',
             'chuyen-nha-chung-cu': 'building', 'chuyen-phong-tro-tiet-kiem': 'bag', 'co-nen-thue-kho-khi-chuyen-nha': 'box',
-            'chi-phi-chuyen-nha': 'coin', 'xem-ngay-chuyen-nha': 'home', 'dong-thung-carton-dung-cach': 'tape'}
+            'chi-phi-chuyen-nha': 'coin', 'xem-ngay-chuyen-nha': 'home', 'dong-thung-carton-dung-cach': 'tape',
+            'chuyen-phong-tro-xem-ngay-cung': 'calendar', 'mua-thung-carton-chuyen-nha': 'box', 'boc-xep-duoi-xe-la-gi': 'truck',
+            'thue-xe-tai-hay-ung-dung-giao-hang': 'phone', 'kinh-nghiem-chuyen-nha-lien-tinh': 'route', 'ke-hoach-chuyen-kho-xuong': 'factory'}
 PHOTO = {'chuyen-nha-chung-cu': 'hero.jpg', 'chon-xe-tai-phu-hop': 'truck.jpg', 'chuyen-van-phong-gon-gang': 'band.jpg',
-         'van-chuyen-tu-lanh-may-giat': 'band.jpg'}
+         'van-chuyen-tu-lanh-may-giat': 'band.jpg', 'kinh-nghiem-chuyen-nha-lien-tinh': 'truck.jpg', 'boc-xep-duoi-xe-la-gi': 'band.jpg'}
 
 
 def svg(name, size=64):
@@ -145,6 +150,11 @@ def jobs():
         ('Máy giặt', ['Xả hết nước', 'Lắp ốc khóa lồng giặt', 'Bọc kín đầu ống']),
         ('Máy lạnh', ['Thu gas trước khi tháo', 'Bọc kín ống đồng', 'Thợ chuyên môn lắp lại'])], 3, red_last=False,
         icons=['fridge', 'box', 'clock']), 600), 1200, 600))
+    J.append(('lien-tinh', frame('Chuyển nhà liên tỉnh: 4 việc cần nhớ', cols([
+        ('Giảm đồ', 'Bán, cho đồ dễ mua lại; chỉ mang đồ giá trị.'),
+        ('Đóng gói kỹ', 'Thùng 5 lớp, chèn kín, bọc góc nội thất.'),
+        ('Mang theo người', 'Giấy tờ, tiền, trang sức, laptop, thuốc.'),
+        ('Chốt lịch hai đầu', 'Ngày đi, ngày giao, người nhận, đường vào.')], 4, icons=['home', 'box', 'bag', 'calendar']), 520), 1200, 520))
     for s, d in SERVICES.items():
         J.append(('quy-trinh-' + s, frame(f'Quy trình {d["name"].lower()}', cols(d['steps'], 5), 600), 1200, 600))
     return J

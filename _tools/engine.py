@@ -12,6 +12,7 @@ TT = 'https://www.tiktok.com/@sge6868'
 ZALO = 'https://zalo.me/0368757303'
 
 SV = [('chuyen-nha-tron-goi', 'Chuyển nhà trọn gói'), ('chuyen-van-phong', 'Chuyển văn phòng'),
+      ('chuyen-nha-lien-tinh', 'Chuyển nhà liên tỉnh'), ('chuyen-kho-xuong', 'Chuyển kho xưởng'),
       ('cho-thue-xe-tai', 'Cho thuê xe tải'), ('boc-xep', 'Bốc xếp'), ('kho-bai-luu-tru', 'Kho bãi lưu trữ')]
 PR = [('bang-gia-xe-tai', 'Bảng giá xe tải'), ('bang-gia-boc-xep', 'Bảng giá nhân công bốc xếp'),
       ('bang-gia-thao-lap', 'Bảng giá tháo lắp nội thất')]
@@ -190,6 +191,7 @@ def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', o
 <meta property="og:image" content="{BASE}{og_image}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/jpeg" href="{p}assets/logo.jpg">
+<link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
 <link rel="preload" href="{p}assets/fonts/montserrat.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="{p}assets/fonts/bevietnam-Regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{p}assets/style.css">

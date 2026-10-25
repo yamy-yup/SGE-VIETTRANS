@@ -17,6 +17,8 @@ AREAS = [
  ('Tân Bình', 'noi', 'Tân Bình có sân bay Tân Sơn Nhất, khu công nghiệp Tân Bình cùng nhiều văn phòng, nhà phố. Nhu cầu chuyển văn phòng và chở hàng khá lớn.'),
  ('Tân Phú', 'noi', 'Tân Phú là khu dân cư đông với nhiều nhà phố, xưởng may và cửa hàng. Hẻm nhiều, cần chọn xe phù hợp đường vào.'),
  ('Bình Tân', 'ngoai', 'Bình Tân có khu công nghiệp Tân Tạo, nhiều khu dân cư và nhà trọ công nhân. Chuyển phòng trọ, chở hàng cho xưởng là nhu cầu thường gặp.'),
+ ('Quận 2', 'ngoai', 'Quận 2 (nay thuộc khu vực Thủ Đức) có Thảo Điền, An Phú, Thủ Thiêm với nhiều căn hộ cao cấp, biệt thự và văn phòng. Nhiều gia đình người nước ngoài sinh sống, đồ đạc thường cần đóng gói kỹ.'),
+ ('Quận 9', 'ngoai', 'Quận 9 (nay thuộc khu vực Thủ Đức) có khu công nghệ cao, Vinhomes Grand Park và nhiều khu dân cư mới. Đường rộng, thuận tiện cho xe tải, nhưng quãng đường vào trung tâm khá xa.'),
  ('Thủ Đức', 'ngoai', 'Thủ Đức có khu công nghệ cao, làng đại học, khu Thảo Điền và nhiều chung cư mới. Quãng đường đến các quận trung tâm khá xa, nên lịch chuyển cần tính kỹ.'),
  ('Bình Chánh', 'ngoai', 'Bình Chánh ở phía tây nam thành phố, có nhiều khu dân cư mới, nhà vườn và kho bãi. Đường rộng, phù hợp xe tải lớn.'),
  ('Hóc Môn', 'ngoai', 'Hóc Môn ở phía bắc, có nhà vườn, nhà xưởng và khu dân cư đang phát triển. Đồ đạc thường nhiều và cồng kềnh.'),

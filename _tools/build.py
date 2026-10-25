@@ -8,7 +8,9 @@ from content_areas import AREAS, INTRO, WHY, NOTE
 from content_blog import POSTS
 
 TODAY = datetime.date.today().isoformat()
-INC_IDX = {'chuyen-nha-tron-goi': 1, 'chuyen-van-phong': 1, 'cho-thue-xe-tai': 0, 'boc-xep': 0, 'kho-bai-luu-tru': 1}
+INC_IDX = {'chuyen-nha-tron-goi': 1, 'chuyen-van-phong': 1, 'cho-thue-xe-tai': 0, 'boc-xep': 0, 'kho-bai-luu-tru': 1, 'chuyen-nha-lien-tinh': 1, 'chuyen-kho-xuong': 1}
+from content_routes import ROUTES
+ROUTE_LIST = [(slug(r), r, km, d) for r, km, d in ROUTES]
 POST_BY = {p['slug']: p for p in POSTS}
 AREA_LIST = [(slug(a), a, k, d) for a, k, d in AREAS]
 
@@ -34,13 +36,14 @@ def fill(html, p, d=None, sv=None):
     if d is not None:
         html = html.replace('{steps_li}', steps_li(d['steps']))
         html = html.replace('{steps_img}', img(p, f'assets/blog/quy-trinh-{sv}.jpg', f'Quy trình {lower1(d["name"])} của SGE Viettrans', 1200, 600))
+        html = html.replace('{routes}', route_chips(p))
         html = html.replace('{truck_img}', img(p, 'assets/blog/chon-xe.jpg', 'Bảng chọn xe van, xe tải nhỏ, xe tải lớn theo lượng đồ', 1200, 580))
     def rep(m):
         n = m.group(1)
         alt = {'lich-chuan-bi': 'Lịch chuẩn bị chuyển nhà theo 4 mốc thời gian', 'dong-goi-de-vo': 'Bốn bước đóng gói đồ dễ vỡ',
                'gio-cam-xe-tai': 'Biểu đồ giờ cấm xe tải nội thành TP.HCM theo tải trọng', 'chon-xe': 'Bảng chọn xe tải theo lượng đồ',
-               'checklist-van-phong': 'Năm bước chuyển văn phòng', 'tu-lanh-may-giat': 'Cách vận chuyển tủ lạnh, máy giặt, máy lạnh'}[n]
-        hh = {'lich-chuan-bi': 560, 'dong-goi-de-vo': 600, 'gio-cam-xe-tai': 560, 'chon-xe': 580, 'checklist-van-phong': 560, 'tu-lanh-may-giat': 600}[n]
+               'checklist-van-phong': 'Năm bước chuyển văn phòng', 'tu-lanh-may-giat': 'Cách vận chuyển tủ lạnh, máy giặt, máy lạnh', 'lien-tinh': 'Bốn việc cần nhớ khi chuyển nhà liên tỉnh'}[n]
+        hh = {'lich-chuan-bi': 560, 'dong-goi-de-vo': 600, 'gio-cam-xe-tai': 560, 'chon-xe': 580, 'checklist-van-phong': 560, 'tu-lanh-may-giat': 600, 'lien-tinh': 520}[n]
         return img(p, f'assets/blog/{n}.jpg', alt, 1200, hh)
     return re.sub(r'\{img:([a-z0-9-]+)\}', rep, html)
 
@@ -55,8 +58,17 @@ def area_chips(p, sv, cur=None):
     return f'<h3>TP. Hồ Chí Minh</h3><ul class="areas">{h}</ul><h3>Bình Dương, Long An, Biên Hòa</h3><ul class="areas">{n}</ul>'
 
 
+def route_chips(p, cur=None):
+    def chip(s, r):
+        if s == cur:
+            return f'<li><span aria-current="page">TP.HCM – {r}</span></li>'
+        return f'<li><a href="{p}chuyen-nha-lien-tinh/{s}.html">TP.HCM – {r}</a></li>'
+    return '<ul class="areas">' + ''.join(chip(s, r) for s, r, km, d in ROUTE_LIST) + '</ul>'
+
+
 def related_posts(p, slugs, limit=3, exclude=None):
-    out = [q for q in POSTS if q['slug'] != exclude and any(s in q['svc'] for s in slugs)][:limit]
+    out = sorted([q for q in POSTS if q['slug'] != exclude and any(s in q['svc'] for s in slugs)],
+                 key=lambda q: min(slugs.index(s) if s in slugs else 9 for s in q['svc']))[:limit]
     if len(out) < limit:
         out += [q for q in POSTS if q not in out and q['slug'] != exclude][:limit - len(out)]
     return '<ul class="rel">' + ''.join(
@@ -73,14 +85,15 @@ def toc(sections):
 def build_services():
     for sv, name in SV:
         d = SERVICES[sv]; p = ''
-        secs = d['sections'] + [('Câu hỏi thường gặp', None), ('Khu vực phục vụ', None)]
+        lt = sv == 'chuyen-nha-lien-tinh'
+        secs = d['sections'] + [('Câu hỏi thường gặp', None)] + ([] if lt else [('Khu vực phục vụ', None)])
         body_secs = ''
         for i, (h, html) in enumerate(d['sections']):
             body_secs += f'<section id="m{i+1}"><h2>{h}</h2>{fill(html, p, d, sv)}</section>\n'
         n = len(d['sections'])
         faq = [(q, a.replace('{p}', p)) for q, a in d['faq']]
         body_secs += f'<section id="m{n+1}"><h2>Câu hỏi thường gặp về {lower1(name)}</h2>{faq_html(faq)}</section>\n'
-        body_secs += f'<section id="m{n+2}" class="area-sec"><h2>{name} theo khu vực</h2><p>Chọn khu vực của bạn để xem chi tiết dịch vụ {lower1(name)} tại đó.</p>{area_chips(p, sv)}</section>'
+        if not lt: body_secs += f'<section id="m{n+2}" class="area-sec"><h2>{name} theo khu vực</h2><p>Chọn khu vực của bạn để xem chi tiết dịch vụ {lower1(name)} tại đó.</p>{area_chips(p, sv)}</section>'
         im = d['img']
         rel = ''.join(f'<li><a href="{s}.html">{nm}</a></li>' for s, nm in SV if s != sv)
         extra = (f'<a class="more" href="{d["price"]}.html">Xem {dict(PR)[d["price"]].lower()}</a>' if d['price'] else '')
@@ -101,7 +114,7 @@ def build_services():
 </div></section>'''
         ld = [breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ"), (sv + ".html", name)]),
               {"@type": "Service", "name": name, "serviceType": name, "provider": {"@id": BASE + "#org"},
-               "areaServed": ["TP. Hồ Chí Minh", "Bình Dương", "Long An", "Biên Hòa"], "description": d['desc'], "url": BASE + sv + '.html'},
+               "areaServed": (["TP. Hồ Chí Minh"] + [r for _, r, _, _ in ROUTE_LIST]) if lt else ["TP. Hồ Chí Minh", "Bình Dương", "Long An", "Biên Hòa"], "description": d['desc'], "url": BASE + sv + '.html'},
               faq_ld(faq)]
         page(sv + '.html', d['title'], d['desc'], body, cur=sv, ld=ld, og_image=im[0], priority='0.9')
 
@@ -109,6 +122,8 @@ def build_services():
 # ---------------- Trang khu vực ----------------
 def build_areas():
     for sv, name in SV:
+        if sv == 'chuyen-nha-lien-tinh':
+            continue
         d = SERVICES[sv]
         inc = re.search(r'<ul>.*?</ul>', d['sections'][INC_IDX[sv]][1], re.S).group(0)
         for i, (s, a, kind, desc) in enumerate(AREA_LIST):
@@ -151,6 +166,64 @@ def build_areas():
                   {"@type": "Service", "name": f"{name} {a}", "serviceType": name, "provider": {"@id": BASE + "#org"},
                    "areaServed": a, "url": f"{BASE}{sv}/{s}.html"}, faq_ld(faq)]
             page(f'{sv}/{s}.html', title, dsc, body, cur=sv, ld=ld, priority='0.6')
+
+
+# ---------------- Tuyến liên tỉnh ----------------
+def build_routes():
+    sv, name = 'chuyen-nha-lien-tinh', 'Chuyển nhà liên tỉnh'
+    d = SERVICES[sv]; p = '../'
+    inc = re.search(r'<ul>.*?</ul>', d['sections'][1][1], re.S).group(0)
+    for s, r, km, desc in ROUTE_LIST:
+        faq = [
+            (f'Chuyển nhà TP.HCM đi {r} giá bao nhiêu?', f'Giá phụ thuộc quãng đường ({km}), khối lượng đồ và dịch vụ đi kèm như đóng gói, tháo lắp. SGE Viettrans báo giá trọn chuyến trước khi đi, gọi {PHONE_TXT}.'),
+            (f'Có nhận chuyển nhà từ {r} về TP. Hồ Chí Minh không?', f'Có. Chúng tôi nhận cả chiều TP. Hồ Chí Minh đi {r} và {r} về TP. Hồ Chí Minh.'),
+            (f'Chuyển nhà đi {r} mất bao lâu?', 'Phụ thuộc lịch xe và khối lượng đồ. Khi đặt lịch, chúng tôi báo rõ ngày đi và ngày giao dự kiến.'),
+            ('Tôi cần chuẩn bị gì?', 'Danh sách đồ, địa chỉ hai đầu, tầng và đường vào nhà, ngày mong muốn. Giấy tờ, tiền, trang sức nên mang theo người.'),
+        ]
+        body = f'''<section class="page-head"><div class="wrap">{crumb_html([("index.html", "Trang chủ"), ("dich-vu.html", "Dịch vụ"), (sv + ".html", name), (f"{sv}/{s}.html", "TP.HCM – " + r)], p)}
+<h1>Chuyển nhà TP.HCM đi {r}</h1><p class="lead">Chuyển nhà, chở đồ từ TP. Hồ Chí Minh đi {r} và ngược lại: đóng gói kỹ cho đường dài, xe tải thùng, báo giá trọn chuyến trước khi đi. Gọi <a href="tel:{PHONE}">{PHONE_TXT}</a>.</p></div></section>
+<section class="detail"><div class="wrap grid">
+  <article class="prose">
+    <section><h2>Tuyến TP. Hồ Chí Minh – {r}</h2><p>Quãng đường {km} (tham khảo). {desc}</p></section>
+    <section><h2>Dịch vụ chuyển nhà đi {r} gồm những gì</h2>{inc}</section>
+    <section><h2>Kinh nghiệm chuyển nhà đi {r}</h2>{img(p, "assets/blog/lien-tinh.jpg", "Bốn việc cần nhớ khi chuyển nhà liên tỉnh", 1200, 520)}
+    <p>Đọc thêm <a href="{p}blog/kinh-nghiem-chuyen-nha-lien-tinh.html">kinh nghiệm chuyển nhà liên tỉnh, Bắc Nam</a>.</p></section>
+    <section><h2>Quy trình</h2><ol class="mini-steps">{steps_li(d["steps"])}</ol></section>
+    <section><h2>Câu hỏi thường gặp về chuyển nhà đi {r}</h2>{faq_html(faq)}</section>
+    <section class="area-sec"><h2>Các tuyến khác</h2>{route_chips(p, s)}</section>
+  </article>
+  <div class="side">
+  {aside_cta(p, f"Báo giá chuyển nhà đi {r}", name, f'<a class="more" href="{p}{sv}.html">Về dịch vụ chuyển nhà liên tỉnh</a>')}
+  <div class="side-box"><h2>Bài viết hữu ích</h2>{related_posts(p, [sv, "chuyen-nha-tron-goi"], 3)}</div>
+  </div>
+</div></section>'''
+        ld = [breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ"), (sv + ".html", name), (f"{sv}/{s}.html", "TP.HCM – " + r)]),
+              {"@type": "Service", "name": f"Chuyển nhà TP.HCM đi {r}", "serviceType": name, "provider": {"@id": BASE + "#org"}, "areaServed": ["TP. Hồ Chí Minh", r], "url": f"{BASE}{sv}/{s}.html"},
+              faq_ld(faq)]
+        page(f'{sv}/{s}.html', f'Chuyển nhà TPHCM đi {r} trọn gói | SGE Viettrans',
+             f'Chuyển nhà, chở đồ TP.HCM đi {r} và ngược lại: đóng gói kỹ, xe tải thùng, báo giá trọn chuyến. Tư vấn 24/7, gọi {PHONE_TXT}.',
+             body, cur=sv, ld=ld, priority='0.7')
+
+
+# ---------------- Trang chủ: đồng bộ menu và chân trang ----------------
+def sync_index():
+    s = open(ROOT + 'index.html', encoding='utf8').read()
+    a = s.index('<nav class="nav"'); b = s.index('</nav>', a) + 6
+    n = nav('', '').replace('href="index.html#', 'href="#')
+    s = s[:a] + n + s[b:]
+    a = s.index('<footer>'); b = s.index('</footer>') + 9
+    s = s[:a] + footer('').replace('href="index.html#', 'href="#') + s[b:]
+    open(ROOT + 'index.html', 'w', encoding='utf8').write(s)
+
+
+def build_404():
+    body = f'''<section class="page-head"><div class="wrap"><h1>Không tìm thấy trang</h1>
+<p class="lead">Trang bạn tìm có thể đã đổi địa chỉ. Hãy quay về trang chủ, xem các dịch vụ hoặc gọi ngay {PHONE_TXT} để được hỗ trợ.</p>
+<div class="head-act"><a class="btn" href="index.html">Về trang chủ</a><a class="btn btn-ghost" href="dich-vu.html">Xem dịch vụ</a><a class="btn btn-ghost" href="tel:{PHONE}">Gọi {PHONE_TXT}</a></div></div></section>'''
+    doc = page('404.html', 'Không tìm thấy trang | SGE Viettrans', 'Trang không tồn tại.', body)
+    PAGES.pop()
+    doc = doc.replace('<head>', '<head>\n<base href="/SGE-VIETTRANS/">', 1).replace('content="index, follow, max-image-preview:large"', 'content="noindex"')
+    open(ROOT + '404.html', 'w', encoding='utf8').write(doc)
 
 
 # ---------------- Bảng giá ----------------
@@ -264,6 +337,6 @@ document.querySelectorAll('#cards .card').forEach(function(li){{li.hidden=!!c&&l
 
 
 if __name__ == '__main__':
-    build_services(); build_prices(); build_lists(); build_blog(); build_areas()
+    build_services(); build_prices(); build_lists(); build_blog(); build_areas(); build_routes(); build_404(); sync_index()
     write_sitemap(TODAY)
     print(len(PAGES) + 1, 'URL trong sitemap')
