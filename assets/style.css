@@ -363,7 +363,7 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
 .post li::marker{color:var(--red)}
 .post .btn{margin-top:1.5rem}
 @media (max-width:1000px){.blog .grid{grid-template-columns:minmax(0,1fr)}.toc{position:static}}
-@media (max-width:760px){.tbl table{min-width:26rem}}
+@media (max-width:760px){.tbl table{min-width:0}.tbl th,.tbl td{padding:.8rem .7rem}.tbl td:last-child{white-space:normal}}
 .tbl.t2 table{min-width:0}
 .tbl.t2 td:last-child{white-space:normal;width:6.5rem}
 

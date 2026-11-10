@@ -116,6 +116,9 @@ def build_services():
 
 
 # ---------------- Trang khu vực ----------------
+# Chỉ 3 dịch vụ có người tìm theo khu vực mới cho index; các dịch vụ còn lại giữ trang cho khách đi từ link nhưng noindex để tránh trùng lặp.
+AREA_INDEXED = {'chuyen-nha-tron-goi', 'cho-thue-xe-tai', 'chuyen-van-phong'}
+
 def build_areas():
     for sv, name in SV:
         if sv == 'chuyen-nha-lien-tinh':
@@ -159,7 +162,7 @@ def build_areas():
             ld = [breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ"), (sv + ".html", name), (f"{sv}/{s}.html", a)]),
                   {"@type": "Service", "name": f"{name} {a}", "serviceType": name, "provider": {"@id": BASE + "#org"},
                    "areaServed": a, "url": f"{BASE}{sv}/{s}.html"}, faq_ld(faq)]
-            page(f'{sv}/{s}.html', title, dsc, body, cur=sv, ld=ld, priority='0.6')
+            page(f'{sv}/{s}.html', title, dsc, body, cur=sv, ld=ld, priority='0.6', index=sv in AREA_INDEXED)
 
 
 # ---------------- Tuyến liên tỉnh ----------------
