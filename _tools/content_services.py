@@ -4,8 +4,8 @@
 SERVICES = {
 'chuyen-nha-tron-goi': dict(
     name='Chuyển nhà trọn gói',
-    title='Chuyển nhà trọn gói TPHCM, báo giá rõ trước khi làm | SGE Viettrans',
-    desc='Dịch vụ chuyển nhà trọn gói tại TP.HCM: tháo lắp, đóng gói, bốc xếp, vận chuyển và sắp xếp lại đồ đạc. Báo giá rõ trước khi làm, tư vấn 24/7: 0368 757 303.',
+    title='Chuyển nhà trọn gói TPHCM chỉ từ 800K | SGE Viettrans',
+    desc='Chuyển nhà trọn gói TP.HCM chỉ từ 800K: tháo lắp, đóng gói, bốc xếp, vận chuyển, sắp xếp lại đồ đạc. Gửi ảnh qua Zalo 0368 757 303 để nhận báo giá.',
     h1='Chuyển nhà trọn gói tại TP. Hồ Chí Minh',
     lead='Bạn chỉ cần nói ngày chuyển và địa chỉ mới. SGE Viettrans lo phần còn lại: tháo lắp, đóng gói, bốc xếp, chở đồ và sắp xếp lại ở nhà mới, với chi phí báo rõ trước khi bắt đầu.',
     img=('assets/hero.jpg', 'Đội xe tải và nhân viên SGE Viettrans chuẩn bị chuyển nhà trọn gói', 2000, 1125),
@@ -30,7 +30,7 @@ SERVICES = {
       ('Quy trình 5 bước',
        '{steps_img}<ol class="mini-steps">{steps_li}</ol>'),
       ('Chi phí chuyển nhà trọn gói phụ thuộc vào đâu',
-       '<p>Mỗi căn nhà một khác, nên chúng tôi không báo một con số chung cho mọi người. Chi phí phụ thuộc vào:</p>'
+       '<p>Chuyển nhà chỉ từ 800K là mức khởi điểm. Mỗi căn nhà một khác, nên chi phí cuối cùng phụ thuộc vào:</p>'
        '<ul><li>Khối lượng đồ và số món cần tháo lắp.</li><li>Quãng đường giữa nhà cũ và nhà mới.</li><li>Số tầng, có thang máy hay không, xe có đỗ sát nhà được không.</li><li>Đồ cần đóng gói kỹ như đồ thủy tinh, tranh, thiết bị điện tử.</li></ul>'
        '<p>Xem thêm <a href="{p}bang-gia-thao-lap.html">bảng giá tháo lắp nội thất</a> và <a href="{p}bang-gia-xe-tai.html">bảng giá xe tải</a>, hoặc <a href="{p}index.html?dv=Chuy%E1%BB%83n%20nh%C3%A0%20tr%E1%BB%8Dn%20g%C3%B3i#phieu">lập phiếu báo giá</a> để nhận giá sát nhất.</p>'),
       ('Mẹo để ngày chuyển nhà nhẹ nhàng hơn',
@@ -40,14 +40,14 @@ SERVICES = {
     faq=[
       ('Chuyển nhà trọn gói có bao gồm tháo lắp giường tủ không?', 'Có. Tháo lắp giường, tủ, kệ và bàn ghế là một phần của dịch vụ chuyển nhà trọn gói. Bạn chỉ cần cho biết số lượng khi đặt lịch để chúng tôi chuẩn bị đủ người và dụng cụ.'),
       ('Tôi cần đặt lịch trước bao lâu?', 'Nên liên hệ sớm vài ngày để chọn được giờ phù hợp, nhất là vào cuối tuần và cuối tháng. Trường hợp gấp, hãy gọi 0368 757 303 để kiểm tra lịch trống.'),
-      ('Giá chuyển nhà trọn gói được tính như thế nào?', 'Giá dựa trên khối lượng đồ, quãng đường, số tầng, thang máy và mức độ đóng gói. Chúng tôi báo giá rõ trước khi làm, bạn đồng ý rồi mới bắt đầu.'),
+      ('Giá chuyển nhà trọn gói được tính như thế nào?', 'Chuyển nhà chỉ từ 800K. Giá cuối cùng dựa trên khối lượng đồ, quãng đường, số tầng, thang máy và mức độ đóng gói. Chúng tôi báo giá rõ trước khi làm, bạn đồng ý rồi mới bắt đầu.'),
       ('SGE Viettrans có chuyển nhà đi tỉnh không?', 'Có. Ngoài các quận, huyện của TP. Hồ Chí Minh, chúng tôi nhận <a href="{p}chuyen-nha-lien-tinh.html">chuyển nhà liên tỉnh</a> từ TP. Hồ Chí Minh đi các tỉnh và ngược lại.'),
       ('Tôi có cần tự chuẩn bị thùng carton không?', 'Không bắt buộc. Với gói trọn gói, chúng tôi lo phần đóng gói. Nếu bạn muốn tự đóng một phần đồ cá nhân, hãy báo trước để chúng tôi tính đúng khối lượng công việc.'),
     ]),
 
 'chuyen-van-phong': dict(
     name='Chuyển văn phòng',
-    title='Chuyển văn phòng trọn gói TPHCM, nhanh gọn, đúng hẹn | SGE Viettrans',
+    title='Chuyển văn phòng trọn gói TPHCM, báo giá rõ | SGE Viettrans',
     desc='Dịch vụ chuyển văn phòng trọn gói tại TP.HCM: tháo lắp bàn ghế, đóng gói hồ sơ, thiết bị, vận chuyển và sắp xếp tại văn phòng mới. Gọi 0368 757 303.',
     h1='Chuyển văn phòng trọn gói tại TP. Hồ Chí Minh',
     lead='Văn phòng cần chuyển nhanh để công việc không bị gián đoạn. SGE Viettrans lên kế hoạch cùng bạn, tháo lắp, đóng gói hồ sơ, thiết bị và đặt mọi thứ vào đúng chỗ ở văn phòng mới.',
@@ -84,8 +84,8 @@ SERVICES = {
 
 'cho-thue-xe-tai': dict(
     name='Cho thuê xe tải',
-    title='Cho thuê xe tải, taxi tải chở hàng TPHCM giá tốt | SGE Viettrans',
-    desc='Cho thuê xe tải, taxi tải chở hàng, chuyển đồ tại TP.HCM: xe van, xe tải nhỏ, xe tải lớn có tài xế, thêm bốc xếp khi cần. Gọi 0368 757 303.',
+    title='Thuê xe tải TPHCM chỉ từ 300K, có tài xế | SGE Viettrans',
+    desc='Thuê xe tải TP.HCM chỉ từ 300K: xe van, xe tải nhỏ, xe tải lớn có tài xế, thêm bốc xếp khi cần. Nhắn Zalo 0368 757 303 để nhận báo giá.',
     h1='Cho thuê xe tải, taxi tải chở hàng tại TP. Hồ Chí Minh',
     lead='Cần chở ít đồ, chuyển phòng trọ hay chở hàng cho cửa hàng? Thuê xe tải thùng SGE theo đúng khối lượng hàng của bạn, có tài xế, có thể thêm người bốc xếp khi cần.',
     img=('assets/truck.jpg', 'Xe tải thùng SGE Viettrans màu trắng, xanh, đỏ cho thuê chở hàng', 760, 299),
@@ -110,9 +110,10 @@ SERVICES = {
       ('Lưu ý giờ cấm xe tải trong nội thành',
        '<p>TP. Hồ Chí Minh có quy định giờ cấm xe tải ở khu vực nội thành, khác nhau theo tải trọng xe. Khi bạn đặt xe, chúng tôi kiểm tra tuyến đường và xếp giờ chạy trong khung được phép để hàng không bị kẹt. Xem tóm tắt: <a href="{p}blog/gio-cam-xe-tai-tphcm.html">Giờ cấm xe tải TP.HCM</a>.</p>'),
       ('Giá thuê xe tải',
-       '<p>Giá thuê phụ thuộc vào loại xe, quãng đường và thời gian thuê. Giá xe chưa gồm nhân công bốc xếp nếu bạn không chọn thêm. Xem <a href="{p}bang-gia-xe-tai.html">bảng giá xe tải</a> hoặc gọi để được báo giá ngay.</p>'),
+       '<p>Thuê xe tải chỉ từ 300K là mức khởi điểm. Giá cụ thể phụ thuộc vào loại xe, quãng đường và thời gian thuê. Giá xe chưa gồm nhân công bốc xếp nếu bạn không chọn thêm. Xem <a href="{p}bang-gia-xe-tai.html">bảng giá xe tải</a> hoặc gọi để được báo giá ngay.</p>'),
     ],
     faq=[
+      ('Thuê xe tải giá bao nhiêu?', 'Thuê xe tải chỉ từ 300K, có tài xế. Giá cuối cùng phụ thuộc loại xe, quãng đường và thời gian thuê. Nhắn Zalo 0368 757 303 để nhận báo giá.'),
       ('Thuê xe tải có kèm tài xế không?', 'Có, xe cho thuê có tài xế của SGE Viettrans. Bạn không cần tự lái.'),
       ('Có thể thuê thêm người bốc xếp không?', 'Có. Bạn có thể thuê xe kèm <a href="{p}boc-xep.html">nhân công bốc xếp</a>, nhất là khi có đồ nặng như tủ lạnh, máy giặt.'),
       ('Tôi nên thuê xe loại nào?', 'Xe van hợp với ít đồ và phòng trọ; xe tải nhỏ cho căn hộ, nhà nhỏ; xe tải lớn cho nhà phố, văn phòng. Hãy mô tả đồ của bạn để được tư vấn chính xác.'),
@@ -122,7 +123,7 @@ SERVICES = {
 
 'boc-xep': dict(
     name='Bốc xếp',
-    title='Dịch vụ bốc xếp hàng hóa, nhân công bốc vác TPHCM | SGE Viettrans',
+    title='Dịch vụ bốc xếp TPHCM, thuê nhân công | SGE Viettrans',
     desc='Dịch vụ bốc xếp hàng hóa, đồ gia dụng, đồ nặng tại TP.HCM: nhân viên đồng phục, có đồ bảo hộ, làm cẩn thận. Báo giá theo khối lượng, gọi 0368 757 303.',
     h1='Dịch vụ bốc xếp hàng hóa tại TP. Hồ Chí Minh',
     lead='Đồ nặng, nhà nhiều tầng, hàng hóa cần lên xuống xe nhanh: nhân công bốc xếp SGE Viettrans mặc đồng phục, có găng tay bảo hộ và làm việc cẩn thận với từng món đồ.',
@@ -157,7 +158,7 @@ SERVICES = {
 
 'kho-bai-luu-tru': dict(
     name='Kho bãi lưu trữ',
-    title='Cho thuê kho bãi lưu trữ hàng hóa, đồ đạc TPHCM | SGE Viettrans',
+    title='Cho thuê kho chứa đồ TPHCM, kho bãi lưu trữ | SGE Viettrans',
     desc='Dịch vụ kho bãi lưu trữ hàng hóa, đồ đạc ngắn hạn và dài hạn tại TP.HCM, kết hợp vận chuyển và bốc xếp. Liên hệ 0368 757 303 để biết diện tích phù hợp.',
     h1='Kho bãi lưu trữ hàng hóa, đồ đạc tại TP. Hồ Chí Minh',
     lead='Chưa kịp dọn vào nhà mới, cần chỗ để hàng tồn hay muốn giải phóng không gian? Gửi hàng hóa, đồ đạc vào kho SGE Viettrans, ngắn hạn hoặc dài hạn, có xe chở đến tận nơi.',
@@ -190,8 +191,8 @@ SERVICES = {
 
 'chuyen-nha-lien-tinh': dict(
     name='Chuyển nhà liên tỉnh',
-    title='Chuyển nhà liên tỉnh, Bắc Nam từ TPHCM trọn gói | SGE Viettrans',
-    desc='Dịch vụ chuyển nhà liên tỉnh từ TP.HCM đi Hà Nội, Đà Nẵng, Nha Trang, Đà Lạt, Cần Thơ và các tỉnh: đóng gói kỹ, xe tải thùng, báo giá trọn chuyến. Gọi 0368 757 303.',
+    title='Chuyển nhà liên tỉnh Bắc Nam từ TPHCM | SGE Viettrans',
+    desc='Chuyển nhà liên tỉnh từ TP.HCM đi Hà Nội, Đà Nẵng, Nha Trang, Đà Lạt, Cần Thơ: đóng gói kỹ, xe tải thùng, báo giá trọn chuyến. Gọi 0368 757 303.',
     h1='Chuyển nhà liên tỉnh, Bắc Nam từ TP. Hồ Chí Minh',
     lead='Chuyển nhà đi tỉnh, về quê hay ra Bắc: SGE Viettrans đóng gói kỹ cho chặng đường dài, chở bằng xe tải thùng, báo giá trọn chuyến trước khi đi để bạn chủ động.',
     img=('assets/truck.jpg', 'Xe tải thùng SGE Viettrans chuyển nhà liên tỉnh', 760, 299),
@@ -225,8 +226,8 @@ SERVICES = {
 
 'chuyen-kho-xuong': dict(
     name='Chuyển kho xưởng',
-    title='Chuyển kho xưởng trọn gói TPHCM, Bình Dương, Đồng Nai | SGE Viettrans',
-    desc='Dịch vụ chuyển kho xưởng trọn gói tại TP.HCM, Bình Dương, Đồng Nai: lập kế hoạch, tháo dỡ kệ, bốc xếp hàng hóa, máy móc, vận chuyển và sắp xếp lại. Gọi 0368 757 303.',
+    title='Chuyển kho xưởng trọn gói TPHCM, Bình Dương | SGE Viettrans',
+    desc='Chuyển kho xưởng trọn gói tại TP.HCM, Bình Dương, Đồng Nai: lập kế hoạch, tháo dỡ kệ, bốc xếp, vận chuyển, sắp xếp lại. Gọi 0368 757 303.',
     h1='Chuyển kho xưởng trọn gói tại TP. Hồ Chí Minh và khu vực lân cận',
     lead='Chuyển kho, chuyển xưởng sao cho hàng hóa không thất lạc và sản xuất dừng ít nhất. SGE Viettrans lập kế hoạch cùng bạn, bốc xếp, vận chuyển và sắp xếp lại theo sơ đồ mới.',
     img=('assets/hero.jpg', 'Đội xe tải SGE Viettrans phục vụ chuyển kho xưởng', 2000, 1125),
