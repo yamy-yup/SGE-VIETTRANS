@@ -166,11 +166,12 @@ def faq_ld(qa):
         {"@type": "Question", "name": strip(q), "acceptedAnswer": {"@type": "Answer", "text": strip(a)}} for q, a in qa]}
 
 
-def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', og_type='website', priority='0.6'):
+def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', og_type='website', priority='0.6', index=True):
     depth = path.count('/')
     p = rel(depth)
     url = BASE + ('' if path == 'index.html' else path)
     graph = [ORG] + (ld or [])
+    ROBOTS = 'index, follow, max-image-preview:large' if index else 'noindex, follow'
     ldjson = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=1)
     doc = f'''<!DOCTYPE html>
 <html lang="vi">
@@ -180,7 +181,7 @@ def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', o
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="{ROBOTS}">
 <meta name="theme-color" content="#184e94">
 <meta name="color-scheme" content="only light">
 <meta property="og:type" content="{og_type}">
@@ -214,7 +215,8 @@ def page(path, title, desc, body, cur='', ld=None, og_image='assets/hero.jpg', o
 '''
     os.makedirs(os.path.dirname(ROOT + path) or ROOT, exist_ok=True)
     open(ROOT + path, 'w', encoding='utf8').write(doc)
-    PAGES.append((path, priority))
+    if index:
+        PAGES.append((path, priority))
     return doc
 
 
