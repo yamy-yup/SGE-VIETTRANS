@@ -83,6 +83,8 @@ p{margin:0;max-width:65ch;text-wrap:pretty}
 .hero h1{font-size:clamp(2.75rem,.5rem + 6.9vw,6rem);font-weight:800;line-height:1.05;letter-spacing:-.005em;color:#1b4a91;text-shadow:0 2px 24px rgba(255,255,255,.75)}
 .hero .sub{margin-top:clamp(.4rem,1.2svh,1rem);font:700 clamp(.9375rem,.55rem + 1.35vw,1.75rem)/1.25 var(--display);letter-spacing:.045em;text-transform:uppercase;color:var(--navy);text-shadow:0 1px 14px rgba(255,255,255,.8)}
 .hero .act{margin-top:clamp(1rem,2.6svh,1.9rem);display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.hero .price{margin-top:clamp(.6rem,1.6svh,1.2rem);display:flex;flex-wrap:wrap;gap:.5rem .6rem;justify-content:center;list-style:none;padding:0}
+.hero .price li{padding:.45em .95em;border-radius:999px;background:rgba(255,255,255,.92);color:var(--navy);font:700 clamp(.875rem,.6rem + .9vw,1.125rem)/1.2 var(--display);box-shadow:0 2px 12px rgba(27,74,145,.18)}
 
 /* Giới thiệu */
 .intro{padding-block:var(--sec) clamp(2.5rem,2rem + 2vw,4rem)}
@@ -210,6 +212,7 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
 .js .hero-in>*{animation:rise 1s var(--ease) both}
 .js .hero h1{animation-delay:.1s}
 .js .hero .sub{animation-delay:.25s}
+.js .hero .price{animation-delay:.32s}
 .js .hero .act{animation-delay:.4s}
 
 /* Máy tính bảng */
@@ -361,6 +364,8 @@ footer .f-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7
 .post .btn{margin-top:1.5rem}
 @media (max-width:1000px){.blog .grid{grid-template-columns:minmax(0,1fr)}.toc{position:static}}
 @media (max-width:760px){.tbl table{min-width:26rem}}
+.tbl.t2 table{min-width:0}
+.tbl.t2 td:last-child{white-space:normal;width:6.5rem}
 
 /* ===== Chuyển động mượt ===== */
 @view-transition{navigation:auto}

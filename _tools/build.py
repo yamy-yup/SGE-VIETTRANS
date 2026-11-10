@@ -154,9 +154,7 @@ def build_areas():
   <div class="side-box"><h2>Bài viết hữu ích</h2>{related_posts(p, [sv], 2)}</div>
   </div>
 </div></section>'''
-            title = f'{name} {a} – Báo giá nhanh 24/7 | SGE Viettrans'
-            if len(title) > 65:
-                title = f'{name} {a} | SGE Viettrans'
+            title = f'{name} {a} | SGE Viettrans'
             dsc = f'{name} tại {a}{region}: nhân viên đồng phục, xe tải thùng SGE, báo giá rõ trước khi làm. Tư vấn 24/7, gọi {PHONE_TXT}.'
             ld = [breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ"), (sv + ".html", name), (f"{sv}/{s}.html", a)]),
                   {"@type": "Service", "name": f"{name} {a}", "serviceType": name, "provider": {"@id": BASE + "#org"},
@@ -227,6 +225,10 @@ PRD = {
  'bang-gia-xe-tai': dict(lead='Bảng giá thuê xe tải chở hàng, chuyển đồ tại TP. Hồ Chí Minh: xe van, xe tải nhỏ, xe tải lớn mang thương hiệu SGE, có tài xế.',
    items=['Xe van', 'Xe tải nhỏ', 'Xe tải lớn'], basis='Quãng đường và thời gian thuê', svc='cho-thue-xe-tai',
    note='Giá thuê xe chưa gồm nhân công bốc xếp nếu bạn không chọn thêm dịch vụ này.',
+   title='Bảng giá thuê xe tải TPHCM, chỉ từ 300K | SGE Viettrans',
+   desc='Thuê xe tải chỉ từ 300K, có tài xế. Bảng giá xe van, xe tải nhỏ, xe tải lớn tại TP.HCM, giá cụ thể tùy quãng đường. Gọi 0368 757 303 nhận báo giá.',
+   pre='<p><b>Thuê xe tải chỉ từ 300K.</b> Đây là mức khởi điểm, giá cụ thể tùy loại xe, quãng đường và thời gian thuê.</p>',
+   why='Thuê xe tải chỉ từ 300K là mức khởi điểm. Mỗi chuyến có loại xe, quãng đường và thời gian khác nhau, nên chúng tôi báo giá cụ thể sau khi nghe bạn mô tả, thay vì một con số chung dễ phát sinh.',
    factors=['Loại xe và tải trọng.', 'Quãng đường: trong quận, liên quận hay đi tỉnh.', 'Thời gian thuê và thời gian chờ.', 'Khung giờ chạy, nhất là khi xe lớn phải chạy đêm trong nội thành.'],
    faq=[('Giá thuê xe có gồm tài xế không?', 'Có, xe cho thuê có tài xế của SGE Viettrans.'), ('Có phát sinh phí khi chờ bốc hàng lâu không?', 'Thời gian chờ được tính vào báo giá. Hãy mô tả đầy đủ công việc để chúng tôi báo giá trọn chuyến, tránh phát sinh.')]),
  'bang-gia-boc-xep': dict(lead='Bảng giá nhân công bốc xếp đồ gia dụng, đồ văn phòng, hàng hóa và đồ nặng tại TP. Hồ Chí Minh.',
@@ -247,13 +249,14 @@ def build_prices():
         d = PRD[s]; p = ''
         name_svc = dict(SV)[d['svc']]
         tr = ''.join(f'<tr><td>{x}</td><td>{d["basis"]}</td><td>Liên hệ</td></tr>' for x in d['items'])
-        faq = [(q, a.replace('{p}', p)) for q, a in d['faq']] + [('Vì sao bảng giá ghi "Liên hệ"?', 'Mỗi công việc có khối lượng và điều kiện khác nhau, nên chúng tôi báo giá cụ thể sau khi nghe bạn mô tả, thay vì một con số chung dễ phát sinh.')]
+        faq = [(q, a.replace('{p}', p)) for q, a in d['faq']] + [('Vì sao bảng giá ghi "Liên hệ"?', d.get('why', 'Mỗi công việc có khối lượng và điều kiện khác nhau, nên chúng tôi báo giá cụ thể sau khi nghe bạn mô tả, thay vì một con số chung dễ phát sinh.'))]
         body = f'''<section class="page-head"><div class="wrap">{crumb_html([("index.html", "Trang chủ"), ("bang-gia.html", "Bảng giá"), (s + ".html", n)], p)}
 <h1>{n} SGE Viettrans</h1><p class="lead">{d["lead"]} Báo giá rõ trước khi làm.</p></div></section>
 <section class="detail"><div class="wrap grid">
   <article class="prose">
     <section><h2>{n}</h2>
     <!-- TODO: điền giá thật vào cột "Giá" (thay chữ "Liên hệ") khi chủ công ty chốt bảng giá. Không tự bịa giá. -->
+    {d.get("pre", "")}
     <div class="tbl"><table><thead><tr><th scope="col">Hạng mục</th><th scope="col">Tính giá theo</th><th scope="col">Giá</th></tr></thead><tbody>{tr}</tbody></table></div>
     <p class="pg-note">{d["note"]}</p></section>
     <section><h2>Giá được tính dựa trên những gì</h2><ul>{"".join(f"<li>{x}</li>" for x in d["factors"])}</ul>
@@ -265,7 +268,42 @@ def build_prices():
   </div>
 </div></section>'''
         ld = [breadcrumb_ld([("", "Trang chủ"), ("bang-gia.html", "Bảng giá"), (s + ".html", n)]), faq_ld(faq)]
-        page(s + '.html', f'{n} TPHCM | SGE Viettrans', f'{d["lead"]} Gọi {PHONE_TXT} để được báo giá.', body, cur=s, ld=ld, priority='0.7')
+        page(s + '.html', d.get('title', f'{n} TPHCM | SGE Viettrans'), d.get('desc', f'{d["lead"]} Gọi {PHONE_TXT} để được báo giá.'), body, cur=s, ld=ld, priority='0.7')
+
+
+# ---- Trang tổng quan dịch vụ: bảng chọn dịch vụ, yếu tố chi phí, quy trình, FAQ ----
+DV_TITLE = 'Dịch vụ vận tải TPHCM giá rẻ | SGE Viettrans'
+DV_DESC = 'SGE Viettrans nhận chuyển nhà chỉ từ 800K, thuê xe tải chỉ từ 300K, chuyển văn phòng, bốc xếp, kho bãi tại TP.HCM. Nhắn Zalo 0368 757 303 nhận báo giá.'
+DV_FAQ = [
+    ('Chuyển nhà và thuê xe tải giá bao nhiêu?', 'Chuyển nhà chỉ từ 800K, thuê xe tải chỉ từ 300K. Giá cuối cùng tùy khối lượng đồ, quãng đường, số tầng, thang máy và loại xe. Nhắn Zalo 0368 757 303 hoặc lập phiếu báo giá để nhận báo giá.'),
+    ('SGE Viettrans có những dịch vụ nào?', 'Chuyển nhà trọn gói, chuyển văn phòng, chuyển nhà liên tỉnh, chuyển kho xưởng, cho thuê xe tải, bốc xếp và kho bãi lưu trữ, tại TP. Hồ Chí Minh, Bình Dương, Long An và Biên Hòa.'),
+    ('Nên chọn dịch vụ nào khi chỉ có ít đồ?', 'Nếu tự đóng gói được, thuê xe tải (xe van hợp với ít đồ và phòng trọ). Nếu muốn SGE lo từ đóng gói đến sắp xếp, chọn chuyển nhà trọn gói. Mô tả đồ của bạn qua Zalo để được tư vấn.'),
+]
+_DV_ROWS = [('Dọn nhà, căn hộ, phòng trọ', 'chuyen-nha-tron-goi', 'Chuyển nhà trọn gói', 'Chỉ từ 800K'),
+            ('Tự đóng gói, cần xe và tài xế', 'cho-thue-xe-tai', 'Cho thuê xe tải', 'Chỉ từ 300K'),
+            ('Dọn cả văn phòng, ít gián đoạn công việc', 'chuyen-van-phong', 'Chuyển văn phòng', 'Nhận báo giá'),
+            ('Chuyển nhà đi tỉnh, về quê', 'chuyen-nha-lien-tinh', 'Chuyển nhà liên tỉnh', 'Nhận báo giá'),
+            ('Chuyển kho, chuyển xưởng', 'chuyen-kho-xuong', 'Chuyển kho xưởng', 'Nhận báo giá'),
+            ('Cần người khiêng, tháo lắp', 'boc-xep', 'Bốc xếp', 'Nhận báo giá'),
+            ('Cần chỗ gửi đồ, hàng', 'kho-bai-luu-tru', 'Kho bãi lưu trữ', 'Nhận báo giá')]
+_dv_tr = ''.join(f'<tr><td><a href="{s}.html">{n}</a><small>{a}</small></td><td>{g}</td></tr>' for a, s, n, g in _DV_ROWS)
+DV_EXTRA = f'''<section class="detail"><div class="wrap grid">
+  <article class="prose">
+    <section><h2>Chọn dịch vụ theo nhu cầu</h2>
+    <p>SGE Viettrans nhận chuyển nhà chỉ từ 800K và cho thuê xe tải chỉ từ 300K. Các dịch vụ còn lại báo giá theo khối lượng và yêu cầu thực tế.</p>
+    <div class="tbl t2"><table><thead><tr><th scope="col">Dịch vụ, bạn cần gì</th><th scope="col">Giá</th></tr></thead><tbody>{_dv_tr}</tbody></table></div></section>
+    <section><h2>Giá dịch vụ vận tải phụ thuộc vào những gì?</h2>
+    <p>Chuyển nhà chỉ từ 800K và thuê xe tải chỉ từ 300K là mức khởi điểm. Giá cuối cùng thay đổi theo:</p>
+    <ul><li>Khối lượng đồ và số món cần tháo lắp.</li><li>Quãng đường giữa điểm đi và điểm đến.</li><li>Số tầng, có thang máy hay không.</li><li>Loại xe và tải trọng, nếu thuê xe tải.</li></ul>
+    <p>Chuyển văn phòng, bốc xếp và kho bãi mỗi việc một khác nên không có mức chung. Xem <a href="bang-gia.html">bảng giá</a> hoặc gọi {PHONE_TXT} để được báo giá.</p></section>
+    <section><h2>Quy trình làm việc với SGE Viettrans</h2>
+    <ol><li>Gọi hotline hoặc điền phiếu báo giá.</li><li>SGE khảo sát khối lượng đồ, quãng đường, tầng và thang máy, rồi báo giá trước khi làm.</li><li>Đội ngũ đồng phục đến đúng hẹn, tháo lắp, đóng gói, bốc xếp và vận chuyển.</li><li>Sắp xếp đồ tại nơi mới và kiểm tra cùng bạn trước khi kết thúc.</li></ol></section>
+    <section><h2>Câu hỏi thường gặp</h2>{faq_html(DV_FAQ)}</section>
+  </article>
+  <div class="side">
+  {aside_cta("", "Nhận báo giá", "Chuyển nhà trọn gói")}
+  </div>
+</div></section>'''
 
 
 def build_lists():
@@ -273,16 +311,16 @@ def build_lists():
 <div><h2><a href="{s}.html">{n}</a></h2><p>{SERVICES[s]["lead"]}</p><a class="go" href="{s}.html">Xem chi tiết {lower1(n)}</a></div></li>''' for s, n in SV)
     body = f'''<section class="page-head"><div class="wrap">{crumb_html([("index.html", "Trang chủ"), ("dich-vu.html", "Dịch vụ")], "")}
 <h1>Dịch vụ vận chuyển của SGE Viettrans</h1><p class="lead">Chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp và kho bãi lưu trữ tại TP. Hồ Chí Minh, Bình Dương, Long An, Biên Hòa. Báo giá rõ trước khi làm, tư vấn 24/7.</p></div></section>
-<section class="list-page"><div class="wrap"><ul class="svc-cards">{rows}</ul></div></section>'''
-    page('dich-vu.html', 'Dịch vụ chuyển nhà, chuyển văn phòng, thuê xe tải TPHCM | SGE Viettrans',
-         'Các dịch vụ của SGE Viettrans: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ tại TP.HCM và khu vực lân cận.',
-         body, cur='dich-vu', ld=[breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ")])], priority='0.9')
+<section class="list-page"><div class="wrap"><ul class="svc-cards">{rows}</ul></div></section>
+{DV_EXTRA}'''
+    page('dich-vu.html', DV_TITLE, DV_DESC,
+         body, cur='dich-vu', ld=[breadcrumb_ld([("", "Trang chủ"), ("dich-vu.html", "Dịch vụ")]), faq_ld(DV_FAQ)], priority='0.9')
     rows = ''.join(f'<li><h2><a href="{s}.html">{n}</a></h2><p>{PRD[s]["lead"]}</p><a class="go" href="{s}.html">Xem bảng giá</a></li>' for s, n in PR)
     body = f'''<section class="page-head"><div class="wrap">{crumb_html([("index.html", "Trang chủ"), ("bang-gia.html", "Bảng giá")], "")}
-<h1>Bảng giá dịch vụ SGE Viettrans</h1><p class="lead">Giá phụ thuộc khối lượng, quãng đường, tầng và thang máy, nên chúng tôi báo giá cụ thể sau khi nghe bạn mô tả. Báo giá rõ trước khi làm, không phát sinh mập mờ.</p></div></section>
+<h1>Bảng giá dịch vụ SGE Viettrans</h1><p class="lead">Chuyển nhà chỉ từ 800K, thuê xe tải chỉ từ 300K. Giá cuối cùng phụ thuộc khối lượng, quãng đường, tầng và thang máy, nên chúng tôi báo giá cụ thể sau khi nghe bạn mô tả. Báo giá rõ trước khi làm, không phát sinh mập mờ.</p></div></section>
 <section class="list-page"><div class="wrap"><ul class="rows">{rows}</ul></div></section>'''
-    page('bang-gia.html', 'Bảng giá chuyển nhà, thuê xe tải, bốc xếp TPHCM | SGE Viettrans',
-         'Bảng giá xe tải, nhân công bốc xếp và tháo lắp nội thất của SGE Viettrans tại TP.HCM. Báo giá rõ trước khi làm, gọi 0368 757 303.',
+    page('bang-gia.html', 'Bảng giá chuyển nhà, thuê xe tải TPHCM | SGE Viettrans',
+         'Bảng giá SGE Viettrans: chuyển nhà chỉ từ 800K, thuê xe tải chỉ từ 300K, cùng bốc xếp và tháo lắp nội thất tại TP.HCM. Gọi 0368 757 303 nhận báo giá.',
          body, cur='bang-gia', ld=[breadcrumb_ld([("", "Trang chủ"), ("bang-gia.html", "Bảng giá")])], priority='0.8')
 
 
@@ -302,7 +340,7 @@ document.querySelectorAll('#cards .card').forEach(function(li){{li.hidden=!!c&&l
     ld = [breadcrumb_ld([("", "Trang chủ"), ("blog.html", "Blog")]),
           {"@type": "Blog", "name": "Blog SGE Viettrans", "url": BASE + "blog.html",
            "blogPost": [{"@type": "BlogPosting", "headline": q['h1'], "url": f"{BASE}blog/{q['slug']}.html"} for q in POSTS]}]
-    page('blog.html', 'Blog kinh nghiệm chuyển nhà, chuyển văn phòng | SGE Viettrans',
+    page('blog.html', 'Blog kinh nghiệm chuyển nhà, văn phòng | SGE Viettrans',
          'Kinh nghiệm chuyển nhà, đóng gói đồ dễ vỡ, chọn xe tải, giờ cấm xe tải TP.HCM, chuyển văn phòng và thuê kho từ SGE Viettrans.',
          body, cur='blog', ld=ld, og_image='assets/blog/cover-chuan-bi-truoc-ngay-chuyen-nha.jpg', priority='0.8')
     for q in POSTS:
@@ -328,7 +366,7 @@ document.querySelectorAll('#cards .card').forEach(function(li){{li.hidden=!!c&&l
               {"@type": "BlogPosting", "headline": q['h1'], "description": q['desc'], "datePublished": q['date'], "dateModified": q['date'],
                "image": f"{BASE}assets/blog/cover-{q['slug']}.jpg", "author": {"@type": "Organization", "name": "SGE Viettrans", "url": BASE},
                "publisher": {"@id": BASE + "#org"}, "mainEntityOfPage": f"{BASE}blog/{q['slug']}.html", "inLanguage": "vi"}]
-        page(f'blog/{q["slug"]}.html', q['title'] + ' | SGE Viettrans' if len(q['title']) < 52 else q['title'], q['desc'], body,
+        page(f'blog/{q["slug"]}.html', q['title'] + ' | SGE Viettrans' if len(q['title']) <= 44 else q['title'], q['desc'], body,
              cur='blog', ld=ld, og_image=f'assets/blog/cover-{q["slug"]}.jpg', og_type='article', priority='0.7')
 
 

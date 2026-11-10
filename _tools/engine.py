@@ -230,6 +230,36 @@ def aside_cta(p, heading, svc_name, extra=''):
   </aside>'''
 
 
+LLMS_TXT = f'''# SGE Viettrans (Sài Gòn Express)
+
+> Công ty vận tải tại TP. Hồ Chí Minh: chuyển nhà trọn gói, chuyển văn phòng, cho thuê xe tải, bốc xếp, kho bãi lưu trữ. Chuyển nhà chỉ từ 800K, thuê xe tải chỉ từ 300K.
+
+- Công ty: CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VẬN TẢI SGE VIETTRANS
+- Địa chỉ: Số 1B, Đường 30, Khu phố 21, Phường An Khánh, TP. Hồ Chí Minh
+- Điện thoại và Zalo: {PHONE_TXT}
+- Email: {EMAIL}
+- Khu vực phục vụ: TP. Hồ Chí Minh, Bình Dương, Long An, Biên Hòa; chuyển nhà liên tỉnh đi các tỉnh
+
+## Dịch vụ
+- [Chuyển nhà trọn gói]({BASE}chuyen-nha-tron-goi.html): tháo lắp, đóng gói, bốc xếp, vận chuyển, sắp xếp lại đồ đạc. Chuyển nhà chỉ từ 800K.
+- [Cho thuê xe tải]({BASE}cho-thue-xe-tai.html): xe van, xe tải nhỏ, xe tải lớn có tài xế. Thuê xe tải chỉ từ 300K.
+- [Chuyển văn phòng]({BASE}chuyen-van-phong.html): tháo lắp, đóng gói hồ sơ, thiết bị, vận chuyển, sắp xếp tại văn phòng mới.
+- [Chuyển nhà liên tỉnh]({BASE}chuyen-nha-lien-tinh.html): chuyển nhà từ TP.HCM đi các tỉnh bằng xe tải thùng.
+- [Chuyển kho xưởng]({BASE}chuyen-kho-xuong.html): lập kế hoạch, tháo dỡ kệ, bốc xếp, vận chuyển, sắp xếp lại.
+- [Bốc xếp]({BASE}boc-xep.html): nhân công bốc xếp đồ gia dụng, đồ văn phòng, hàng nặng.
+- [Kho bãi lưu trữ]({BASE}kho-bai-luu-tru.html): gửi hàng hóa, đồ đạc ngắn hạn và dài hạn.
+
+## Giá
+- Chuyển nhà chỉ từ 800K. Thuê xe tải chỉ từ 300K. Đây là mức khởi điểm; giá cuối cùng phụ thuộc khối lượng đồ, quãng đường, số tầng, thang máy và loại xe.
+- Chuyển văn phòng, bốc xếp, kho bãi: báo giá theo yêu cầu.
+- [Bảng giá]({BASE}bang-gia.html)
+
+## Tài liệu
+- [Dịch vụ]({BASE}dich-vu.html)
+- [Blog kinh nghiệm chuyển nhà]({BASE}blog.html)
+'''
+
+
 def write_sitemap(today):
     urls = ''.join(
         f'<url><loc>{BASE}{"" if p == "index.html" else p}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>\n'
@@ -237,6 +267,7 @@ def write_sitemap(today):
     open(ROOT + 'sitemap.xml', 'w', encoding='utf8').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
     open(ROOT + 'robots.txt', 'w', encoding='utf8').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
+    open(ROOT + 'llms.txt', 'w', encoding='utf8').write(LLMS_TXT)
 
 
 try:
