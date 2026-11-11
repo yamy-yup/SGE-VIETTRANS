@@ -530,3 +530,19 @@ img{background-color:transparent}
 .fig-wide img{aspect-ratio:16/8;object-fit:cover;object-position:50% 70%}
 @media (max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.cards{grid-template-columns:minmax(0,1fr)}.svc-cards li{grid-template-columns:minmax(0,1fr)}.toc-box ol{columns:1}.rel a{grid-template-columns:5.5rem 1fr}}
+
+/* Menu dịch vụ 5 nhóm */
+.dd-menu.mega ul{list-style:none;margin:0;padding:0}
+.dd-menu.mega .dd-g{margin:0}
+.nav .dd-menu.mega a.dd-h:not(.btn){font:800 .75rem/1.3 var(--display);letter-spacing:.07em;text-transform:uppercase;color:var(--navy);padding:.6rem .9rem .35rem}
+.nav .dd-menu.mega a[aria-current="page"]:not(.btn){color:var(--blue)}
+@media (min-width:901px){
+  .dd-menu.mega{min-width:40rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.25rem .5rem;padding:.9rem}
+  .nav .dd-menu.mega a:not(.btn){padding:.5rem .9rem}
+  .nav .dd-menu.mega a.dd-h:not(.btn){padding:.4rem .9rem .5rem;border-bottom:2px solid var(--blue);border-radius:0;margin-bottom:.25rem}
+  .nav .dd-menu.mega ul a:not(.btn){font-size:.9rem}
+}
+@media (max-width:900px){
+  .nav .dd-menu.mega a.dd-h:not(.btn){background:#fff;padding:.9rem 1rem .5rem;border-bottom:0}
+  .nav .dd-menu.mega ul a:not(.btn){padding:.75rem 1rem .75rem 1.75rem;border-bottom:1px solid var(--line)}
+}
