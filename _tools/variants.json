@@ -803,5 +803,62 @@
    ]
   ],
   "jpg": "assets/blog/quy-trinh-chuyen-kho-xuong.jpg"
+ },
+ "assets/thao-may-lanh.jpg": {
+  "w": 1200,
+  "h": 900,
+  "ratio": [
+   3000,
+   2250
+  ],
+  "webp": [
+   [
+    600,
+    "assets/thao-may-lanh-600.webp"
+   ],
+   [
+    1200,
+    "assets/thao-may-lanh-1200.webp"
+   ]
+  ],
+  "jpg": "assets/thao-may-lanh.jpg"
+ },
+ "assets/dan-nong-may-lanh.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "ratio": [
+   2252,
+   2252
+  ],
+  "webp": [
+   [
+    600,
+    "assets/dan-nong-may-lanh-600.webp"
+   ],
+   [
+    1200,
+    "assets/dan-nong-may-lanh-1200.webp"
+   ]
+  ],
+  "jpg": "assets/dan-nong-may-lanh.jpg"
+ },
+ "assets/dong-goi-ghe-van-phong.jpg": {
+  "w": 1200,
+  "h": 1040,
+  "ratio": [
+   3000,
+   2600
+  ],
+  "webp": [
+   [
+    600,
+    "assets/dong-goi-ghe-van-phong-600.webp"
+   ],
+   [
+    1200,
+    "assets/dong-goi-ghe-van-phong-1200.webp"
+   ]
+  ],
+  "jpg": "assets/dong-goi-ghe-van-phong.jpg"
  }
 }
