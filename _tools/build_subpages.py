@@ -229,8 +229,8 @@ PAGES.append(dict(
 
 PAGES.append(dict(
     slug='boc-xep-container',
-    title='Bốc xếp container TPHCM, rút cont từ 400K | SGE Viettrans',
-    meta='Bốc xếp, rút hàng container 20 feet, 40 feet TPHCM bằng xe nâng: cont 20ft từ 400K, 40ft từ 700K. Giá tham khảo, báo giá chính xác gọi 0368 757 303.',
+    title='Bốc xếp container TPHCM, rút cont khoảng 600K | SGE',
+    meta='Bốc xếp, rút hàng container 20 feet, 40 feet TPHCM bằng xe nâng: cont 20ft khoảng 600K, 40ft khoảng 1,1 triệu. Giá tham khảo, gọi 0368 757 303 báo giá.',
     h1='Bốc xếp, rút hàng container tại TP. Hồ Chí Minh',
     lead='Container về kho, cần rút hàng gấp: SGE Viettrans bốc xếp và rút hàng container 20 feet, 40 feet bằng xe nâng, tính giá rõ theo container và trọng lượng.',
     img=None,
@@ -238,17 +238,17 @@ PAGES.append(dict(
     secs=[
         ('Dịch vụ bốc xếp container gồm những gì', ul(['Rút hàng từ container 20 feet, 40 feet ra kho, ra xe.', 'Bốc hàng lên container, xếp gọn tận dụng thùng.', 'Dùng xe nâng cho hàng đóng pallet, kiện nặng.', 'Phối hợp với xe tải để chở hàng về kho hoặc đến nơi nhận.'])
          + '<p>Việc đóng hàng vào container và các yêu cầu đặc thù được báo giá sau khi khảo sát.</p>'),
-        ('Bảng giá rút container bằng xe nâng', table(['Hạng mục', 'Tính giá theo', 'Chỉ từ'], [[esc(a), esc(b), esc(c)] for a, b, c in [
-            ('Rút container 20 feet bằng xe nâng', 'Mỗi container', '400K'), ('Rút container 40 feet bằng xe nâng', 'Mỗi container', '700K')]], 'tbl t2')),
+        ('Bảng giá rút container bằng xe nâng', table(['Hạng mục', 'Tính giá theo', 'Giá tham khảo'], [[esc(a), esc(b), esc(c)] for a, b, c in [
+            ('Rút container 20 feet bằng xe nâng', 'Mỗi container', 'Khoảng 600K'), ('Rút container 40 feet bằng xe nâng', 'Mỗi container', 'Khoảng 1,1 triệu')]], 'tbl t2')),
         ('Bảng giá bốc xếp theo container', '<p>Giá bốc lên hoặc xuống hàng cho mỗi container.</p>'
-         + table(['Loại container', 'Chỉ từ'], [[esc(a), esc(b)] for a, b in [('Container 20 feet nhẹ (dưới 10 tấn)', '690K'), ('Container 20 feet nặng (trên 10 tấn)', '1,195 triệu'),
-                                                                               ('Container 40 feet nhẹ (dưới 10 tấn)', '1,55 triệu'), ('Container 40 feet nặng (trên 10 tấn)', '2,195 triệu')]], 'tbl t2')
+         + table(['Loại container', 'Giá tham khảo'], [[esc(a), esc(b)] for a, b in [('Container 20 feet nhẹ (dưới 10 tấn)', 'Khoảng 1,25 triệu'), ('Container 20 feet nặng (trên 10 tấn)', 'Khoảng 1,75 triệu'),
+                                                                               ('Container 40 feet nhẹ (dưới 10 tấn)', 'Khoảng 2,15 triệu'), ('Container 40 feet nặng (trên 10 tấn)', 'Khoảng 2,75 triệu')]], 'tbl t2')
          + '<p class="pg-note">%s</p>' % esc(BX_NOTE)),
         ('Cần chuẩn bị gì trước khi rút container', ul(['Loại container (20 hay 40 feet) và trọng lượng hàng ước tính.', 'Loại hàng: rời, đóng thùng, đóng pallet, hàng nặng.', 'Địa điểm rút hàng: kho, bãi, nhà xưởng; xe nâng và xe container vào được không.', 'Giờ cần rút hàng, nhất là khi có hạn trả cont.'])
          + '<p>Cần chở hàng sau khi rút, xem <a href="cho-thue-xe-tai.html">cho thuê xe tải</a>.</p>'),
     ],
-    faqs=[('Rút container giá bao nhiêu?', 'Rút container 20 feet bằng xe nâng chỉ từ 400K, container 40 feet chỉ từ 700K mỗi container. Đây là giá tham khảo, gọi %s để báo giá chính xác theo loại hàng và địa điểm.' % TEL),
-          ('Bốc xếp container nặng tính giá thế nào?', 'Container 20 feet dưới 10 tấn chỉ từ 690K, trên 10 tấn chỉ từ 1,195 triệu. Container 40 feet dưới 10 tấn chỉ từ 1,55 triệu, trên 10 tấn chỉ từ 2,195 triệu. Giá tham khảo, báo giá chính xác khi gọi %s.' % TEL),
+    faqs=[('Rút container giá bao nhiêu?', 'Rút container 20 feet bằng xe nâng khoảng 600K, container 40 feet khoảng 1,1 triệu mỗi container. Đây là giá tham khảo, gọi %s để báo giá chính xác theo loại hàng và địa điểm.' % TEL),
+          ('Bốc xếp container nặng tính giá thế nào?', 'Container 20 feet dưới 10 tấn khoảng 1,25 triệu, trên 10 tấn khoảng 1,75 triệu. Container 40 feet dưới 10 tấn khoảng 2,15 triệu, trên 10 tấn khoảng 2,75 triệu. Giá tham khảo, báo giá chính xác khi gọi %s.' % TEL),
           ('Có nhận rút container ngoài giờ, cuối tuần không?', 'Có nhận, được báo giá riêng cho ngoài giờ và ngày lễ. Hãy báo trước giờ cần rút hàng khi gọi.'),
           ('Cần cung cấp thông tin gì để báo giá?', 'Loại container, trọng lượng hàng, loại hàng, địa điểm và giờ rút. Ảnh chụp hàng hoặc mặt bằng gửi qua Zalo %s giúp báo giá nhanh hơn.' % TEL)],
     aside_title='Nhận báo giá bốc xếp container', aside_more=('Xem bảng giá bốc xếp', 'bang-gia-boc-xep.html'),
