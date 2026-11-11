@@ -860,5 +860,119 @@
    ]
   ],
   "jpg": "assets/dong-goi-ghe-van-phong.jpg"
+ },
+ "assets/thao-giuong.jpg": {
+  "w": 1200,
+  "h": 1478,
+  "ratio": [
+   1536,
+   1892
+  ],
+  "webp": [
+   [
+    600,
+    "assets/thao-giuong-600.webp"
+   ],
+   [
+    1200,
+    "assets/thao-giuong-1200.webp"
+   ]
+  ],
+  "jpg": "assets/thao-giuong.jpg"
+ },
+ "assets/lap-kinh-thang-nhom.jpg": {
+  "w": 1200,
+  "h": 1634,
+  "ratio": [
+   1536,
+   2092
+  ],
+  "webp": [
+   [
+    600,
+    "assets/lap-kinh-thang-nhom-600.webp"
+   ],
+   [
+    1200,
+    "assets/lap-kinh-thang-nhom-1200.webp"
+   ]
+  ],
+  "jpg": "assets/lap-kinh-thang-nhom.jpg"
+ },
+ "assets/xe-tai-cho-may-giat.jpg": {
+  "w": 1200,
+  "h": 1484,
+  "ratio": [
+   1536,
+   1900
+  ],
+  "webp": [
+   [
+    600,
+    "assets/xe-tai-cho-may-giat-600.webp"
+   ],
+   [
+    1200,
+    "assets/xe-tai-cho-may-giat-1200.webp"
+   ]
+  ],
+  "jpg": "assets/xe-tai-cho-may-giat.jpg"
+ },
+ "assets/thang-may-chuyen-do.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "ratio": [
+   3000,
+   3000
+  ],
+  "webp": [
+   [
+    600,
+    "assets/thang-may-chuyen-do-600.webp"
+   ],
+   [
+    1200,
+    "assets/thang-may-chuyen-do-1200.webp"
+   ]
+  ],
+  "jpg": "assets/thang-may-chuyen-do.jpg"
+ },
+ "assets/dong-goi-trong-nha.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "ratio": [
+   3000,
+   3000
+  ],
+  "webp": [
+   [
+    600,
+    "assets/dong-goi-trong-nha-600.webp"
+   ],
+   [
+    1200,
+    "assets/dong-goi-trong-nha-1200.webp"
+   ]
+  ],
+  "jpg": "assets/dong-goi-trong-nha.jpg"
+ },
+ "assets/boc-xep-ong-nhua.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "ratio": [
+   2252,
+   2815
+  ],
+  "webp": [
+   [
+    600,
+    "assets/boc-xep-ong-nhua-600.webp"
+   ],
+   [
+    1200,
+    "assets/boc-xep-ong-nhua-1200.webp"
+   ]
+  ],
+  "jpg": "assets/boc-xep-ong-nhua.jpg"
  }
 }
