@@ -177,8 +177,8 @@ BX_OTHERS = [('Bốc xếp hàng xe tải', 'boc-xep-hang-xe-tai.html'), ('Bốc
 
 PAGES.append(dict(
     slug='boc-xep-hang-xe-tai',
-    title='Bốc xếp hàng xe tải TPHCM, xe 2 tấn từ 150K | SGE',
-    meta='Bốc xếp hàng lên xuống xe tải TPHCM: xe 2 tấn từ 150K, xe 5 tấn từ 295K, xe 10 tấn từ 590K. Giá tham khảo, báo giá chính xác gọi 0368 757 303.',
+    title='Bốc xếp hàng xe tải TPHCM, xe 2 tấn khoảng 250K | SGE',
+    meta='Bốc xếp hàng lên xuống xe tải TPHCM: xe 2 tấn khoảng 250K, xe 5 tấn khoảng 700K, xe 10 tấn khoảng 1,6 triệu. Giá tham khảo, gọi 0368 757 303.',
     h1='Bốc xếp hàng lên xuống xe tải tại TP. Hồ Chí Minh',
     lead='Hàng về kho, hàng ra xe, xe tải đến là có người bốc. Nhân công SGE Viettrans bốc xếp theo xe từ xe 2 tấn đến 20 tấn, giá niêm yết rõ theo từng cỡ xe.',
     img=('xe-tai-cho-may-giat', 'Nhân viên SGE Viettrans bốc xếp hàng và đồ gia dụng lên xe tải'),
@@ -187,13 +187,13 @@ PAGES.append(dict(
         ('Bốc xếp hàng xe tải gồm những gì', '<p>Dịch vụ dành cho chủ hàng, cửa hàng, kho và doanh nghiệp cần bốc hàng lên hoặc xuống xe nhanh gọn, tính giá theo xe nên dễ dự trù chi phí.</p>'
          + ul(['Bốc hàng từ kho, cửa hàng lên xe và ngược lại.', 'Bốc thủ công hoặc kết hợp xe nâng khi hàng nặng.', 'Xếp hàng gọn trên xe để hạn chế xô lệch khi di chuyển.', 'Phục vụ xe từ 2 tấn đến 20 tấn, đầu kéo rơ-moóc.'])),
         ('Bảng giá bốc xếp hàng theo xe tải', '<p>Giá bốc lên hoặc xuống hàng cho mỗi xe.</p>'
-         + table(['Loại xe', 'Chỉ từ'], [[esc(a), esc(b)] for a, b in [('Xe 2 tấn', '150K'), ('Xe 3,5 tấn', '190K'), ('Xe 5 tấn', '295K'), ('Xe 8 tấn', '495K'), ('Xe 10 tấn', '590K'), ('Xe 15 tấn', '995K'), ('Xe 20 tấn', '1,495 triệu'), ('Đầu kéo rơ-moóc thùng 12 m', '1,49 triệu')]], 'tbl t2')
+         + table(['Loại xe', 'Giá tham khảo'], [[esc(a), esc(b)] for a, b in [('Xe 2 tấn', '250K'), ('Xe 3,5 tấn', '500K'), ('Xe 5 tấn', '700K'), ('Xe 8 tấn', '1,2 triệu'), ('Xe 10 tấn', '1,6 triệu'), ('Xe 15 tấn', '2,2 triệu'), ('Xe 20 tấn', '2,5 triệu'), ('Đầu kéo rơ-moóc thùng 12 m', '3,5 triệu')]], 'tbl t2')
          + '<p class="pg-note">%s</p>' % esc(BX_NOTE) + '<p>Hàng bốc thủ công tính theo tấn chỉ từ 200K mỗi tấn. Xem thêm <a href="bang-gia-boc-xep.html">bảng giá nhân công bốc xếp</a>.</p>'),
         ('Giá phụ thuộc vào những gì', ul(['Cỡ xe và khối lượng hàng.', 'Loại hàng: hàng rời, hàng đóng thùng, hàng dễ vỡ, hàng nặng.', 'Khoảng cách từ chỗ để hàng ra xe, số tầng và có thang máy hay không.', 'Khung giờ làm việc: ban đêm, ngày lễ báo giá riêng.'])),
         ('Quy trình bốc xếp', ol([('Cho biết hàng và xe', 'Loại hàng, khối lượng, cỡ xe.'), ('Báo giá', 'Báo giá theo xe hoặc theo tấn trước khi làm.'),
                                  ('Nhân công đến đúng giờ', 'Đồng phục, găng tay bảo hộ, dụng cụ cơ bản.'), ('Bốc xếp và kiểm đếm', 'Bốc, xếp gọn và đối chiếu hàng cùng bạn.')])),
     ],
-    faqs=[('Bốc xếp hàng xe tải giá bao nhiêu?', 'Bốc xếp theo xe chỉ từ 150K cho xe 2 tấn, 295K cho xe 5 tấn, 590K cho xe 10 tấn. Đây là giá tham khảo, giá chính xác phụ thuộc loại hàng và điều kiện thực tế. Gọi %s để báo giá.' % TEL),
+    faqs=[('Bốc xếp hàng xe tải giá bao nhiêu?', 'Bốc xếp theo xe khoảng 250K cho xe 2 tấn, 700K cho xe 5 tấn, 1,6 triệu cho xe 10 tấn. Đây là giá tham khảo, giá chính xác phụ thuộc loại hàng và điều kiện thực tế. Gọi %s để báo giá.' % TEL),
           ('Bốc xếp theo xe hay theo tấn có lợi hơn?', 'Hàng đầy xe thì tính theo xe thường dễ dự trù hơn. Hàng ít, nhiều loại thì tính theo tấn hoặc theo giờ. Gọi %s để chúng tôi tư vấn cách tính phù hợp.' % TEL),
           ('Có bốc xếp ngoài giờ, ngày lễ không?', 'Có nhận, nhưng được báo giá riêng. Hãy báo trước giờ làm khi gọi.'),
           ('Nhân công có mang dụng cụ không?', 'Nhân viên có găng tay bảo hộ và dụng cụ bốc xếp cơ bản. Hàng đặc biệt nặng hãy báo trước để chuẩn bị thêm.')],
@@ -229,8 +229,8 @@ PAGES.append(dict(
 
 PAGES.append(dict(
     slug='boc-xep-container',
-    title='Bốc xếp container TPHCM, rút cont khoảng 600K | SGE',
-    meta='Bốc xếp, rút hàng container 20 feet, 40 feet TPHCM bằng xe nâng: cont 20ft khoảng 600K, 40ft khoảng 1,1 triệu. Giá tham khảo, gọi 0368 757 303 báo giá.',
+    title='Bốc xếp container TPHCM, rút cont khoảng 800K | SGE',
+    meta='Bốc xếp, rút hàng container 20 feet, 40 feet TPHCM bằng xe nâng: cont 20ft khoảng 800K, 40ft khoảng 1,5 triệu. Giá tham khảo, gọi 0368 757 303 báo giá.',
     h1='Bốc xếp, rút hàng container tại TP. Hồ Chí Minh',
     lead='Container về kho, cần rút hàng gấp: SGE Viettrans bốc xếp và rút hàng container 20 feet, 40 feet bằng xe nâng, tính giá rõ theo container và trọng lượng.',
     img=None,
@@ -239,16 +239,16 @@ PAGES.append(dict(
         ('Dịch vụ bốc xếp container gồm những gì', ul(['Rút hàng từ container 20 feet, 40 feet ra kho, ra xe.', 'Bốc hàng lên container, xếp gọn tận dụng thùng.', 'Dùng xe nâng cho hàng đóng pallet, kiện nặng.', 'Phối hợp với xe tải để chở hàng về kho hoặc đến nơi nhận.'])
          + '<p>Việc đóng hàng vào container và các yêu cầu đặc thù được báo giá sau khi khảo sát.</p>'),
         ('Bảng giá rút container bằng xe nâng', table(['Hạng mục', 'Tính giá theo', 'Giá tham khảo'], [[esc(a), esc(b), esc(c)] for a, b, c in [
-            ('Rút container 20 feet bằng xe nâng', 'Mỗi container', 'Khoảng 600K'), ('Rút container 40 feet bằng xe nâng', 'Mỗi container', 'Khoảng 1,1 triệu')]], 'tbl t2')),
+            ('Rút container 20 feet bằng xe nâng', 'Mỗi container', '800K'), ('Rút container 40 feet bằng xe nâng', 'Mỗi container', '1,5 triệu')]], 'tbl t2')),
         ('Bảng giá bốc xếp theo container', '<p>Giá bốc lên hoặc xuống hàng cho mỗi container.</p>'
-         + table(['Loại container', 'Giá tham khảo'], [[esc(a), esc(b)] for a, b in [('Container 20 feet nhẹ (dưới 10 tấn)', 'Khoảng 1,25 triệu'), ('Container 20 feet nặng (trên 10 tấn)', 'Khoảng 1,75 triệu'),
-                                                                               ('Container 40 feet nhẹ (dưới 10 tấn)', 'Khoảng 2,15 triệu'), ('Container 40 feet nặng (trên 10 tấn)', 'Khoảng 2,75 triệu')]], 'tbl t2')
+         + table(['Loại container', 'Giá tham khảo'], [[esc(a), esc(b)] for a, b in [('Container 20 feet nhẹ (dưới 10 tấn)', '1,7 triệu'), ('Container 20 feet nặng (trên 10 tấn)', '2,2 triệu'),
+                                                                               ('Container 40 feet nhẹ (dưới 10 tấn)', '2,6 triệu'), ('Container 40 feet nặng (trên 10 tấn)', '3,2 triệu')]], 'tbl t2')
          + '<p class="pg-note">%s</p>' % esc(BX_NOTE)),
         ('Cần chuẩn bị gì trước khi rút container', ul(['Loại container (20 hay 40 feet) và trọng lượng hàng ước tính.', 'Loại hàng: rời, đóng thùng, đóng pallet, hàng nặng.', 'Địa điểm rút hàng: kho, bãi, nhà xưởng; xe nâng và xe container vào được không.', 'Giờ cần rút hàng, nhất là khi có hạn trả cont.'])
          + '<p>Cần chở hàng sau khi rút, xem <a href="cho-thue-xe-tai.html">cho thuê xe tải</a>.</p>'),
     ],
-    faqs=[('Rút container giá bao nhiêu?', 'Rút container 20 feet bằng xe nâng khoảng 600K, container 40 feet khoảng 1,1 triệu mỗi container. Đây là giá tham khảo, gọi %s để báo giá chính xác theo loại hàng và địa điểm.' % TEL),
-          ('Bốc xếp container nặng tính giá thế nào?', 'Container 20 feet dưới 10 tấn khoảng 1,25 triệu, trên 10 tấn khoảng 1,75 triệu. Container 40 feet dưới 10 tấn khoảng 2,15 triệu, trên 10 tấn khoảng 2,75 triệu. Giá tham khảo, báo giá chính xác khi gọi %s.' % TEL),
+    faqs=[('Rút container giá bao nhiêu?', 'Rút container 20 feet bằng xe nâng khoảng 800K, container 40 feet khoảng 1,5 triệu mỗi container. Đây là giá tham khảo, gọi %s để báo giá chính xác theo loại hàng và địa điểm.' % TEL),
+          ('Bốc xếp container nặng tính giá thế nào?', 'Container 20 feet dưới 10 tấn khoảng 1,7 triệu, trên 10 tấn khoảng 2,2 triệu. Container 40 feet dưới 10 tấn khoảng 2,6 triệu, trên 10 tấn khoảng 3,2 triệu. Giá tham khảo, báo giá chính xác khi gọi %s.' % TEL),
           ('Có nhận rút container ngoài giờ, cuối tuần không?', 'Có nhận, được báo giá riêng cho ngoài giờ và ngày lễ. Hãy báo trước giờ cần rút hàng khi gọi.'),
           ('Cần cung cấp thông tin gì để báo giá?', 'Loại container, trọng lượng hàng, loại hàng, địa điểm và giờ rút. Ảnh chụp hàng hoặc mặt bằng gửi qua Zalo %s giúp báo giá nhanh hơn.' % TEL)],
     aside_title='Nhận báo giá bốc xếp container', aside_more=('Xem bảng giá bốc xếp', 'bang-gia-boc-xep.html'),
