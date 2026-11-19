@@ -492,7 +492,7 @@
   }
 
   /* Gửi phiếu thẳng về Google Sheet + email lienhe@ (Apps Script). Để trống thì dùng mailto. */
-  var FORM_ENDPOINT='';
+  var FORM_ENDPOINT='https://script.google.com/macros/s/AKfycbwpld0F9q84fBS1UKPrkGYft7-kUzz5GApOeghp2VEJsbi9EDqhF8YD7VuDPqIYVbewwQ/exec';
   var sending=false,btn=$('button[type=submit]',form);
   function mailto(subject){
     window.location.href='mailto:lienhe@sgeviettrans.vn?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(out.value);
