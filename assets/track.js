@@ -6,7 +6,7 @@
    - ADS_CALL / ADS_ZALO / ADS_LEAD: nhãn chuyển đổi (phần sau dấu / trong "AW-XXXX/nhan")
    - PIXEL:    Meta Pixel ID (dãy số) */
 (function () {
-  var C = { GA4: 'G-WM13QN6R5R', ADS: '', ADS_CALL: '', ADS_ZALO: '', ADS_LEAD: '', PIXEL: '1876553240026691' };
+  var C = { GA4: 'G-WM13QN6R5R', ADS: 'AW-18583563440', ADS_CALL: '', ADS_ZALO: '', ADS_LEAD: 'LbKRCKe5nLsdELDZqp1F', PIXEL: '1876553240026691' };
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
