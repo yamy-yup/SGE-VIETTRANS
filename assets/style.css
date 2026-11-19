@@ -546,3 +546,7 @@ img{background-color:transparent}
   .nav .dd-menu.mega a.dd-h:not(.btn){background:#fff;padding:.9rem 1rem .5rem;border-bottom:0}
   .nav .dd-menu.mega ul a:not(.btn){padding:.75rem 1rem .75rem 1.75rem;border-bottom:1px solid var(--line)}
 }
+
+/* Liên kết chính sách ở chân trang, và chữ chỉ đọc bằng trình đọc màn hình */
+footer .f-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

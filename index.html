@@ -179,7 +179,7 @@
 <section class="hero" id="top">
   <picture><source type="image/webp" srcset="assets/hero-640.webp 640w, assets/hero-1024.webp 1024w, assets/hero-1600.webp 1600w, assets/hero-2304.webp 2304w" sizes="100vw"><img src="assets/hero.jpg" width="1600" height="900" alt="Đội xe tải SGE Viettrans và nhân viên mặc đồng phục tại bãi xe" fetchpriority="high" decoding="async"></picture>
   <div class="hero-in">
-    <h1><span>SGE </span><span>VIETTRANS</span></h1>
+    <h1><span>SGE </span><span>VIETTRANS</span><span class="vh"> - Chuyển nhà trọn gói, thuê xe tải TP.HCM</span></h1>
     <p class="sub">Vận tải Việt - Kết nối toàn cầu</p>
     <ul class="price"><li>Chuyển nhà chỉ từ 800K</li><li>Thuê xe tải chỉ từ 300K</li></ul>
     <div class="act">
@@ -425,6 +425,7 @@
     </div>
     <div class="f-legal">
       <span>© <span id="year">2026</span> SGE Viettrans. Một chữ tín - Vạn niềm tin.</span>
+      <span class="f-links"><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a><a href="dieu-khoan.html">Điều khoản</a></span>
       <a href="#top">Lên đầu trang</a>
     </div>
   </div>
@@ -495,6 +496,7 @@
   var sending=false,btn=$('button[type=submit]',form);
   function mailto(subject){
     window.location.href='mailto:lienhe@sgeviettrans.vn?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(out.value);
+    document.dispatchEvent(new CustomEvent('sge:lead',{detail:{type:'mailto',service:svc.value}}));
     status.textContent='Đã mở ứng dụng email với nội dung phiếu. Nếu không thấy, hãy gọi 0368 757 303 để được hỗ trợ ngay.';
   }
   form.addEventListener('submit',function(e){
@@ -517,6 +519,7 @@
       .then(function(r){return r.json()})
       .then(function(j){
         if(!j.ok)throw new Error('fail');
+        document.dispatchEvent(new CustomEvent('sge:lead',{detail:{type:'form',service:svc.value}}));
         status.textContent='Đã gửi phiếu. SGE Viettrans sẽ gọi lại cho anh/chị sớm nhất. Cần gấp, gọi 0368 757 303.';
         form.reset();$$('.q-row input').forEach(function(i){i.value=0});build();
       })
@@ -530,13 +533,14 @@
   $('#copy').addEventListener('click',function(){
     if(!valid())return;
     build();
-    function done(){status.textContent='Đã sao chép. Dán vào Zalo hoặc tin nhắn để gửi cho chúng tôi.'}
+    function done(){document.dispatchEvent(new CustomEvent('sge:lead',{detail:{type:'copy_zalo',service:svc.value}}));status.textContent='Đã sao chép. Dán vào Zalo hoặc tin nhắn để gửi cho chúng tôi.'}
     if(navigator.clipboard&&navigator.clipboard.writeText){
       navigator.clipboard.writeText(out.value).then(done,function(){out.select();document.execCommand('copy');done()});
     }else{out.select();document.execCommand('copy');done()}
   });
 })();
 </script>
+<script src="assets/track.js" defer></script>
 <script src="assets/site.js" defer></script>
 </body>
 </html>
